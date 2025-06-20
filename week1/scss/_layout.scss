@@ -1,0 +1,28 @@
+.header {
+	&-hero {
+		background-image: url("../images/brand-hero.jpg");
+		background-size: cover;
+		background-position: center;
+		padding: 150px 12px;
+		text-align: center;
+		&__title {
+			font-size: 40px;
+			color: white;
+		}
+		&__subtitle {
+			font-size: 28px;
+			color: white;
+			margin-top: 16px;
+		}
+	}
+}
+
+.footer {
+	background-color: $neutral100;
+	padding: 64px 12px;
+	text-align: center;
+	&__text {
+		font-size: 14px;
+		color: $text-secondary;
+	}
+}
