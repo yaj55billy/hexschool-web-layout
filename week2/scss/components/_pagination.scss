@@ -1,0 +1,40 @@
+.pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: $spacing-3xl;
+
+	&__item {
+		margin: 0 $spacing-xxs;
+
+		&--prev {
+			margin-right: $spacing-xs;
+		}
+
+		&--next {
+			margin-left: $spacing-xs;
+		}
+	}
+
+	&__link {
+		display: block;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		color: $text-primary;
+		text-align: center;
+
+		&:hover {
+			background-color: $neutral100;
+		}
+
+		&--disabled {
+			opacity: 0.6;
+			pointer-events: none;
+		}
+
+		&--selected {
+			background-color: $primary300;
+		}
+	}
+}

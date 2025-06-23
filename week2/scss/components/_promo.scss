@@ -1,0 +1,14 @@
+.promo {
+	background-color: $primary200;
+
+	&__content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: $spacing-l $spacing-s;
+	}
+
+	&__btn {
+		margin-left: $spacing-l;
+	}
+}

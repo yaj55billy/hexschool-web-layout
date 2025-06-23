@@ -1,0 +1,54 @@
+.btn {
+	display: inline-block;
+	border-radius: $radius-sm;
+
+	&__large {
+		padding: $spacing-s $spacing-l;
+	}
+
+	&__small {
+		padding: $spacing-xs $spacing-m;
+	}
+
+	&__primary {
+		background-color: $primary300;
+		color: $text-primary;
+		&:hover {
+			opacity: 0.8;
+			color: $primary500;
+		}
+
+		&:focus {
+			opacity: 0.8;
+			color: $primary500;
+			box-shadow: 0 0 3px lighten($primary300, 10%);
+		}
+	}
+
+	&__neutral {
+		background-color: $text-primary;
+		color: white;
+		&:hover {
+			opacity: 0.8;
+		}
+
+		&:focus {
+			opacity: 0.8;
+			box-shadow: 0 0 3px lighten($text-primary, 10%);
+		}
+	}
+
+	&__outline {
+		border: solid 1px $text-primary;
+		color: $text-primary;
+
+		&:hover {
+			background-color: $text-primary;
+			color: white;
+		}
+
+		&:focus {
+			box-shadow: 0 0 3px lighten($text-primary, 10%);
+		}
+	}
+}

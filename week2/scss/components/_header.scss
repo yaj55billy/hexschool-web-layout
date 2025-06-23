@@ -1,0 +1,69 @@
+.header {
+	&-navbar {
+		padding: $spacing-m 0px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__main {
+		display: flex;
+		align-items: center;
+	}
+
+	&__logo {
+		margin-right: $spacing-3xl;
+	}
+
+	&__menu {
+		&__item {
+			display: inline-block;
+			margin-right: $spacing-2xl;
+		}
+
+		&__link {
+			font-weight: 500;
+			color: $text-primary;
+			padding: $spacing-s 0px;
+			transition: color 0.3s ease;
+
+			&:hover {
+				color: $text-secondary;
+			}
+
+			&:focus {
+				color: $text-primary;
+				border-bottom: solid 2px $text-primary;
+			}
+		}
+	}
+
+	&__user {
+		padding: 9px 13.5px;
+		&__icon {
+			color: $text-primary;
+			font-size: 20px;
+			transition: color 0.3s ease;
+		}
+		&__icon:hover {
+			color: $text-highlight;
+		}
+	}
+
+	&-hero {
+		background-image: url("../images/brand-hero.jpg");
+		background-size: cover;
+		background-position: center;
+		padding: 150px 12px;
+		text-align: center;
+		&__title {
+			font-size: 40px;
+			color: white;
+		}
+		&__subtitle {
+			font-size: 28px;
+			color: white;
+			margin-top: 16px;
+		}
+	}
+}
