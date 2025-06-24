@@ -107,19 +107,20 @@
             <p class="product-detail__sizes__message">僅剩 3 雙</p>
           </div>
           <div class="product-detail__actions">
-            <a href="">
+            <a class="product-detail__actions__collect" href="#" id="btnCollect">
+              <i class="bi bi-heart product-detail__actions__icon"></i>
+                <!-- <i class="bi bi-heart-fill"></i> -->
               加入收藏
-              <i class="bi bi-heart"></i>
-              <i class="bi bi-heart-fill"></i>
             </a>
-            <a href="">
+            <a class="product-detail__actions__reserve" href="#">
+              <i class="bi bi-handbag product-detail__actions__icon"></i>
               門市預約試穿
             </a>
           </div>
           <ul class="product-detail__notice">
             <li class="product-detail__notice__item">
-              <p>商品材質</p>
-              <p>
+              <h6>商品材質</h6>
+              <p class="product-detail__notice__text">
                 鞋面：合成皮革（Synthetic Leather）<br/>
                 內裡：透氣網布材質，提升舒適與排汗性<br/>
                 鞋底：EVA 輕量發泡橡膠，具備良好緩震與止滑效果<br/>
@@ -127,16 +128,16 @@
               </p>
             </li>
             <li class="product-detail__notice__item">
-              <p>購買須知</p>
-              <p>
+              <h6>購買須知</h6>
+              <p class="product-detail__notice__text">
                 商品顏色因螢幕顯示可能略有差異，請以實品為準。<br/>
                 建議首次穿著前試穿確認尺寸，避免影響退換貨權益。<br/>
                 本商品為限量發售，庫存有限，如需更換尺寸請儘早聯繫客服協助處理。
               </p>
             </li>
             <li class="product-detail__notice__item">
-              <p>保養方式</p>
-              <p>
+              <h6>保養方式</h6>
+              <p class="product-detail__notice__text">
                 建議以乾布或微濕軟布擦拭表面汙漬，避免機洗或長時間浸水。<br/>
                 收納時請放置於乾燥通風處，避免日曬及高溫導致變形或龜裂。<br/>
                 若需深層清潔，建議使用中性清潔劑並搭配柔刷輕刷，勿使用漂白水或強酸強鹼清潔劑。
@@ -213,6 +214,20 @@
       </p>
     </div>
   </footer>
+
+  <script>
+    const btnCollect = document.querySelector('#btnCollect');
+    btnCollect.addEventListener('click', function(event) {
+      event.preventDefault();
+      if (btnCollect.classList.contains('active')) {
+        btnCollect.classList.remove('active');
+        btnCollect.innerHTML = '<i class="bi bi-heart product-detail__actions__icon"></i> 加入收藏';
+      } else {
+        btnCollect.classList.add('active');
+        btnCollect.innerHTML = '<i class="bi bi-heart-fill product-detail__actions__icon"></i> 已收藏';
+      }
+    });
+  </script>
 
 </body>
 </html>
