@@ -1,0 +1,216 @@
+.product {
+	&-detail {
+		padding: $spacing-5xl 0;
+		display: flex;
+		gap: $spacing-l;
+
+		&__showcase {
+			width: 57.5%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: $spacing-xs;
+			&__image {
+				width: calc(50% - 4px);
+				object-fit: cover;
+			}
+		}
+
+		&__info {
+			flex: 1;
+		}
+
+		&__title {
+			margin-top: $spacing-s;
+		}
+
+		&__price {
+			margin-top: $spacing-m;
+			color: $text-highlight;
+			&--origin {
+				color: $text-muted;
+				font-size: 14px;
+				font-weight: 400;
+				text-decoration: line-through;
+			}
+		}
+
+		&__description {
+			margin-top: $spacing-m;
+			font-weight: 400;
+			&__text {
+				margin-top: $spacing-s;
+			}
+		}
+
+		&__colors {
+			margin-top: $spacing-xl;
+
+			&__title {
+				font-weight: 400;
+			}
+
+			&__list {
+				margin-top: $spacing-xs;
+				display: flex;
+				gap: $spacing-xs;
+			}
+
+			&__name {
+				margin-top: $spacing-xxs;
+				color: $text-secondary;
+			}
+
+			&__item {
+				text-align: center;
+				cursor: pointer;
+				&:hover {
+					opacity: 0.9;
+				}
+				&--selected .product-detail__colors__image {
+					border: solid 1px $text-primary;
+				}
+
+				&--selected .product-detail__colors__name {
+					color: $text-primary;
+				}
+			}
+		}
+
+		&__sizes {
+			margin-top: $spacing-xl;
+
+			&__title {
+				font-weight: 400;
+			}
+
+			&__list {
+				margin-top: $spacing-xs;
+				display: flex;
+				flex-wrap: wrap;
+				gap: $spacing-xs;
+			}
+
+			&__item {
+				width: 160px;
+				text-align: center;
+			}
+
+			&__link {
+				display: block;
+				padding: $spacing-s $spacing-l;
+				color: $text-primary;
+				border: solid 1px $neutral300;
+				border-radius: $radius-sm;
+				transition: border 0.3s ease;
+
+				&:hover {
+					border: solid 1px $text-secondary;
+				}
+
+				&--selected {
+					border: solid 1px $text-primary;
+				}
+
+				&--disabled {
+					color: $text-muted;
+					border: solid 1px $neutral300;
+					cursor: not-allowed;
+				}
+			}
+
+			&__message {
+				margin-top: $spacing-xs;
+				color: $danger300;
+				font-weight: 400;
+			}
+		}
+
+		&__actions {
+			margin-top: $spacing-3xl;
+			display: flex;
+			gap: $spacing-xs;
+
+			&__collect,
+			&__reserve {
+				width: calc(50% - 4px);
+				border-radius: $radius-sm;
+				display: block;
+				padding: $spacing-s;
+				text-align: center;
+			}
+
+			&__collect {
+				border: solid 1px $text-primary;
+				color: $text-primary;
+				transition: all 0.3s ease;
+			}
+
+			&__collect:hover {
+				background-color: $text-primary;
+				color: white;
+			}
+
+			&__reserve {
+				background-color: $text-primary;
+				color: white;
+			}
+
+			&__reserve:hover {
+				opacity: 0.8;
+			}
+
+			&__reserve:focus {
+				opacity: 0.8;
+				box-shadow: 0 0 3px lighten($text-primary, 10%);
+			}
+
+			&__icon {
+				font-size: 18px;
+				margin-right: $spacing-xs;
+			}
+		}
+
+		&__notice {
+			margin-top: $spacing-xl;
+
+			&__item {
+				margin-top: $spacing-s;
+
+				&::after {
+					content: "";
+					display: block;
+					width: 100%;
+					height: 1px;
+					background-color: $neutral300;
+					margin-top: $spacing-s;
+				}
+			}
+
+			&__text {
+				margin-top: $spacing-xxs;
+				color: $text-secondary;
+				font-weight: 400;
+			}
+		}
+	}
+
+	&-maybelike {
+		padding: $spacing-3xl 0;
+
+		&__title {
+			padding: 9.5px 0;
+		}
+
+		&__list {
+			margin-top: $spacing-m;
+			display: flex;
+			flex-wrap: wrap;
+			gap: $spacing-l;
+		}
+
+		&__item {
+			width: calc(25% - 18px);
+		}
+	}
+}

@@ -1,0 +1,25 @@
+.breadcrumb {
+	display: flex;
+	align-items: center;
+
+	&__item {
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		color: $text-secondary;
+
+		&::after {
+			content: "/";
+			display: inline-block;
+			color: $neutral300;
+			margin: 0 $spacing-s;
+			transform: translateY(-1px);
+		}
+
+		&:hover {
+			color: $text-primary;
+		}
+	}
+}

@@ -1,0 +1,127 @@
+.brand {
+	padding: $spacing-5xl 0;
+
+	&__content__title {
+		color: $text-highlight;
+	}
+	&__section__title {
+		color: $text-primary;
+	}
+
+	&__section {
+		margin-top: $spacing-3xl;
+		&::after {
+			content: "";
+			display: block;
+			width: 100%;
+			height: 1px;
+			background-color: $neutral300;
+			margin-top: $spacing-3xl;
+		}
+	}
+
+	&-quote {
+		padding: $spacing-xl;
+		border-radius: $radius-sm;
+		text-align: center;
+		background-color: $primary100;
+		&__text {
+			margin-top: $spacing-s;
+		}
+	}
+
+	&-intro {
+		&__image {
+			width: calc(100% + 220px);
+			max-width: none;
+			margin: 0 -110px;
+		}
+		&__content,
+		&__subtitle {
+			margin-top: $spacing-l;
+		}
+		&__text {
+			margin-top: $spacing-m;
+		}
+	}
+
+	&-history {
+		&__list {
+			margin-top: $spacing-l;
+			list-style-type: disc;
+			list-style-position: inside;
+			padding-left: $spacing-xs;
+		}
+
+		&__item {
+			margin-top: $spacing-s;
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+			&--border::before {
+				content: "";
+				display: inline-block;
+				vertical-align: middle;
+				width: 1px;
+				height: 24px;
+				background-color: $text-primary;
+				margin: -2px 8px 0px;
+			}
+		}
+	}
+
+	&-concept {
+		&__list {
+			margin-top: $spacing-l;
+		}
+
+		&__item {
+			margin-top: $spacing-s;
+			padding-left: 9px;
+			border-left: solid 3px $neutral300;
+
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+	}
+
+	&-story {
+		&__list {
+			margin-top: $spacing-l;
+		}
+
+		&__link {
+			display: inline-block;
+			padding: $spacing-xs 0;
+			color: $text-highlight;
+			text-decoration: none;
+			transition: color 0.3s;
+
+			&:hover {
+				color: darken($text-highlight, 10%);
+			}
+		}
+
+		&__icon {
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 20px;
+		}
+		&__text {
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: $spacing-xs;
+			&::after {
+				content: "";
+				display: block;
+				width: 100%;
+				height: 1px;
+				background-color: $text-highlight;
+				margin-top: $spacing-xxs;
+			}
+		}
+	}
+}

@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	// outline: olive 1px solid;
+}
+
+body {
+	font-family: "Noto Sans TC", sans-serif;
+	font-weight: 500;
+	line-height: 1.5;
+	letter-spacing: 1px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 700;
+	line-height: 1.2;
+	color: $text-primary;
+}
+
+h1 {
+	font-size: $head-fz-h1;
+}
+
+h2 {
+	font-size: $head-fz-h2;
+}
+
+h3 {
+	font-size: $head-fz-h3;
+}
+
+h4 {
+	font-size: $head-fz-h4;
+}
+
+h5 {
+	font-size: $head-fz-h5;
+}
+
+h6 {
+	font-size: $head-fz-h6;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container-sm {
+	max-width: 856px;
+	margin: 0 auto;
+}
+
+.container {
+	max-width: 1320px;
+	margin: 0 auto;
+	padding: 0 12px;
+
+	@include pad {
+		max-width: 720px;
+	}
+}
