@@ -67,3 +67,20 @@
 		}
 	}
 }
+
+@include mobile-larger {
+	.header {
+		&-navbar {
+			padding: $spacing-s 0px;
+		}
+		&__logo {
+			margin-right: 0;
+		}
+		&__menu {
+			display: none;
+		}
+		&__user {
+			padding: 15px;
+		}
+	}
+}

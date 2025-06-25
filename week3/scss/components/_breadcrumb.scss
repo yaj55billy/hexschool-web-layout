@@ -2,9 +2,6 @@
 	display: flex;
 	align-items: center;
 
-	&__item {
-	}
-
 	&__link {
 		display: flex;
 		align-items: center;
@@ -20,6 +17,16 @@
 
 		&:hover {
 			color: $text-primary;
+		}
+	}
+}
+
+@include mobile-larger {
+	.breadcrumb {
+		&__link {
+			&::after {
+				margin: 0 $spacing-xs;
+			}
 		}
 	}
 }

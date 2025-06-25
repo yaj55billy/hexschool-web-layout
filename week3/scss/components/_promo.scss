@@ -5,10 +5,19 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		padding: $spacing-l $spacing-s;
+		padding: $spacing-l $spacing-m;
+	}
+
+	&__title {
+		@include mobile-larger {
+			font-size: 20px;
+		}
 	}
 
 	&__btn {
 		margin-left: $spacing-l;
+		@include mobile-larger {
+			margin-left: $spacing-m;
+		}
 	}
 }

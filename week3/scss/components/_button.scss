@@ -4,6 +4,9 @@
 
 	&__large {
 		padding: $spacing-s $spacing-l;
+		@include mobile-larger {
+			padding: $spacing-xs $spacing-m;
+		}
 	}
 
 	&__small {
