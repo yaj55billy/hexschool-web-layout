@@ -108,18 +108,18 @@
           </div>
           <div class="product-detail__actions">
             <a class="product-detail__actions__collect" href="#" id="btnCollect">
-              <i class="bi bi-heart product-detail__actions__icon"></i>
+              <i class="bi bi-heart product-detail__collect__icon"></i>
                 <!-- <i class="bi bi-heart-fill"></i> -->
-              加入收藏
+              <span class="product-detail__actions__collect__text">加入收藏</span>
             </a>
             <a class="product-detail__actions__reserve" href="#">
-              <i class="bi bi-handbag product-detail__actions__icon"></i>
+              <i class="bi bi-handbag product-detail__reserve__icon"></i>
               門市預約試穿
             </a>
           </div>
           <ul class="product-detail__notice">
             <li class="product-detail__notice__item">
-              <h6>商品材質</h6>
+              <h6 class="product-detail__notice__title">商品材質</h6>
               <p class="product-detail__notice__text">
                 鞋面：合成皮革（Synthetic Leather）<br/>
                 內裡：透氣網布材質，提升舒適與排汗性<br/>
@@ -128,7 +128,7 @@
               </p>
             </li>
             <li class="product-detail__notice__item">
-              <h6>購買須知</h6>
+              <h6 class="product-detail__notice__title">購買須知</h6>
               <p class="product-detail__notice__text">
                 商品顏色因螢幕顯示可能略有差異，請以實品為準。<br/>
                 建議首次穿著前試穿確認尺寸，避免影響退換貨權益。<br/>
@@ -136,7 +136,7 @@
               </p>
             </li>
             <li class="product-detail__notice__item">
-              <h6>保養方式</h6>
+              <h6 class="product-detail__notice__title">保養方式</h6>
               <p class="product-detail__notice__text">
                 建議以乾布或微濕軟布擦拭表面汙漬，避免機洗或長時間浸水。<br/>
                 收納時請放置於乾燥通風處，避免日曬及高溫導致變形或龜裂。<br/>
@@ -214,20 +214,6 @@
       </p>
     </div>
   </footer>
-
-  <script>
-    const btnCollect = document.querySelector('#btnCollect');
-    btnCollect.addEventListener('click', function(event) {
-      event.preventDefault();
-      if (btnCollect.classList.contains('active')) {
-        btnCollect.classList.remove('active');
-        btnCollect.innerHTML = '<i class="bi bi-heart product-detail__actions__icon"></i> 加入收藏';
-      } else {
-        btnCollect.classList.add('active');
-        btnCollect.innerHTML = '<i class="bi bi-heart-fill product-detail__actions__icon"></i> 已收藏';
-      }
-    });
-  </script>
 
 </body>
 </html>

@@ -71,3 +71,25 @@ a {
 		max-width: 720px;
 	}
 }
+
+@include mobile-larger {
+	// h1 {
+	// 	font-size: $head-fz-h1;
+	// }
+
+	h2 {
+		font-size: 28px;
+	}
+
+	h3 {
+		font-size: 24px;
+	}
+
+	// h4 {
+	// 	font-size: $head-fz-h4;
+	// }
+
+	h5 {
+		font-size: 16px;
+	}
+}
