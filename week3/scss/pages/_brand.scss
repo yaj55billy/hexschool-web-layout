@@ -1,5 +1,7 @@
 .brand {
 	padding: $spacing-5xl 0;
+	font-weight: 400;
+	color: $text-primary;
 
 	&__content__title {
 		color: $text-highlight;
@@ -26,7 +28,11 @@
 		text-align: center;
 		background-color: $primary100;
 		&__text {
-			margin-top: $spacing-s;
+			margin-top: $spacing-xxs;
+
+			&--first {
+				margin-top: $spacing-s;
+			}
 		}
 	}
 
@@ -49,8 +55,7 @@
 		&__list {
 			margin-top: $spacing-l;
 			list-style-type: disc;
-			list-style-position: inside;
-			padding-left: $spacing-xs;
+			padding-left: 28px;
 		}
 
 		&__item {
@@ -114,6 +119,7 @@
 			display: inline-block;
 			vertical-align: middle;
 			margin-left: $spacing-xs;
+			font-weight: 500;
 			&::after {
 				content: "";
 				display: block;
@@ -121,6 +127,75 @@
 				height: 1px;
 				background-color: $text-highlight;
 				margin-top: $spacing-xxs;
+			}
+		}
+	}
+}
+
+@include desktop-smaller {
+	.brand {
+		&-intro {
+			&__image {
+				width: 100%;
+				max-width: 100%;
+				margin: 0;
+			}
+		}
+	}
+}
+
+@include mobile-larger {
+	.brand {
+		padding: ($spacing-5xl/2) 0;
+
+		&__content__title {
+			font-size: 20px;
+		}
+
+		&__section {
+			margin-top: $spacing-xl;
+			&::after {
+				margin-top: $spacing-xl;
+			}
+		}
+
+		&-quote {
+			padding: $spacing-l;
+			text-align: left;
+		}
+
+		&-intro {
+			&__content,
+			&__subtitle {
+				margin-top: $spacing-m;
+			}
+			&__subtitle {
+				font-size: 16px;
+			}
+			&__subtitle--mobile {
+				display: block;
+				margin-top: $spacing-xs;
+			}
+			&__text {
+				margin-top: $spacing-s;
+			}
+		}
+
+		&-history {
+			&__list {
+				margin-top: $spacing-m;
+			}
+		}
+
+		&-concept {
+			&__list {
+				margin-top: $spacing-m;
+			}
+		}
+
+		&-story {
+			&__list {
+				margin-top: $spacing-m;
 			}
 		}
 	}

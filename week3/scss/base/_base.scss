@@ -2,7 +2,7 @@
 *::before,
 *::after {
 	box-sizing: border-box;
-	// outline: olive 1px solid;
+	// outline: orange 2px solid;
 }
 
 body {
@@ -10,6 +10,9 @@ body {
 	font-weight: 500;
 	line-height: 1.5;
 	letter-spacing: 1px;
+	@include pad {
+		letter-spacing: 0.8px;
+	}
 }
 
 img {
@@ -58,8 +61,13 @@ a {
 }
 
 .container-sm {
-	max-width: 856px;
+	max-width: 880px;
 	margin: 0 auto;
+	padding: 0 12px;
+
+	@include pad {
+		max-width: 720px;
+	}
 }
 
 .container {
@@ -91,5 +99,12 @@ a {
 
 	h5 {
 		font-size: 16px;
+	}
+}
+
+.mobile-show {
+	display: none;
+	@include mobile-larger {
+		display: block;
 	}
 }

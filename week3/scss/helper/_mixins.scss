@@ -1,3 +1,9 @@
+@mixin desktop-smaller {
+	@media (max-width: 1200px) {
+		@content;
+	}
+}
+
 @mixin pad {
 	@media (max-width: 992px) {
 		@content;

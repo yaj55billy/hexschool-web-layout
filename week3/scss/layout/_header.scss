@@ -82,5 +82,36 @@
 		&__user {
 			padding: 15px;
 		}
+
+		&-hero {
+			background-image: url("../images/brand-hero-mobile.png");
+			padding: 87px 12px;
+			position: relative;
+
+			&__title,
+			&__subtitle {
+				position: relative;
+				z-index: 5;
+			}
+
+			&__title {
+				font-size: 28px;
+			}
+
+			&__subtitle {
+				font-size: 20px;
+			}
+
+			&::after {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(#000, 0.25);
+				z-index: 0;
+			}
+		}
 	}
 }

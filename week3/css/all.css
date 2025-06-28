@@ -147,6 +147,11 @@ body {
   line-height: 1.5;
   letter-spacing: 1px;
 }
+@media (max-width: 992px) {
+  body {
+    letter-spacing: 0.8px;
+  }
+}
 
 img {
   max-width: 100%;
@@ -194,8 +199,14 @@ a {
 }
 
 .container-sm {
-  max-width: 856px;
+  max-width: 880px;
   margin: 0 auto;
+  padding: 0 12px;
+}
+@media (max-width: 992px) {
+  .container-sm {
+    max-width: 720px;
+  }
 }
 
 .container {
@@ -220,6 +231,15 @@ a {
     font-size: 16px;
   }
 }
+.mobile-show {
+  display: none;
+}
+@media (max-width: 767px) {
+  .mobile-show {
+    display: block;
+  }
+}
+
 .breadcrumb {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -501,6 +521,31 @@ a {
   .header__user {
     padding: 15px;
   }
+  .header-hero {
+    background-image: url("../images/brand-hero-mobile.png");
+    padding: 87px 12px;
+    position: relative;
+  }
+  .header-hero__title, .header-hero__subtitle {
+    position: relative;
+    z-index: 5;
+  }
+  .header-hero__title {
+    font-size: 28px;
+  }
+  .header-hero__subtitle {
+    font-size: 20px;
+  }
+  .header-hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 0;
+  }
 }
 .footer {
   background-color: #f8f9fa;
@@ -571,6 +616,8 @@ a {
 }
 .brand {
   padding: 64px 0;
+  font-weight: 400;
+  color: #212529;
 }
 .brand__content__title {
   color: #57a203;
@@ -596,6 +643,9 @@ a {
   background-color: #f5fee7;
 }
 .brand-quote__text {
+  margin-top: 4px;
+}
+.brand-quote__text--first {
   margin-top: 12px;
 }
 .brand-intro__image {
@@ -612,8 +662,7 @@ a {
 .brand-history__list {
   margin-top: 24px;
   list-style-type: disc;
-  list-style-position: inside;
-  padding-left: 8px;
+  padding-left: 28px;
 }
 .brand-history__item {
   margin-top: 12px;
@@ -664,6 +713,7 @@ a {
   display: inline-block;
   vertical-align: middle;
   margin-left: 8px;
+  font-weight: 500;
 }
 .brand-story__text::after {
   content: "";
@@ -674,6 +724,53 @@ a {
   margin-top: 4px;
 }
 
+@media (max-width: 1200px) {
+  .brand-intro__image {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+}
+@media (max-width: 767px) {
+  .brand {
+    padding: 32px 0;
+  }
+  .brand__content__title {
+    font-size: 20px;
+  }
+  .brand__section {
+    margin-top: 32px;
+  }
+  .brand__section::after {
+    margin-top: 32px;
+  }
+  .brand-quote {
+    padding: 24px;
+    text-align: left;
+  }
+  .brand-intro__content, .brand-intro__subtitle {
+    margin-top: 16px;
+  }
+  .brand-intro__subtitle {
+    font-size: 16px;
+  }
+  .brand-intro__subtitle--mobile {
+    display: block;
+    margin-top: 8px;
+  }
+  .brand-intro__text {
+    margin-top: 12px;
+  }
+  .brand-history__list {
+    margin-top: 16px;
+  }
+  .brand-concept__list {
+    margin-top: 16px;
+  }
+  .brand-story__list {
+    margin-top: 16px;
+  }
+}
 .products {
   padding: 32px 0;
 }
