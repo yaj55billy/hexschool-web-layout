@@ -3,6 +3,8 @@
 
 	&__image {
 		transition: opacity 0.3s ease;
+		position: relative;
+		z-index: 1;
 	}
 
 	&:hover .card__image {
@@ -26,6 +28,18 @@
 
 	&__price {
 		margin-top: $spacing-xxs;
+	}
+
+	&__tag {
+		background-color: $primary100;
+		display: inline-block;
+		padding: $spacing-xs $spacing-s;
+		font-size: 14px;
+		color: $primary400;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 4;
 	}
 }
 

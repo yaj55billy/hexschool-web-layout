@@ -1,17 +1,276 @@
-@mixin pad {
-	@media (max-width: 992px) {
-		@content;
+.index {
+	&-banner {
+		background-image: url("../images/index-banner.jpg");
+		background-size: cover;
+		background-position: center;
+
+		&__info {
+			padding: 288px 0 288px 10.4%;
+		}
+
+		&__title {
+			font-size: 64px;
+			color: white;
+		}
+
+		&__subtitle {
+			color: white;
+			margin-top: $spacing-m;
+		}
+
+		&__link {
+			margin-top: $spacing-3xl;
+		}
+	}
+
+	&-newarrival {
+		&__content {
+			padding: $spacing-5xl 0;
+		}
+
+		&__head {
+			font-size: 48px;
+			text-align: center;
+		}
+
+		&__title {
+			margin-top: $spacing-s;
+			text-align: center;
+		}
+
+		&__list {
+			margin-top: $spacing-xl;
+			display: flex;
+			flex-wrap: wrap;
+			gap: $spacing-2xl $spacing-l;
+		}
+
+		&__item {
+			width: calc(50% - 12px);
+		}
+	}
+
+	&-hotcake {
+		&__content {
+			padding: $spacing-5xl 0;
+		}
+
+		&__list {
+			margin-top: $spacing-m;
+			display: flex;
+			gap: $spacing-l;
+		}
+
+		&__item {
+			width: calc(25% - 18px);
+		}
+	}
+
+	&-collaboration {
+		margin: $spacing-3xl 0;
+		padding: 100px 0;
+		background-image: url("../images/index-collaboration.jpg");
+		background-size: cover;
+		background-position: center;
+
+		&__content {
+			width: 635px;
+			margin: 0 auto;
+			text-align: center;
+			position: relative;
+		}
+
+		&__head {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 48px;
+			color: white;
+
+			&--decora {
+				display: inline-block;
+				vertical-align: middle;
+				font-size: 40px;
+				margin: 0 $spacing-l;
+				color: $primary300;
+			}
+		}
+
+		&__title {
+			margin-top: $spacing-m;
+			color: white;
+		}
+
+		&__text {
+			margin-top: $spacing-xl;
+			font-size: 20px;
+			font-weight: 400;
+			color: $text-muted;
+		}
+
+		&__link {
+			margin-top: $spacing-3xl;
+		}
+
+		&__decora__star {
+			position: absolute;
+			top: -32px;
+			left: -64px;
+			z-index: 2;
+		}
+
+		&__decora__sparkle {
+			position: absolute;
+			bottom: 12px;
+			right: -48px;
+			z-index: 2;
+		}
 	}
 }
 
-@mixin mobile-larger {
-	@media (max-width: 767px) {
-		@content;
+@include desktop-smaller {
+	.index {
+		&-banner {
+			&__info {
+				padding: 288px 0 288px 50px;
+			}
+		}
 	}
 }
 
-@mixin mobile {
-	@media (max-width: 576px) {
-		@content;
+@include pad {
+	.index {
+		&-hotcake {
+			&__list {
+				overflow-x: auto;
+			}
+
+			&__item {
+				width: 45%;
+				flex-shrink: 0;
+			}
+		}
+	}
+}
+
+@include mobile-larger {
+	.index {
+		&-banner {
+			background-image: url("../images/index-banner-mobile.jpg");
+
+			&__info {
+				padding: 155px 24px;
+			}
+
+			&__title {
+				font-size: 48px;
+			}
+
+			&__subtitle {
+				font-size: 20px;
+				margin-top: $spacing-m/2;
+			}
+
+			&__link {
+				margin-top: $spacing-xl;
+				padding: $spacing-s $spacing-l;
+			}
+		}
+
+		&-newarrival {
+			&__content {
+				padding: $spacing-2xl 0;
+			}
+
+			&__head {
+				font-size: 32px;
+			}
+
+			&__title {
+				margin-top: $spacing-xs;
+				font-size: 24px;
+			}
+
+			&__list {
+				margin-top: $spacing-l;
+				gap: $spacing-l $spacing-s;
+			}
+
+			&__item {
+				width: calc(50% - 6px);
+			}
+
+			.card__title {
+				font-size: 16px;
+			}
+		}
+
+		&-hotcake {
+			&__content {
+				padding: $spacing-2xl 0;
+			}
+
+			&__title {
+				font-size: 24px;
+			}
+		}
+
+		&-collaboration {
+			margin: $spacing-l 0;
+			padding: $spacing-5xl 12px;
+			background-image: url("../images/index-collaboration-mobile.jpg");
+			overflow: hidden;
+
+			&__content {
+				width: 100%;
+			}
+
+			&__head {
+				display: flex;
+				flex-direction: column;
+				font-size: 32px;
+
+				&--decora {
+					font-size: 28px;
+					margin: $spacing-xs 0;
+				}
+			}
+
+			&__title {
+				font-size: 20px;
+			}
+
+			&__text {
+				margin-top: $spacing-l;
+				font-size: 16px;
+			}
+
+			&__link {
+				margin-top: $spacing-xl;
+			}
+
+			&__decora__star {
+				top: -32px;
+				left: -40px;
+			}
+
+			&__decora__sparkle {
+				bottom: -12px;
+				right: -48px;
+			}
+		}
+	}
+}
+
+@include mobile {
+	.index {
+		&-hotcake {
+			&__list {
+				gap: $spacing-m;
+			}
+			&__item {
+				width: 80%;
+			}
+		}
 	}
 }
