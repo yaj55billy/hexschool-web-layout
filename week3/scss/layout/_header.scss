@@ -66,6 +66,10 @@
 			margin-top: 16px;
 		}
 	}
+
+	&-navbar-mobile {
+		display: none;
+	}
 }
 
 @include mobile-larger {
@@ -111,6 +115,36 @@
 				height: 100%;
 				background-color: rgba(#000, 0.25);
 				z-index: 0;
+			}
+		}
+
+		&-navbar-mobile {
+			display: block;
+			&__menu {
+				display: flex;
+			}
+			&__item {
+				width: 50%;
+				text-align: center;
+			}
+
+			&__item:nth-child(1) {
+				background-color: $primary200;
+			}
+
+			&__item:nth-child(2) {
+				background-color: $primary100;
+			}
+
+			&__link {
+				display: block;
+				padding: $spacing-s;
+				color: $text-primary;
+				transition: color 0.3s ease;
+			}
+
+			&__link:hover {
+				color: $text-highlight;
 			}
 		}
 	}

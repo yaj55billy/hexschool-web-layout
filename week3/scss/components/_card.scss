@@ -7,10 +7,6 @@
 		z-index: 1;
 	}
 
-	&:hover .card__image {
-		opacity: 0.8;
-	}
-
 	&__link {
 		position: absolute;
 		top: 0;
@@ -40,6 +36,71 @@
 		top: 0;
 		left: 0;
 		z-index: 4;
+	}
+
+	&__mask {
+		&__image {
+			position: relative;
+			width: 100%;
+			height: 0;
+			padding-bottom: 100%;
+			background-size: cover;
+			background-position: center;
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 2;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0, 0, 0, 0.4);
+			}
+		}
+
+		&__info {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			right: 0;
+			transform: translateY(-50%);
+			margin: auto;
+			text-align: center;
+			z-index: 3;
+		}
+
+		&__title {
+			font-size: 28px;
+			color: white;
+		}
+
+		&__subtitle {
+			font-size: 24px;
+			color: white;
+			margin-top: $spacing-xs;
+		}
+	}
+
+	&:hover .card__image {
+		opacity: 0.8;
+	}
+
+	&:hover .card__mask__title {
+		color: $primary300;
+	}
+}
+
+@include pad {
+	.card {
+		&__mask {
+			&__title {
+				font-size: 16px;
+			}
+
+			&__subtitle {
+				font-size: 16px;
+			}
+		}
 	}
 }
 
