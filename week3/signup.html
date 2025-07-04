@@ -31,15 +31,28 @@
       </nav>
     </div>
   </header>
-  <main>
-
-  </main>
-  <section class="promo">
-    <div class="promo__content">
-      <h4 class="promo__title">加入會員取得 9 折優惠</h4>
-      <a class="btn btn__large btn__neutral promo__btn" href="signup.html">馬上註冊</a>
+  <main class="account">
+    <div class="container">
+      <div class="account__content">
+        <picture class="account__picture">
+          <source media="(max-width: 991px)" srcset="images/account-pic-mobile.jpg">
+          <img src="images/account-pic.jpg" alt="URBNSTEP 機能鞋" class="account__image">
+        </picture>
+        <div class="account__info">
+          <h3 class="account__title">歡迎！</h3>
+          <ul class="account__menu">
+            <li class="account__menu__item"><a href="signin.html" class="account__menu__link">登入</a></li>
+            <li class="account__menu__item"><a href="signup.html" class="account__menu__link account__menu__link--active">註冊</a></li>
+          </ul>
+          <ul class="account__social">
+            <li class="account__social__item"><a href="#" class="account__social__link"><img src="images/icon-facebook.png" alt="Facebook 登入">Facebook 登入</a></li>
+            <li class="account__social__item"><a href="#" class="account__social__link"><img src="images/icon-apple.png" alt="Apple 登入">Apple 登入</a></li>
+            <li class="account__social__item"><a href="#" class="account__social__link"><img src="images/icon-google.png" alt="Google 登入">Google 登入</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </section>
+  </main>
   <footer class="footer">
     <div class="container">
       <div class="footer__info">
