@@ -1,24 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-@import "helper/_variables";
-@import "helper/_mixins";
+@import "./helper/_variables";
+@import "./helper/_mixins";
 
-@import "base/_reset";
-@import "base/_base";
+@import "./base/_reset";
+@import "./base/_base";
 
-@import "components/_breadcrumb";
-@import "components/_card";
-@import "components/_pagination";
-@import "components/_button";
-@import "components/_promo";
-@import "components/_banner";
+@import "./components/_breadcrumb";
+@import "./components/_card";
+@import "./components/_pagination";
+@import "./components/_button";
+@import "./components/_promo";
+@import "./components/_banner";
 
-@import "layout/_header";
-@import "layout/_footer";
+@import "./layout/_header";
+@import "./layout/_footer";
 
-@import "pages/_brand";
-@import "pages/_products";
-@import "pages/_product";
-@import "pages/_index";
-@import "pages/_account";
-@import "pages/_my-collect";
+@import "./pages/_brand";
+@import "./pages/_products";
+@import "./pages/_product";
+@import "./pages/_index";
+@import "./pages/_account";
+@import "./pages/_my-collect";
