@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>week4 - 首頁</title>
+  <meta name="description" content="我們相信，每一雙鞋都該帶著個性出場。在 URBNSTEP，我們認為鞋履不只是穿戴飾品，更是你與世界連結的語言。" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <%- include('./layout/header', {
+    mobileNavbarShow: true
+  }); %>
+  <main class="index">
+    <section class="index-banner">
+      <div class="index-banner__info">
+        <h1 class="index-banner__title">URBNSTEP</h1>
+        <h3 class="index-banner__subtitle">Your Step, Your Statement</h3>
+        <a href="products.html" class="btn btn__large btn__primary index-banner__link">立即選購</a>
+      </div>
+    </section>
+    <section class="index-newarrival">
+      <div class="container">
+        <div class="index-newarrival__content">
+          <h2 class="index-newarrival__head">New Arrival</h2>
+          <h2 class="index-newarrival__title">新品上架</h2>
+          <ul class="index-newarrival__list">
+            <li class="index-newarrival__item">
+              <div class="card">
+                <img class="card__image" src="../assets/images/index-newarrival-1.jpg" alt="Monoverse" />
+                <h5 class="card__title">Monoverse</h5>
+                <p class="card__price">NT$3,600</p>
+                <a class="card__link" href="product-detail.html"></a>
+              </div>
+            </li>
+            <li class="index-newarrival__item">
+              <div class="card">
+                <img class="card__image" src="../assets/images/index-newarrival-2.jpg" alt="PLATFORM 404" />
+                <h5 class="card__title">PLATFORM 404</h5>
+                <p class="card__price">NT$2,600</p>
+                <a class="card__link" href="product-detail.html"></a>
+              </div>
+            </li>
+            <li class="index-newarrival__item">
+              <div class="card">
+                <img class="card__image" src="../assets/images/index-newarrival-3.jpg" alt="URBN Force" />
+                <h5 class="card__title">URBN Force</h5>
+                <p class="card__price">NT$3,200</p>
+                <a class="card__link" href="product-detail.html"></a>
+              </div>
+            </li>
+            <li class="index-newarrival__item">
+              <div class="card">
+                <img class="card__image" src="../assets/images/index-newarrival-4.jpg" alt="Mode90" />
+                <h5 class="card__title">Mode90</h5>
+                <p class="card__price">NT$4,000</p>
+                <a class="card__link" href="product-detail.html"></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </section>
+    <section class="index-hotcake">
+      <div class="container">
+        <div class="index-hotcake__content">
+          <h2 class="index-hotcake__title">熱銷補貨</h2>
+          <ul class="index-hotcake__list">
+            <li class="index-hotcake__item">
+              <div class="card">
+                <img class="card__image" src="../assets/images/product-4.jpg" alt="Melty Kiss" />
+                <span class="card__tag">人氣 No.1</span>
+                <a class="card__link" href="product-detail.html"></a>
+              </div>
+            </li>
+            <li class="index-hotcake__item">
+              <div class="card">
+                <img class="card__image" src="../assets/images/product-1.jpg" alt="PLATFORM 404" />
+                <span class="card__tag">人氣 No.1</span>
+                <a class="card__link" href="product-detail.html"></a>
+              </div>
+            </li>
+            <li class="index-hotcake__item">
+              <div class="card">
+                <img class="card__image" src="../assets/images/product-7.jpg" alt="R:UNER" />
+                <span class="card__tag">人氣 No.1</span>
+                <a class="card__link" href="product-detail.html"></a>
+              </div>
+            </li>
+            <li class="index-hotcake__item">
+              <div class="card">
+                <img class="card__image" src="../assets/images/product-5.jpg" alt="BOOMBLOK" />
+                <span class="card__tag">人氣 No.1</span>
+                <a class="card__link" href="product-detail.html"></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="index-collaboration">
+      <div class="index-collaboration__content">
+        <h2 class="index-collaboration__head">
+          URBNSTEP
+          <span class="index-collaboration__head--decora">x</span>
+          Kevin Chen
+        </h2>
+        <h2 class="index-collaboration__title">跨界聯名，限量發售</h2>
+        <p class="index-collaboration__text">新銳漫畫家 Kevin Chen 親自操刀設計，街頭能量全面引爆！</p>
+        <a href="products.html" class="btn btn__large btn__primary index-collaboration__link">立即搶購</a>
+        <img class="index-collaboration__decora__star" src="../assets/images/index-collaboration-decora1.png" alt="裝飾圖案1">
+        <img class="index-collaboration__decora__sparkle" src="../assets/images/index-collaboration-decora2.png" alt="裝飾圖案2">
+      </div>
+    </section>
+
+    <section class="index-series">
+      <div class="container">
+        <div class="index-series__content">
+          <h2 class="index-series__title">依系列選購</h2>
+          <ul class="index-series__list">
+            <li class="index-series__item">
+              <div class="card">
+                <div class="card__mask">  
+                  <div class="card__mask__image" style="background-image: url('../assets/images/product-11.jpg');"></div>
+                  <div class="card__mask__info">
+                    <h3 class="card__mask__title">URBN RUNNER</h3>
+                    <h4 class="card__mask__subtitle">慢跑系列</h4>
+                  </div>
+                </div>
+                <a class="card__link" href="product-detail.html"></a>
+              </div> 
+            </li>
+            <li class="index-series__item">
+              <div class="card">
+                <div class="card__mask">
+                  <div class="card__mask__image" style="background-image: url('../assets/images/product-10.jpg');"></div>
+                  <div class="card__mask__info">
+                    <h3 class="card__mask__title">STREETMODE</h3>
+                    <h4 class="card__mask__subtitle">滑板系列</h4>
+                  </div>
+                </div>
+                <a class="card__link" href="product-detail.html"></a>
+              </div> 
+            </li>
+            <li class="index-series__item">
+              <div class="card">
+                <div class="card__mask">
+                  <div class="card__mask__image" style="background-image: url('../assets/images/product-12.jpg');"></div>
+                  <div class="card__mask__info">
+                    <h3 class="card__mask__title">CHUNK DISTRICT</h3>
+                    <h4 class="card__mask__subtitle">厚底系列</h4>
+                  </div>
+                </div>
+                <a class="card__link" href="product-detail.html"></a>
+              </div> 
+            </li>
+            <li class="index-series__item">
+              <div class="card">
+                <div class="card__mask">
+                  <div class="card__mask__image" style="background-image: url('../assets/images/product-13.jpg');"></div>
+                  <div class="card__mask__info">
+                    <h3 class="card__mask__title">COLLAB ZONE</h3>
+                    <h4 class="card__mask__subtitle">聯名企劃</h4>
+                  </div>
+                </div>
+                <a class="card__link" href="product-detail.html"></a>
+              </div> 
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="index-outfit">
+      <div class="container">
+        <div class="index-outfit__content">
+          <h2 class="index-outfit__title">穿搭靈感</h2>
+          <ul class="index-outfit__list">
+            <li class="index-outfit__item">
+              <img src="../assets/images/index-outfit-1.jpg" alt="搭配推薦圖一" class="index-outfit__image" />
+            </li>
+            <li class="index-outfit__item">
+              <img src="../assets/images/index-outfit-2.jpg" alt="搭配推薦圖二" class="index-outfit__image" />
+            </li>
+            <li class="index-outfit__item">
+              <img src="../assets/images/index-outfit-3.jpg" alt="搭配推薦圖三" class="index-outfit__image" />
+            </li>
+            <li class="index-outfit__item">
+              <img src="../assets/images/index-outfit-4.jpg" alt="搭配推薦圖四" class="index-outfit__image" />
+            </li>
+            <li class="index-outfit__item">
+              <img src="../assets/images/index-outfit-5.jpg" alt="搭配推薦圖五" class="index-outfit__image" />
+            </li>
+            <li class="index-outfit__item">
+              <img src="../assets/images/index-outfit-6.jpg" alt="搭配推薦圖六" class="index-outfit__image" />
+            </li>
+            <li class="index-outfit__item">
+              <img src="../assets/images/index-outfit-7.jpg" alt="搭配推薦圖七" class="index-outfit__image" />
+            </li>
+            <li class="index-outfit__item">
+              <img src="../assets/images/index-outfit-8.jpg" alt="搭配推薦圖八" class="index-outfit__image" />
+            </li>
+            <li class="index-outfit__item">
+              <img src="../assets/images/index-outfit-9.jpg" alt="搭配推薦圖九" class="index-outfit__image" />
+            </li>
+            <li class="index-outfit__item">
+              <img src="../assets/images/index-outfit-10.jpg" alt="搭配推薦圖十" class="index-outfit__image" />
+            </li>
+            <li class="index-outfit__item">
+              <img src="../assets/images/index-outfit-11.jpg" alt="搭配推薦圖十一" class="index-outfit__image" />
+            </li>
+            <li class="index-outfit__item">
+              <img src="../assets/images/index-outfit-12.jpg" alt="搭配推薦圖十二" class="index-outfit__image" />
+            </li> 
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <%- include('./layout/promo'); -%>
+  <%- include('./layout/footer'); -%>
+
+  <script type="module" src="../main.js"></script>
+</body>
+</html>

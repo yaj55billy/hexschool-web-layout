@@ -1,0 +1,117 @@
+.card {
+	position: relative;
+
+	&__image {
+		transition: opacity 0.3s ease;
+		position: relative;
+		z-index: 1;
+	}
+
+	&__link {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 5;
+	}
+
+	&__title {
+		margin-top: $spacing-s;
+	}
+
+	&__price {
+		margin-top: $spacing-xxs;
+	}
+
+	&__tag {
+		background-color: $primary100;
+		display: inline-block;
+		padding: $spacing-xs $spacing-s;
+		font-size: 14px;
+		color: $primary400;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 4;
+	}
+
+	&__mask {
+		&__image {
+			position: relative;
+			width: 100%;
+			height: 0;
+			padding-bottom: 100%;
+			background-size: cover;
+			background-position: center;
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 2;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0, 0, 0, 0.4);
+			}
+		}
+
+		&__info {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			right: 0;
+			transform: translateY(-50%);
+			margin: auto;
+			text-align: center;
+			z-index: 3;
+		}
+
+		&__title {
+			font-size: 28px;
+			color: white;
+		}
+
+		&__subtitle {
+			font-size: 24px;
+			color: white;
+			margin-top: $spacing-xs;
+		}
+	}
+
+	&:hover .card__image {
+		opacity: 0.8;
+	}
+
+	&:hover .card__mask__title {
+		color: $primary300;
+	}
+}
+
+@include pad {
+	.card {
+		&__mask {
+			&__title {
+				font-size: 16px;
+			}
+
+			&__subtitle {
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+@include mobile-larger {
+	.card {
+		&__title {
+			margin-top: $spacing-xs;
+		}
+
+		&__price {
+			margin-top: 0;
+		}
+	}
+}

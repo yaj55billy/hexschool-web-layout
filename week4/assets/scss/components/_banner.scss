@@ -1,0 +1,53 @@
+.banner {
+	&-hero {
+		background-image: url("../images/brand-hero.jpg");
+		background-size: cover;
+		background-position: center;
+		padding: 150px 12px;
+		text-align: center;
+		&__title {
+			font-size: 40px;
+			color: white;
+		}
+		&__subtitle {
+			font-size: 28px;
+			color: white;
+			margin-top: 16px;
+		}
+	}
+}
+
+@include mobile-larger {
+	.banner {
+		&-hero {
+			background-image: url("../images/brand-hero-mobile.png");
+			padding: 87px 12px;
+			position: relative;
+
+			&__title,
+			&__subtitle {
+				position: relative;
+				z-index: 5;
+			}
+
+			&__title {
+				font-size: 28px;
+			}
+
+			&__subtitle {
+				font-size: 20px;
+			}
+
+			&::after {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(#000, 0.25);
+				z-index: 0;
+			}
+		}
+	}
+}

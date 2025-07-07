@@ -1,0 +1,140 @@
+.account {
+	padding: $spacing-5xl 0;
+
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		gap: $spacing-l;
+	}
+
+	&__picture {
+		width: calc(40% - 12px);
+	}
+
+	&__info {
+		width: calc(60% - 12px);
+		background-image: url("../images/account-info-bg.png");
+		background-size: cover;
+		border-radius: $radius-md;
+		padding: 0px 80px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	&__title {
+		text-align: center;
+	}
+
+	&__menu {
+		margin-top: $spacing-xl;
+		display: flex;
+
+		&__item {
+			width: 50%;
+		}
+
+		&__link {
+			display: block;
+			text-align: center;
+			padding: $spacing-s;
+			color: $text-secondary;
+			font-weight: 700;
+			border-bottom: solid 2px $neutral300;
+			transition: color 0.3s ease, border-color 0.3s ease;
+
+			&--active,
+			&:hover {
+				color: $text-primary;
+				border-bottom: solid 2px $text-primary;
+			}
+		}
+	}
+
+	&__social {
+		margin-top: $spacing-xl;
+
+		&__item {
+			background-color: white;
+			border: solid 1px $neutral300;
+			border-radius: $radius-sm;
+			margin-top: 8px;
+			transition: background-color 0.3s ease;
+
+			&:nth-child(1) {
+				margin-top: 0;
+			}
+
+			&:hover {
+				background-color: $neutral100;
+			}
+		}
+
+		&__link {
+			display: block;
+			padding: $spacing-s;
+			display: flex;
+			align-items: center;
+			gap: $spacing-s;
+			color: $text-primary;
+			font-weight: 400;
+		}
+	}
+}
+
+@include pad {
+	.account {
+		padding: 0px;
+
+		&__content {
+			gap: 0px;
+		}
+
+		&__picture {
+			width: 100%;
+		}
+
+		&__image {
+			width: 100%;
+			object-fit: cover;
+		}
+
+		&__info {
+			width: 100%;
+			border-radius: 0px;
+			background: none;
+			padding: $spacing-xl 0;
+		}
+
+		&__title {
+			font-size: 24px;
+		}
+
+		&__menu {
+			margin-top: $spacing-l;
+		}
+
+		&__social {
+			margin-top: $spacing-l;
+
+			&__item {
+				margin-top: 8px;
+			}
+		}
+	}
+}
+
+@include mobile-larger {
+	.account {
+		&__picture {
+			width: calc(100% + 24px);
+		}
+
+		&__image {
+			max-width: none;
+			width: calc(100% + 24px);
+			position: relative;
+			left: -12px;
+		}
+	}
+}

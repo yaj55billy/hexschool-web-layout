@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>week4 - 鞋子電商商品詳情頁</title>
+  <meta name="description" content="我們相信，每一雙鞋都該帶著個性出場。在 URBNSTEP，我們認為鞋履不只是穿戴飾品，更是你與世界連結的語言。" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <script type="module" crossorigin src="/hexschool-web-layout/week4/dist/assets/main-Dp8XxtkY.js"></script>
+  <link rel="stylesheet" crossorigin href="/hexschool-web-layout/week4/dist/assets/main-BEi2Mxnc.css">
+</head>
+<body>
+  <header class="header">
+  <div class="container">
+    <nav class="header-navbar">
+      <div class="header__main">
+        <a href="index.html" class="header__logo">
+          <img src="data:image/png;base64,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" alt="URBNSTEP Logo" >
+        </a>
+        <ul class="header__menu">
+          <li class="header__menu__item">
+            <a href="products.html" class="header__menu__link">商品列表</a>
+          </li>
+          <li class="header__menu__item">
+            <a href="brand.html" class="header__menu__link">品牌故事</a>
+          </li>
+        </ul>
+      </div>
+      <a href="signin.html" class="header__user">
+        <i class="bi bi-person header__user__icon"></i>
+      </a>
+    </nav>
+  </div>
+  
+</header>
+
+  <main class="product">
+    <div class="container">
+      <section class="product-detail">
+        <div class="product-detail__showcase">
+          <img class="product-detail__showcase__image" src="/hexschool-web-layout/week4/dist/assets/product-detail-1-CohOplBN.jpg" alt="Platform 404 展示圖一">
+          <img class="product-detail__showcase__image" src="/hexschool-web-layout/week4/dist/assets/product-detail-2-DIirltxs.jpg" alt="Platform 404 展示圖二">
+          <img class="product-detail__showcase__image" src="/hexschool-web-layout/week4/dist/assets/product-detail-3-AhTs5E0w.jpg" alt="Platform 404 展示圖三">
+          <img class="product-detail__showcase__image" src="/hexschool-web-layout/week4/dist/assets/product-detail-4-DR5it0im.jpg" alt="Platform 404 展示圖四">
+          <img class="product-detail__showcase__image" src="/hexschool-web-layout/week4/dist/assets/product-detail-5-CMnc7tEh.jpg" alt="Platform 404 展示圖五">
+          <img class="product-detail__showcase__image" src="/hexschool-web-layout/week4/dist/assets/product-detail-6-BS69pyAV.jpg" alt="Platform 404 展示圖六">
+          <img class="product-detail__showcase__image" src="/hexschool-web-layout/week4/dist/assets/product-detail-7-CMEOL3Ai.jpg" alt="Platform 404 展示圖七">
+          <img class="product-detail__showcase__image" src="/hexschool-web-layout/week4/dist/assets/product-detail-8-DyvoBpZg.jpg" alt="Platform 404 展示圖八">
+        </div>
+        <div class="product-detail__info">
+          <ol class="breadcrumb">
+            <li class="breadcrumb__item"><a href="#" class="breadcrumb__link">首頁</a></li>
+            <li class="breadcrumb__item"><a href="#" class="breadcrumb__link">女鞋</a></li>
+            <li class="breadcrumb__item"><a href="#" class="breadcrumb__link">滑板鞋</a></li>
+            <li class="breadcrumb__item">Platform 404</li>
+          </ol> 
+          <h2 class="product-detail__title">Platform 404</h2>
+          <h5 class="product-detail__price">NT$2,600 <span class="product-detail__price--origin">NT$3,200</span></h5>
+          <div class="product-detail__description">
+            <p class="product-detail__description__text">Platform 404 以柔和奶白為底，搭配深藍色皮革點綴，走在街上自帶回頭率。鞋型採用復古運動風輪廓，結合輕量厚底與柔軟泡棉鞋舌，兼顧美感與舒適。</p>
+            <p class="product-detail__description__text">
+              鞋身選用柔軟皮革材質，打造出清新卻不失個性的氛圍，並以鞋面透氣孔設計提升穿著體驗，兼顧質感與舒適度，適合日常長時間著用。無論是街頭穿搭、日常通勤或週末出遊都能輕鬆駕馭。
+            </p>
+          </div>
+          <div class="product-detail__colors">
+            <h6 class="product-detail__colors__title">顏色</h6>
+            <ul class="product-detail__colors__list">
+              <li class="product-detail__colors__item product-detail__colors__item--selected">
+                <img class="product-detail__colors__image" src="/hexschool-web-layout/week4/dist/assets/platform-404-blue-BHnfNGp7.jpg" alt="Platform 404 藍色">
+                <label class="product-detail__colors__name">藍色</label>
+              </li>
+              <li class="product-detail__colors__item">
+                <img class="product-detail__colors__image" src="/hexschool-web-layout/week4/dist/assets/platform-404-khaki-BdRZFaBY.jpg" alt="Platform 404 卡其色">
+                <label class="product-detail__colors__name">卡其色</label>
+              </li>
+            </ul>
+          </div>
+          <div class="product-detail__sizes">
+            <h6 class="product-detail__sizes__title">尺寸</h6>
+            <ul class="product-detail__sizes__list">
+              <li class="product-detail__sizes__item">
+                <a class="product-detail__sizes__link product-detail__sizes__link--selected" href="#">35(22.5cm)</a>
+              </li>
+              <li class="product-detail__sizes__item">
+                <a class="product-detail__sizes__link" href="#">36(23.0cm)</a>
+              </li>
+              <li class="product-detail__sizes__item">
+                <a class="product-detail__sizes__link" href="#">37(23.5cm)</a>
+              </li>
+              <li class="product-detail__sizes__item">
+                <a class="product-detail__sizes__link" href="#">38(24.0cm)</a>
+              </li>
+              <li class="product-detail__sizes__item">
+                <a class="product-detail__sizes__link" href="#">39(24.5cm)</a>
+              </li>
+              <li class="product-detail__sizes__item">
+                <a class="product-detail__sizes__link" href="#">40(25.0cm)</a>
+              </li>
+              <li class="product-detail__sizes__item">
+                <a class="product-detail__sizes__link" href="#">41(26.0cm)</a>
+              </li>
+              <li class="product-detail__sizes__item">
+                <a class="product-detail__sizes__link product-detail__sizes__link--disabled" href="#">42(26.5cm)</a>
+              </li>
+              <li class="product-detail__sizes__item">
+                <a class="product-detail__sizes__link product-detail__sizes__link--disabled" href="#">43(27.0cm)</a>
+              </li>
+            </ul>
+            <p class="product-detail__sizes__message">僅剩 3 雙</p>
+          </div>
+          <div class="product-detail__actions">
+            <a class="product-detail__actions__collect" href="my-collect.html" id="btnCollect">
+              <i class="bi bi-heart product-detail__collect__icon"></i>
+                <!-- <i class="bi bi-heart-fill"></i> -->
+              <span class="product-detail__actions__collect__text">加入收藏</span>
+            </a>
+            <a class="product-detail__actions__reserve" href="#">
+              <i class="bi bi-handbag product-detail__reserve__icon"></i>
+              門市預約試穿
+            </a>
+          </div>
+          <ul class="product-detail__notice">
+            <li class="product-detail__notice__item">
+              <h6 class="product-detail__notice__title">商品材質</h6>
+              <p class="product-detail__notice__text">
+                鞋面：合成皮革（Synthetic Leather）<br/>
+                內裡：透氣網布材質，提升舒適與排汗性<br/>
+                鞋底：EVA 輕量發泡橡膠，具備良好緩震與止滑效果<br/>
+                鞋帶：聚酯纖維，耐拉扯不易鬆脫
+              </p>
+            </li>
+            <li class="product-detail__notice__item">
+              <h6 class="product-detail__notice__title">購買須知</h6>
+              <p class="product-detail__notice__text">
+                商品顏色因螢幕顯示可能略有差異，請以實品為準。<br/>
+                建議首次穿著前試穿確認尺寸，避免影響退換貨權益。<br/>
+                本商品為限量發售，庫存有限，如需更換尺寸請儘早聯繫客服協助處理。
+              </p>
+            </li>
+            <li class="product-detail__notice__item">
+              <h6 class="product-detail__notice__title">保養方式</h6>
+              <p class="product-detail__notice__text">
+                建議以乾布或微濕軟布擦拭表面汙漬，避免機洗或長時間浸水。<br/>
+                收納時請放置於乾燥通風處，避免日曬及高溫導致變形或龜裂。<br/>
+                若需深層清潔，建議使用中性清潔劑並搭配柔刷輕刷，勿使用漂白水或強酸強鹼清潔劑。
+              </p>
+            </li>
+          </ul>
+        </div>
+
+      </section>
+      <section class="product-maybelike">
+        <h4 class="product-maybelike__title">你可能也喜歡...</h4>
+        <ul class="product-maybelike__list">
+          <li class="product-maybelike__item">
+            <div class="card">
+              <img class="card__image" src="/hexschool-web-layout/week4/dist/assets/product-3-CjMPSL_q.jpg" alt="VM001" />
+              <h6 class="card__title">VM001</h6>
+              <p class="card__price">NT$2,600</p>
+              <a class="card__link" href="product-detail.html"></a>
+            </div>
+          </li>
+          <li class="product-maybelike__item">
+            <div class="card">
+              <img class="card__image" src="/hexschool-web-layout/week4/dist/assets/product-4-BcmKycye.jpg" alt="Melty Kiss" />
+              <h6 class="card__title">Melty Kiss</h6>
+              <p class="card__price">NT$4,000</p>
+              <a class="card__link" href="product-detail.html"></a>
+            </div>
+          </li>
+          <li class="product-maybelike__item">
+            <div class="card">
+              <img class="card__image" src="/hexschool-web-layout/week4/dist/assets/product-5-CYTxoXkQ.jpg" alt="BOOMBLOK" />
+              <h6 class="card__title">BOOMBLOK</h6>
+              <p class="card__price">NT$3,200</p>
+              <a class="card__link" href="product-detail.html"></a>
+            </div>
+          </li>
+          <li class="product-maybelike__item">
+            <div class="card">
+              <img class="card__image" src="/hexschool-web-layout/week4/dist/assets/product-8-1cetDhI2.jpg" alt="Sugar Snap" />
+              <h6 class="card__title">Sugar Snap</h6>
+              <p class="card__price">NT$4,000</p>
+              <a class="card__link" href="product-detail.html"></a>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <section class="promo">
+  <div class="promo__content">
+    <h4 class="promo__title">加入會員取得 9 折優惠</h4>
+    <a class="btn btn__large btn__neutral promo__btn" href="signup.html">馬上註冊</a>
+  </div>
+</section>  <footer class="footer">
+  <div class="container">
+    <div class="footer__info">
+      <a href="index.html" class="footer__logo">
+        <img src="data:image/png;base64,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" alt="URBNSTEP Logo">
+      </a>
+      <ul class="footer__menu">
+        <li class="footer__menu__item">
+          <a href="products.html" class="footer__menu__link">商品列表</a>
+        </li>
+        <li class="footer__menu__item">
+          <a href="brand.html" class="footer__menu__link">品牌故事</a>
+        </li>
+      </ul> 
+    </div>
+    <p class="footer__text">
+      Copyright ©2025 URBNSTYLE<br/>
+      All Rights Reserved.
+    </p>
+  </div>
+</footer>  
+</body>
+</html>

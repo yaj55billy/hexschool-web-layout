@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>week4 - 註冊頁</title>
+  <meta name="description" content="我們相信，每一雙鞋都該帶著個性出場。在 URBNSTEP，我們認為鞋履不只是穿戴飾品，更是你與世界連結的語言。" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <%- include('./layout/header', {
+    mobileNavbarShow: false
+  }); %>
+  <main class="account">
+    <div class="container">
+      <div class="account__content">
+        <picture class="account__picture">
+          <source media="(max-width: 991px)" srcset="../assets/images/account-pic-mobile.jpg">
+          <img src="../assets/images/account-pic.jpg" alt="URBNSTEP 機能鞋" class="account__image">
+        </picture>
+        <div class="account__info">
+          <h3 class="account__title">歡迎！</h3>
+          <ul class="account__menu">
+            <li class="account__menu__item"><a href="signin.html" class="account__menu__link">登入</a></li>
+            <li class="account__menu__item"><a href="signup.html" class="account__menu__link account__menu__link--active">註冊</a></li>
+          </ul>
+          <ul class="account__social">
+            <li class="account__social__item"><a href="#" class="account__social__link"><img src="../assets/images/icon-facebook.png" alt="Facebook 登入">Facebook 註冊</a></li>
+            <li class="account__social__item"><a href="#" class="account__social__link"><img src="../assets/images/icon-apple.png" alt="Apple 登入">Apple 註冊</a></li>
+            <li class="account__social__item"><a href="#" class="account__social__link"><img src="../assets/images/icon-google.png" alt="Google 登入">Google 註冊</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+  <%- include('./layout/footer'); -%>
+  <script type="module" src="../main.js"></script>
+</body>
+</html>
