@@ -42,7 +42,7 @@ h5,
 	font-size: map-get($font-sizes-mobile, t-xs);
 }
 
-@include media-breakpoint-up(md) {
+@include media-breakpoint-up(lg) {
 	h1,
 	.h1 {
 		font-size: map-get($font-sizes, h1);

@@ -3,6 +3,10 @@
 	align-items: center;
 	justify-content: center;
 	letter-spacing: 0.02em;
+	font-size: 0.875rem;
+	@include media-breakpoint-up(md) {
+		font-size: 1rem;
+	}
 
 	&-sm {
 		padding: 4px 4px 4px 8px;

@@ -36,3 +36,16 @@ p {
 .bg-neutral {
 	background-color: $natural-95;
 }
+
+.rounded-top-left-3 {
+	border-top-left-radius: var(--bs-border-radius-lg);
+}
+.rounded-top-right-3 {
+	border-top-right-radius: var(--bs-border-radius-lg);
+}
+.rounded-bottom-left-3 {
+	border-bottom-left-radius: var(--bs-border-radius-lg);
+}
+.rounded-bottom-right-3 {
+	border-bottom-right-radius: var(--bs-border-radius-lg);
+}
