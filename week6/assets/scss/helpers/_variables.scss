@@ -996,7 +996,7 @@ $input-border-radius-sm: var(--#{$prefix}border-radius-sm) !default;
 $input-border-radius-lg: var(--#{$prefix}border-radius-lg) !default;
 
 $input-focus-bg: $input-bg !default;
-$input-focus-border-color: tint-color($component-active-bg, 50%) !default;
+$input-focus-border-color: $primary !default;
 $input-focus-color: $input-color !default;
 $input-focus-width: $input-btn-focus-width !default;
 $input-focus-box-shadow: $input-btn-focus-box-shadow !default;
@@ -1040,7 +1040,7 @@ $form-color-width: 3rem !default;
 // scss-docs-end form-input-variables
 
 // scss-docs-start form-check-variables
-$form-check-input-width: 1em !default;
+$form-check-input-width: 1.25em !default;
 $form-check-min-height: $font-size-base * $line-height-base !default;
 $form-check-padding-start: $form-check-input-width + 0.5em !default;
 $form-check-margin-bottom: 0.125rem !default;
@@ -1058,11 +1058,14 @@ $form-check-radio-border-radius: 50% !default;
 $form-check-input-focus-border: $input-focus-border-color !default;
 $form-check-input-focus-box-shadow: $focus-ring-box-shadow !default;
 
-$form-check-input-checked-color: $component-active-color !default;
-$form-check-input-checked-bg-color: $component-active-bg !default;
-$form-check-input-checked-border-color: $form-check-input-checked-bg-color !default;
-$form-check-input-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$form-check-input-checked-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/></svg>") !default;
-$form-check-radio-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{$form-check-input-checked-color}'/></svg>") !default;
+$form-check-input-checked-color: $primary !default;
+$form-check-input-checked-bg-color: $light !default;
+$form-check-input-checked-border-color: $primary !default;
+// $form-check-input-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><rect width='20' height='20' rx='6' fill='#{$primary}'/><path fill='none' stroke='#{$light}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/></svg>") !default;
+
+// $form-check-radio-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><circle cx='10' cy='10' r='9' fill='%23fff' stroke='%234a69e8' stroke-width='2'/><circle cx='10' cy='10' r='6' fill='%234a69e8'/></svg>") !default;
+$form-check-input-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$light}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/></svg>") !default;
+$form-check-radio-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2.5' fill='#{$primary}'/></svg>") !default;
 
 $form-check-input-indeterminate-color: $component-active-color !default;
 $form-check-input-indeterminate-bg-color: $component-active-bg !default;
@@ -1187,7 +1190,7 @@ $form-floating-label-height: 1.5em !default;
 $form-floating-label-opacity: 0.65 !default;
 $form-floating-label-transform: scale(0.85) translateY(-0.5rem)
 	translateX(0.15rem) !default;
-$form-floating-label-disabled-color: $gray-600 !default;
+$form-floating-label-disabled-color: $slate !default;
 $form-floating-transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out !default;
 // scss-docs-end form-floating-variables
 
@@ -1661,8 +1664,8 @@ $modal-backdrop-opacity: 0.5 !default;
 
 $modal-header-border-color: var(--#{$prefix}border-color) !default;
 $modal-header-border-width: $modal-content-border-width !default;
-$modal-header-padding-y: $modal-inner-padding !default;
-$modal-header-padding-x: $modal-inner-padding !default;
+$modal-header-padding-y: 1.125rem !default;
+$modal-header-padding-x: 1.5rem !default;
 $modal-header-padding: $modal-header-padding-y $modal-header-padding-x !default; // Keep this for backwards compatibility
 
 $modal-footer-bg: null !default;
@@ -1670,7 +1673,7 @@ $modal-footer-border-color: $modal-header-border-color !default;
 $modal-footer-border-width: $modal-header-border-width !default;
 
 $modal-sm: 300px !default;
-$modal-md: 500px !default;
+$modal-md: 480px !default;
 $modal-lg: 800px !default;
 $modal-xl: 1140px !default;
 

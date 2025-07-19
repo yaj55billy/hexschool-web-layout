@@ -96,6 +96,13 @@
 			font-size: 22px;
 		}
 	}
+
+	&.w-100-custom {
+		width: 100%;
+		@include media-breakpoint-up(md) {
+			width: auto;
+		}
+	}
 }
 
 .nav-btn {
@@ -115,5 +122,22 @@
 
 	@include media-breakpoint-up(md) {
 		padding: 8px 24px;
+	}
+}
+
+.usermenu-btn {
+	border: 1px solid $natural-85;
+	border-radius: $border-radius-md;
+	background-color: $light;
+	padding: 12px;
+
+	&:hover,
+	&.active {
+		background-color: $natural-90;
+		border: solid 1px $natural-90;
+	}
+
+	@include media-breakpoint-up(md) {
+		padding: 12px 20px;
 	}
 }
