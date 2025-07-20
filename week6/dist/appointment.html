@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    預約紀錄 | 職旅
+  </title>
+  <meta name="description" content="您的預約紀錄" />
+  <script type="module" crossorigin src="/hexschool-web-layout/week6/dist/assets/main-C3g6DF6_.js"></script>
+  <link rel="stylesheet" crossorigin href="/hexschool-web-layout/week6/dist/assets/main-BOKYi5fC.css">
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg position-relative border-bottom py-3">
+  <div class="container">
+    <a class="logo" href="#">
+      <img src="/hexschool-web-layout/week6/dist/assets/logo-C_BoMSwd.png" alt="職旅 Workway logo">
+    </a>
+    <div class="offcanvas offcanvas-end" id="offcanvasNavbar">
+      <div class="offcanvas-header p-6 justify-content-end">
+        <button type="button" class="btn btn-onlyicon d-lg-none" data-bs-dismiss="offcanvas" aria-label="Close">
+          <span class="material-symbols-outlined">
+            close
+          </span>
+        </button>
+      </div>
+      <div class="offcanvas-body px-6 py-4 d-flex flex-column p-lg-0">
+        <ul class="navbar-nav gap-6 gap-lg-3 justify-content-lg-center">
+          <li>
+            <a class="nav-btn w-100 text-center p-4 py-lg-2 px-lg-6" aria-current="page" href="service.html">服務方案</a>
+          </li>
+          <li>
+            <a class="nav-btn w-100 text-center p-4 py-lg-2 px-lg-6" href="about.html">關於職旅</a>
+          </li>
+          <li>
+            <a class="nav-btn w-100 text-center p-4 py-lg-2 px-lg-6" href="contact.html">聯絡我們</a>
+          </li>
+        </ul>
+        <a class="btn btn-lg p-2 w-100 d-block mt-auto d-lg-none" href="#">登入/註冊</a>
+      </div>
+    </div>
+    <a class="nav-btn nav-btn-outline ms-auto me-2 d-none" href="#">登入/註冊</a>
+    <div class="user ms-auto me-2 d-flex align-items-center gap-2 ">
+      <img src="/hexschool-web-layout/week6/dist/assets/user-Da2uELgd.jpg" alt="Mokumaru 貓貓" class="user-avatar">
+      <span class="text-dark font-en fw-medium">Mokumaru</span>
+    </div>
+
+    <button class="btn btn-onlyicon d-lg-none " type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="material-symbols-outlined">
+        menu
+      </span>
+    </button>
+  </div>
+</nav>
+
+      <main class="bg-neutral py-9 py-lg-12">
+        <div class="container">
+          <ul class="d-flex justify-content-center gap-4">
+            <li>
+              <a href="personal-data.html" class="usermenu-btn d-flex align-items-center gap-0 gap-lg-1">
+                <span class="material-symbols-outlined">
+                  face
+                </span>
+                <span class="text-md">個人資料</span>
+              </a>
+            </li>
+            <li>
+              <a href="appointment.html" class="usermenu-btn d-flex align-items-center gap-0 gap-lg-1 active">
+                <span class="material-symbols-outlined">
+                  pending_actions
+                </span>
+                <span class="text-md">預約紀錄</span>
+              </a>
+            </li>
+            <li>
+              <a href="plan.html" class="usermenu-btn d-flex align-items-center gap-0 gap-lg-1">
+                <span class="material-symbols-outlined">
+                  list_alt
+                </span>
+                <span class="text-md">職旅計畫</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="page-content mt-4 mt-lg-6">
+            <div class="shadow rounded-4 bg-light p-6 p-lg-9">
+              <h1 class="h4 fw-medium">預約紀錄</h1>
+
+              <ul class="d-flex gap-0 gap-md-6 mt-4 mt-md-6">
+                <li class="w-100 border rounded-3 p-4 p-md-6 text-center d-none d-md-block">
+                  <h2 class="h2 text-primary">3</h2>
+                  <p class="text-lg text-slate mt-2">已完成諮詢</p>
+                </li>
+                <li class="w-100 border rounded-3 p-4 p-md-6 text-center">
+                  <h2 class="h2 text-primary">2025/10/10</h2>
+                  <p class="text-lg text-slate mt-2">即將到來</p>
+                </li>
+                <li class="w-100 border rounded-3 p-4 p-md-6 text-center d-none d-md-block">
+                  <h2 class="h2 text-primary">3/6</h2>
+                  <p class="text-lg text-slate mt-2">使用方案進度</p>
+                </li>
+              </ul>
+
+              <ul class="d-flex gap-2 mt-6 mt-md-9">
+                <li class="appointment-btn active text-md">全部預約</li>
+                <li class="appointment-btn text-md">已完成</li>
+                <li class="appointment-btn text-md me-auto">已取消</li>
+                <li class="appointment-btn text-md d-flex align-items-center gap-1 appointment-filter-btn">
+                  <span class="appointment-filter-text">排序</span>
+                  <span class="material-symbols-outlined appointment-filter-icon">
+                    filter_list
+                  </span>
+                </li>
+              </ul>
+
+              <div class="table mt-4 mt-lg-6">
+                <div class="table-header">
+                  <div class="table-row">
+                    <div class="table-col">諮詢方案</div>
+                    <div class="table-col">預約日期</div>
+                    <div class="table-col">諮詢時長</div>
+                    <div class="table-col">諮詢方式</div>
+                    <div class="table-col">上課狀態</div>
+                  </div>
+                </div>
+                <div class="text-md d-block d-md-none px-3 py-2 border-bottom">預約紀錄一覽</div>
+                <ul class="table-body">
+                  <li class="table-row">
+                    <div class="table-col">
+                      <span class="table-body-title">職涯定位-職涯探索包 | 6/6堂</span>
+                      <span
+                        class="rounded-pill text-sm text-slate px-2 border bg-light d-inline-block d-md-none">視訊</span>
+                    </div>
+                    <div class="table-col">
+                      <span class="table-body-text d-none d-md-block">2025/11/11</span>
+                      <span class="table-body-text text-slate d-block d-md-none">時間：2025/11/11</span>
+                      <span class="table-body-text text-slate d-block d-md-none">時長：60分鐘</span>
+                    </div>
+                    <div class="table-col">
+                      <span class="table-body-text">60分鐘</span>
+                    </div>
+                    <div class="table-col"><span
+                        class="rounded-pill text-sm text-slate px-2 border bg-light d-inline-block">視訊</span>
+                    </div>
+                    <div class="table-col">
+                      <span class="table-body-text text-md-color">等待上課</span>
+                    </div>
+                  </li>
+                  <li class="table-row">
+                    <div class="table-col">
+                      <span class="table-body-title">職涯定位-職涯探索包 | 5/6堂</span>
+                      <span
+                        class="rounded-pill text-sm text-slate px-2 border bg-light d-inline-block d-md-none">視訊</span>
+                    </div>
+                    <div class="table-col">
+                      <span class="table-body-text d-none d-md-block">2025/10/10</span>
+                      <span class="table-body-text text-slate d-block d-md-none">時間：2025/10/10</span>
+                      <span class="table-body-text text-slate d-block d-md-none">時長：60分鐘</span>
+                    </div>
+                    <div class="table-col">
+                      <span class="table-body-text">60分鐘</span>
+                    </div>
+                    <div class="table-col"><span
+                        class="rounded-pill text-sm text-slate px-2 border bg-light d-inline-block">視訊</span>
+                    </div>
+                    <div class="table-col">
+                      <span class="table-body-text text-md-color">等待上課</span>
+                    </div>
+                  </li>
+                  <li class="table-row course-finished">
+                    <div class="table-col">
+                      <span class="table-body-title">職涯定位-職涯探索包 | 4/6堂</span>
+                      <span
+                        class="rounded-pill text-sm text-slate px-2 border bg-light d-inline-block d-md-none">視訊</span>
+                    </div>
+                    <div class="table-col">
+                      <span class="table-body-text d-none d-md-block">2025/09/09</span>
+                      <span class="table-body-text text-slate d-block d-md-none">時間：2025/09/09</span>
+                      <span class="table-body-text text-slate d-block d-md-none">時長：60分鐘</span>
+                    </div>
+                    <div class="table-col">
+                      <span class="table-body-text">60分鐘</span>
+                    </div>
+                    <div class="table-col"><span
+                        class="rounded-pill text-sm text-slate px-2 border bg-light d-inline-block">視訊</span>
+                    </div>
+                    <div class="table-col">
+                      <span class="table-body-text text-md-color">已完成</span>
+                    </div>
+                  </li>
+                  <li class="table-row course-finished">
+                    <div class="table-col">
+                      <span class="table-body-title">職涯定位-職涯探索包 | 3/6堂</span>
+                      <span
+                        class="rounded-pill text-sm text-slate px-2 border bg-light d-inline-block d-md-none">視訊</span>
+                    </div>
+                    <div class="table-col">
+                      <span class="table-body-text d-none d-md-block">2025/08/08</span>
+                      <span class="table-body-text text-slate d-block d-md-none">時間：2025/08/08</span>
+                      <span class="table-body-text text-slate d-block d-md-none">時長：60分鐘</span>
+                    </div>
+                    <div class="table-col">
+                      <span class="table-body-text">60分鐘</span>
+                    </div>
+                    <div class="table-col"><span
+                        class="rounded-pill text-sm text-slate px-2 border bg-light d-inline-block">視訊</span>
+                    </div>
+                    <div class="table-col">
+                      <span class="table-body-text text-md-color">已完成</span>
+                    </div>
+                  </li>
+                  <li class="table-row course-finished">
+                    <div class="table-col">
+                      <span class="table-body-title">職涯定位-職涯探索包 | 2/6堂</span>
+                      <span
+                        class="rounded-pill text-sm text-slate px-2 border bg-light d-inline-block d-md-none">視訊</span>
+                    </div>
+                    <div class="table-col">
+                      <span class="table-body-text d-none d-md-block">2025/07/07</span>
+                      <span class="table-body-text text-slate d-block d-md-none">時間：2025/07/07</span>
+                      <span class="table-body-text text-slate d-block d-md-none">時長：60分鐘</span>
+                    </div>
+                    <div class="table-col">
+                      <span class="table-body-text">60分鐘</span>
+                    </div>
+                    <div class="table-col"><span
+                        class="rounded-pill text-sm text-slate px-2 border bg-light d-inline-block">視訊</span>
+                    </div>
+                    <div class="table-col">
+                      <span class="table-body-text text-md-color">已完成</span>
+                    </div>
+                  </li>
+                  <li class="table-row course-finished">
+                    <div class="table-col">
+                      <span class="table-body-title">職涯定位-職涯探索包 | 1/6堂</span>
+                      <span
+                        class="rounded-pill text-sm text-slate px-2 border bg-light d-inline-block d-md-none">視訊</span>
+                    </div>
+                    <div class="table-col">
+                      <span class="table-body-text d-none d-md-block">2025/06/06</span>
+                      <span class="table-body-text text-slate d-block d-md-none">時間：2025/06/06</span>
+                      <span class="table-body-text text-slate d-block d-md-none">時長：60分鐘</span>
+                    </div>
+                    <div class="table-col">
+                      <span class="table-body-text">60分鐘</span>
+                    </div>
+                    <div class="table-col"><span
+                        class="rounded-pill text-sm text-slate px-2 border bg-light d-inline-block">視訊</span>
+                    </div>
+                    <div class="table-col">
+                      <span class="table-body-text text-md-color">已完成</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="bg-neutral border-top py-9">
+
+  <div class="container">
+    <div class="d-flex flex-column flex-xl-row justify-content-between align-items-center">
+      <ul class="d-flex flex-wrap justify-content-center row-gap-2 ">
+        <li>
+          <a class="nav-btn" href="service.html">服務方案</a>
+        </li>
+        <li>
+          <a class="nav-btn" href="about.html">關於職旅</a>
+        </li>
+        <li>
+          <a class="nav-btn" href="contact.html">聯絡我們</a>
+        </li>
+        <li>
+          <a class="nav-btn" href="privacy-policy.html">隱私權政策</a>
+        </li>
+        <li>
+          <a class="nav-btn" href="user-agreement.html">用戶條款</a>
+        </li>
+      </ul>
+      <p class="text-slate text-sm text-center mt-2 mt-xl-0">Copyright © 2025 職旅 workway. All rights reserved.</p>
+    </div>
+  </div>
+  
+</footer>
+  </body>
+
+</html>
