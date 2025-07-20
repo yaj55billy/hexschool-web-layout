@@ -130,11 +130,35 @@
 	border-radius: $border-radius-md;
 	background-color: $light;
 	padding: 12px;
+	cursor: pointer;
 
 	&:hover,
 	&.active {
 		background-color: $natural-90;
 		border: solid 1px $natural-90;
+	}
+
+	@include media-breakpoint-up(md) {
+		padding: 12px 20px;
+	}
+}
+
+.appointment-btn {
+	border: 1px solid $natural-85;
+	border-radius: $border-radius-md;
+	background-color: $light;
+	padding: 12px;
+	cursor: pointer;
+
+	&:hover {
+		background-color: $natural-90;
+		border: solid 1px $natural-90;
+	}
+
+	&.active {
+		background-color: $dark;
+		border: solid 1px $dark;
+		color: $light;
 	}
 
 	@include media-breakpoint-up(md) {

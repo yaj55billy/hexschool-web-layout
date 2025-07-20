@@ -3,16 +3,217 @@
 
 <%- include('./layout/head', { title: '預約紀錄 | 職旅' , description: '您的預約紀錄' }) %>
 
-<body>
-  <%- include('./layout/navbar'); %>
+  <body>
+    <%- include('./layout/navbar'); %>
 
-  <main>
+      <main class="bg-neutral py-9 py-lg-12">
+        <div class="container">
+          <ul class="d-flex justify-content-center gap-4">
+            <li>
+              <a href="personal-data.html" class="usermenu-btn d-flex align-items-center gap-0 gap-lg-1">
+                <span class="material-symbols-outlined">
+                  face
+                </span>
+                <span class="text-md">個人資料</span>
+              </a>
+            </li>
+            <li>
+              <a href="appointment.html" class="usermenu-btn d-flex align-items-center gap-0 gap-lg-1 active">
+                <span class="material-symbols-outlined">
+                  pending_actions
+                </span>
+                <span class="text-md">預約紀錄</span>
+              </a>
+            </li>
+            <li>
+              <a href="plan.html" class="usermenu-btn d-flex align-items-center gap-0 gap-lg-1">
+                <span class="material-symbols-outlined">
+                  list_alt
+                </span>
+                <span class="text-md">職旅計畫</span>
+              </a>
+            </li>
+          </ul>
 
-  </main>
+          <div class="page-content mt-4 mt-lg-6">
+            <div class="shadow rounded-4 bg-light p-6 p-lg-9">
+              <h1 class="h4 fw-medium">預約紀錄</h1>
 
-  <%- include('./layout/footer'); -%>
+              <ul class="d-flex gap-0 gap-md-6 mt-4 mt-md-6">
+                <li class="w-100 border rounded-3 p-4 p-md-6 text-center d-none d-md-block">
+                  <h2 class="h2 text-primary">3</h2>
+                  <p class="text-lg text-slate mt-2">已完成諮詢</p>
+                </li>
+                <li class="w-100 border rounded-3 p-4 p-md-6 text-center">
+                  <h2 class="h2 text-primary">2025/10/10</h2>
+                  <p class="text-lg text-slate mt-2">即將到來</p>
+                </li>
+                <li class="w-100 border rounded-3 p-4 p-md-6 text-center d-none d-md-block">
+                  <h2 class="h2 text-primary">3/6</h2>
+                  <p class="text-lg text-slate mt-2">使用方案進度</p>
+                </li>
+              </ul>
 
-  <script type="module" src="../main.js"></script>
-</body>
+              <ul class="d-flex gap-2 mt-6 mt-md-9">
+                <li class="appointment-btn active text-md">全部預約</li>
+                <li class="appointment-btn text-md">已完成</li>
+                <li class="appointment-btn text-md me-auto">已取消</li>
+                <li class="appointment-btn text-md d-flex align-items-center gap-1 appointment-filter-btn">
+                  <span class="appointment-filter-text">排序</span>
+                  <span class="material-symbols-outlined appointment-filter-icon">
+                    filter_list
+                  </span>
+                </li>
+              </ul>
+
+              <div class="table mt-4 mt-lg-6">
+                <div class="table-header">
+                  <div class="table-row">
+                    <div class="table-col">諮詢方案</div>
+                    <div class="table-col">預約日期</div>
+                    <div class="table-col">諮詢時長</div>
+                    <div class="table-col">諮詢方式</div>
+                    <div class="table-col">上課狀態</div>
+                  </div>
+                </div>
+                <div class="text-md d-block d-md-none px-3 py-2 border-bottom">預約紀錄一覽</div>
+                <ul class="table-body">
+                  <li class="table-row">
+                    <div class="table-col">
+                      <span class="table-body-title">職涯定位-職涯探索包 | 6/6堂</span>
+                      <span
+                        class="rounded-pill text-sm text-slate px-2 border bg-light d-inline-block d-md-none">視訊</span>
+                    </div>
+                    <div class="table-col">
+                      <span class="table-body-text d-none d-md-block">2025/11/11</span>
+                      <span class="table-body-text text-slate d-block d-md-none">時間：2025/11/11</span>
+                      <span class="table-body-text text-slate d-block d-md-none">時長：60分鐘</span>
+                    </div>
+                    <div class="table-col">
+                      <span class="table-body-text">60分鐘</span>
+                    </div>
+                    <div class="table-col"><span
+                        class="rounded-pill text-sm text-slate px-2 border bg-light d-inline-block">視訊</span>
+                    </div>
+                    <div class="table-col">
+                      <span class="table-body-text text-md-color">等待上課</span>
+                    </div>
+                  </li>
+                  <li class="table-row">
+                    <div class="table-col">
+                      <span class="table-body-title">職涯定位-職涯探索包 | 5/6堂</span>
+                      <span
+                        class="rounded-pill text-sm text-slate px-2 border bg-light d-inline-block d-md-none">視訊</span>
+                    </div>
+                    <div class="table-col">
+                      <span class="table-body-text d-none d-md-block">2025/10/10</span>
+                      <span class="table-body-text text-slate d-block d-md-none">時間：2025/10/10</span>
+                      <span class="table-body-text text-slate d-block d-md-none">時長：60分鐘</span>
+                    </div>
+                    <div class="table-col">
+                      <span class="table-body-text">60分鐘</span>
+                    </div>
+                    <div class="table-col"><span
+                        class="rounded-pill text-sm text-slate px-2 border bg-light d-inline-block">視訊</span>
+                    </div>
+                    <div class="table-col">
+                      <span class="table-body-text text-md-color">等待上課</span>
+                    </div>
+                  </li>
+                  <li class="table-row course-finished">
+                    <div class="table-col">
+                      <span class="table-body-title">職涯定位-職涯探索包 | 4/6堂</span>
+                      <span
+                        class="rounded-pill text-sm text-slate px-2 border bg-light d-inline-block d-md-none">視訊</span>
+                    </div>
+                    <div class="table-col">
+                      <span class="table-body-text d-none d-md-block">2025/09/09</span>
+                      <span class="table-body-text text-slate d-block d-md-none">時間：2025/09/09</span>
+                      <span class="table-body-text text-slate d-block d-md-none">時長：60分鐘</span>
+                    </div>
+                    <div class="table-col">
+                      <span class="table-body-text">60分鐘</span>
+                    </div>
+                    <div class="table-col"><span
+                        class="rounded-pill text-sm text-slate px-2 border bg-light d-inline-block">視訊</span>
+                    </div>
+                    <div class="table-col">
+                      <span class="table-body-text text-md-color">已完成</span>
+                    </div>
+                  </li>
+                  <li class="table-row course-finished">
+                    <div class="table-col">
+                      <span class="table-body-title">職涯定位-職涯探索包 | 3/6堂</span>
+                      <span
+                        class="rounded-pill text-sm text-slate px-2 border bg-light d-inline-block d-md-none">視訊</span>
+                    </div>
+                    <div class="table-col">
+                      <span class="table-body-text d-none d-md-block">2025/08/08</span>
+                      <span class="table-body-text text-slate d-block d-md-none">時間：2025/08/08</span>
+                      <span class="table-body-text text-slate d-block d-md-none">時長：60分鐘</span>
+                    </div>
+                    <div class="table-col">
+                      <span class="table-body-text">60分鐘</span>
+                    </div>
+                    <div class="table-col"><span
+                        class="rounded-pill text-sm text-slate px-2 border bg-light d-inline-block">視訊</span>
+                    </div>
+                    <div class="table-col">
+                      <span class="table-body-text text-md-color">已完成</span>
+                    </div>
+                  </li>
+                  <li class="table-row course-finished">
+                    <div class="table-col">
+                      <span class="table-body-title">職涯定位-職涯探索包 | 2/6堂</span>
+                      <span
+                        class="rounded-pill text-sm text-slate px-2 border bg-light d-inline-block d-md-none">視訊</span>
+                    </div>
+                    <div class="table-col">
+                      <span class="table-body-text d-none d-md-block">2025/07/07</span>
+                      <span class="table-body-text text-slate d-block d-md-none">時間：2025/07/07</span>
+                      <span class="table-body-text text-slate d-block d-md-none">時長：60分鐘</span>
+                    </div>
+                    <div class="table-col">
+                      <span class="table-body-text">60分鐘</span>
+                    </div>
+                    <div class="table-col"><span
+                        class="rounded-pill text-sm text-slate px-2 border bg-light d-inline-block">視訊</span>
+                    </div>
+                    <div class="table-col">
+                      <span class="table-body-text text-md-color">已完成</span>
+                    </div>
+                  </li>
+                  <li class="table-row course-finished">
+                    <div class="table-col">
+                      <span class="table-body-title">職涯定位-職涯探索包 | 1/6堂</span>
+                      <span
+                        class="rounded-pill text-sm text-slate px-2 border bg-light d-inline-block d-md-none">視訊</span>
+                    </div>
+                    <div class="table-col">
+                      <span class="table-body-text d-none d-md-block">2025/06/06</span>
+                      <span class="table-body-text text-slate d-block d-md-none">時間：2025/06/06</span>
+                      <span class="table-body-text text-slate d-block d-md-none">時長：60分鐘</span>
+                    </div>
+                    <div class="table-col">
+                      <span class="table-body-text">60分鐘</span>
+                    </div>
+                    <div class="table-col"><span
+                        class="rounded-pill text-sm text-slate px-2 border bg-light d-inline-block">視訊</span>
+                    </div>
+                    <div class="table-col">
+                      <span class="table-body-text text-md-color">已完成</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <%- include('./layout/footer'); -%>
+
+        <script type="module" src="../main.js"></script>
+  </body>
 
 </html>
