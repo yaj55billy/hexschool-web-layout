@@ -1,0 +1,40 @@
+.page-banner {
+	background-image: url("../assets/images/page-banner-bg.png");
+	background-size: cover;
+	background-position: center;
+	position: relative;
+
+	&-decora-line {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		@media (max-width: 1024px) {
+			display: none;
+		}
+	}
+	&-decora-shape {
+		position: absolute;
+		top: 0;
+		right: 0;
+		@media (max-width: 1024px) {
+			display: none;
+		}
+	}
+
+	&-content {
+		position: relative;
+		width: 800px;
+		margin: 0 auto;
+		max-width: 100%;
+		text-align: center;
+	}
+
+	&-decora-women {
+		position: absolute;
+		bottom: -8px;
+		right: -108px;
+		@media (max-width: 1024px) {
+			display: none;
+		}
+	}
+}
