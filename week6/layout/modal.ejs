@@ -1,0 +1,159 @@
+<div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-head">
+        <img class="rounded-start-3" src="../assets/images/modal-login.jpg" alt="登入">
+      </div>
+      <div class="modal-body p-6 pt-9 p-lg-9 position-relative">
+        <h2 class="text-center">登入</h2>
+        <div class="modal-close">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="border-bottom mb-6 pb-6">
+          <a href="javascript:;"
+            class="border rounded-3 p-3 mt-6 mt-lg-9 d-flex gap-0 gap-lg-1 justify-content-center align-items-center">
+            <img class="modal-icon" src="../assets/images/icon-google.png" alt="Google Icon">
+            <span class="text-md">Google</span>
+          </a>
+          <a href="javascript:;"
+            class="border rounded-3 p-3 mt-4 d-flex gap-0 gap-lg-1 justify-content-center align-items-center">
+            <img class="modal-icon" src="../assets/images/icon-discord.png" alt="Discord Icon">
+            <span class="text-md">Discord</span>
+          </a>
+        </div>
+        <form action="">
+          <div class="form-floating">
+            <input type="text" class="form-control text-md" id="account" placeholder="帳號">
+            <label for="account" class="text-sm text-slate">帳號</label>
+          </div>
+          <div class="form-floating position-relative mt-4">
+            <input type="password" class="form-control text-md pe-9" id="password" placeholder="密碼">
+            <label for="password" class="text-sm text-slate">密碼</label>
+            <span
+              class="material-symbols-outlined position-absolute top-50 end-0 translate-middle-y me-3 modal-password-icon"
+              id="toggle-password">
+              visibility
+            </span>
+          </div>
+
+          <div class="text-end mt-4">
+            <a href="#" class="text-sm text-slate">忘記密碼</a>
+          </div>
+          <button type="button" class="btn btn-md w-100 mt-4 finish-btn">
+            送出
+            <span class="material-symbols-outlined">
+              chevron_right
+            </span>
+          </button>
+        </form>
+
+        <p class="text-md text-slate text-center mt-6 mt-lg-9">不是會員? <a href="javascript:;" data-bs-toggle="modal"
+            data-bs-target="#registerModal" class="text-primary text-decoration-underline ms-1">快速註冊</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content flex-row-reverse">
+      <div class="modal-head">
+        <img class="rounded-end-3" src="../assets/images/modal-register.jpg" alt="註冊">
+      </div>
+      <div class="modal-body p-6 pt-9 p-lg-9 position-relative">
+        <h2 class="text-center">註冊</h2>
+        <div class="modal-close">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="border-bottom mb-6 pb-6">
+          <a href="javascript:;"
+            class="border rounded-3 p-3 mt-6 mt-lg-9 d-flex gap-0 gap-lg-1 justify-content-center align-items-center">
+            <img class="modal-icon" src="../assets/images/icon-google.png" alt="Google Icon">
+            <span class="text-md">Google</span>
+          </a>
+          <a href="javascript:;"
+            class="border rounded-3 p-3 mt-4 d-flex gap-0 gap-lg-1 justify-content-center align-items-center">
+            <img class="modal-icon" src="../assets/images/icon-discord.png" alt="Discord Icon">
+            <span class="text-md">Discord</span>
+          </a>
+        </div>
+        <form action="">
+          <div class="form-floating">
+            <input type="text" class="form-control text-md" id="account" placeholder="帳號">
+            <label for="account" class="text-sm text-slate">帳號</label>
+          </div>
+          <div class="form-floating position-relative mt-4">
+            <input type="password" class="form-control text-md pe-9" id="password" placeholder="密碼">
+            <label for="password" class="text-sm text-slate">密碼</label>
+            <span
+              class="material-symbols-outlined position-absolute top-50 end-0 translate-middle-y me-3 modal-password-icon"
+              id="toggle-password">
+              visibility
+            </span>
+          </div>
+
+          <div class="form-floating position-relative mt-4">
+            <input type="password" class="form-control text-md pe-9" id="check-password" placeholder="確認密碼">
+            <label for="check-password" class="text-sm text-slate">確認密碼</label>
+            <span
+              class="material-symbols-outlined position-absolute top-50 end-0 translate-middle-y me-3 modal-password-icon"
+              id="toggle-password-check">
+              visibility
+            </span>
+          </div>
+
+          <div class="text-end mt-4">
+            <a href="#" class="text-sm text-slate">忘記密碼</a>
+          </div>
+          <button type="button" class="btn btn-md w-100 mt-4 finish-btn">
+            送出
+            <span class="material-symbols-outlined">
+              chevron_right
+            </span>
+          </button>
+        </form>
+
+        <p class="text-md text-slate text-center mt-6 mt-lg-9">已是會員? <a href="javascript:;" data-bs-toggle="modal"
+            data-bs-target="#loginModal" class="text-primary text-decoration-underline ms-1">直接登入</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const icon = document.querySelector('#toggle-password');
+  const passwordInput = document.querySelector('#password');
+  // const input = document.getElementById('password');
+  icon.addEventListener('click', () => {
+    if (passwordInput.type === 'password') {
+      passwordInput.type = 'text';
+      icon.textContent = 'visibility_off';
+    } else {
+      passwordInput.type = 'password';
+      icon.textContent = 'visibility';
+    }
+  });
+
+  const iconCheck = document.querySelector('#toggle-password-check');
+  const checkPasswordInput = document.querySelector('#check-password');
+  // const input = document.getElementById('password');
+  iconCheck.addEventListener('click', () => {
+    if (checkPasswordInput.type === 'password') {
+      checkPasswordInput.type = 'text';
+      iconCheck.textContent = 'visibility_off';
+    } else {
+      checkPasswordInput.type = 'password';
+      iconCheck.textContent = 'visibility';
+    }
+  });
+
+  const finishBtn = document.querySelectorAll('.finish-btn');
+
+  finishBtn.forEach(btn => {
+    btn.addEventListener('click', () => {
+      window.location.href = 'personal-data.html';
+    });
+  });
+</script>

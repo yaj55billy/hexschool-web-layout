@@ -9,83 +9,16 @@
       <main class="py-12">
         <div class="container">
 
-          <h2 class="mb-3">按鈕 TEST</h2>
-          <p>我是測試文字，測試看看文字跟文字的距離</p>
-          <button type="button" class="btn btn-sm">
-            按鈕
-            <span class="material-symbols-outlined">
-              chevron_right
-            </span>
-          </button>
-          <button type="button" class="btn btn-md">
-            按鈕2
-            <span class="material-symbols-outlined">
-              chevron_right
-            </span>
-          </button>
-          <button type="button" class="btn btn-md-outline">
-            按鈕3
-            <span class="material-symbols-outlined">
-              chevron_right
-            </span>
-          </button>
-          <button type="button" class="btn btn-lg">
-            按鈕3
-            <span class="material-symbols-outlined">
-              chevron_right
-            </span>
-          </button>
-          <button type="button" class="btn btn-onlyicon">
-            <span class="material-symbols-outlined">
-              menu
-            </span>
-          </button>
         </div>
-
-        <div>
-          <div class="demo-section">
-            <div class="demo-row">
-              <div class="demo-label">default</div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="checkbox-default">
-                <label class="form-check-label" for="checkbox-default">
-                  預設狀態
-                </label>
-              </div>
-            </div>
-
-            <div class="demo-row">
-              <div class="demo-label">error</div>
-              <div class="form-check">
-                <input class="form-check-input error" type="checkbox" id="checkbox-error">
-                <label class="form-check-label" for="checkbox-error">
-                  錯誤狀態
-                </label>
-              </div>
-            </div>
-
-            <div class="demo-row">
-              <div class="demo-label">disabled</div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="checkbox-disabled" disabled>
-                <label class="form-check-label" for="checkbox-disabled">
-                  停用狀態
-                </label>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- <div class="display">我是 Display</div>
-    <h1>測試一</h1>
-    <div class="h2 text-slate">測試二</div>
-    <p class="text-md">測試三三三</p> -->
 
       </main>
 
       <%- include('./layout/footer'); -%>
 
-        <script type="module" src="../main.js"></script>
+        <%- include('./layout/modal'); -%>
+
+
+          <script type="module" src="../main.js"></script>
   </body>
 
 </html>
