@@ -3,16 +3,16 @@
 
 <%- include('./layout/head', { title: '隱私權政策 | 職旅' , description: '隱私權政策' }) %>
 
-<body>
-  <%- include('./layout/navbar'); %>
+  <body>
+    <%- include('./layout/navbar', {isLogin: false}); %>
 
-  <main>
+      <main>
 
-  </main>
+      </main>
 
-  <%- include('./layout/footer'); -%>
+      <%- include('./layout/footer'); -%>
 
-  <script type="module" src="../main.js"></script>
-</body>
+        <script type="module" src="../main.js"></script>
+  </body>
 
 </html>

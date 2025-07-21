@@ -5,7 +5,7 @@
   description: '職旅 WorkWay 匯集了來自不同領域、擁有豐富實戰經驗的自由工作者與數位遊牧專家。根據你的需求和階段，我們提供一對一諮詢。' }) %>
 
   <body>
-    <%- include('./layout/navbar'); %>
+    <%- include('./layout/navbar', {isLogin: false}); %>
 
       <main>
         <%- include('./layout/page-banner', { title: '關於職旅' ,
