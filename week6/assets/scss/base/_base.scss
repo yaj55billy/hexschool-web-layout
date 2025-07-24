@@ -31,6 +31,14 @@ p {
 	background-color: $natural-95;
 }
 
+.list-disc {
+	list-style-type: disc;
+	padding-left: 24px;
+	li::marker {
+		font-size: 0.75rem;
+	}
+}
+
 .rounded-top-left-3 {
 	border-top-left-radius: var(--bs-border-radius-lg);
 }
