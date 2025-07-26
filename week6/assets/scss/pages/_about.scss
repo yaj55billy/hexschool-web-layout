@@ -1,17 +1,3 @@
-.team-slider-wrapper {
-	margin-right: calc(-50vw + 50%);
-}
-
-.team-cards-container {
-	overflow-x: auto;
-	white-space: nowrap;
-	scrollbar-width: thin;
-	scrollbar-color: #6c757d #f8f9fa;
-	padding-left: 12px;
-	padding: 0 12px;
-	margin: 0 -12px; // 讓陰影顯示，但又對齊 container
-}
-
 .about {
 	&-list {
 		&:hover .about-card-head img {
