@@ -43,7 +43,7 @@
 		}
 
 		&-row {
-			margin-right: calc(-50vw + 50%);
+			margin-right: calc(-50vw + 50% + 24px);
 		}
 
 		.cards-container {
@@ -207,15 +207,12 @@
 
 		&__decora {
 			position: absolute;
-			bottom: -200px;
-			right: -100px;
-			width: 800px;
-			height: 800px;
-			border-radius: 99em;
-			background: linear-gradient(180deg, #e2ffe4 0%, #d0ffd4 100%);
-			opacity: 0.5;
-			filter: blur(10px);
+			bottom: 0px;
+			right: 0px;
 			z-index: -1;
+			@include media-breakpoint-down(lg) {
+				width: 315px;
+			}
 		}
 
 		&__pic {
@@ -231,6 +228,123 @@
 			@include media-breakpoint-down(md) {
 				display: block;
 				text-align: center;
+			}
+		}
+	}
+
+	&-services {
+		&__list {
+			overflow-x: auto;
+			padding-bottom: 8px; // 在捲軸下方留空間
+			margin-bottom: -8px; // 抵消 padding
+		}
+
+		&__item {
+			flex: 0 0 306px;
+		}
+
+		&__step {
+			position: relative;
+
+			&__number {
+				position: absolute;
+				top: 0;
+				left: 0;
+				background-color: $natural-95;
+				padding: 10px 16px;
+				border-top-left-radius: $border-radius-lg;
+				border-bottom-right-radius: $border-radius-lg;
+			}
+		}
+	}
+
+	&-qa {
+		background-image: url("../images/index-qa-bg.png");
+		background-repeat: repeat;
+
+		&__tooltip {
+			position: relative;
+			border: solid 2px $primary;
+
+			&__text {
+				position: relative;
+				background-color: $light;
+				padding: 12px 18px;
+				display: block;
+				z-index: 3;
+			}
+
+			&::before {
+				content: "";
+				position: absolute;
+				bottom: -7px;
+				left: 0;
+				right: 0;
+				margin: auto;
+				transform: rotate(45deg);
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 0 0 24px 24px;
+				border-color: transparent transparent $light;
+				z-index: 2;
+			}
+
+			&::after {
+				content: "";
+				position: absolute;
+				bottom: -9px;
+				left: 0;
+				right: 0;
+				margin: auto;
+				transform: rotate(45deg);
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 0 0 28px 28px;
+				border-color: transparent transparent $primary;
+				z-index: 1;
+			}
+		}
+
+		&__content {
+		}
+
+		&__decora {
+			width: 400px;
+			@include media-breakpoint-down(lg) {
+				width: 300px;
+			}
+		}
+
+		&__item {
+			&__head {
+				cursor: pointer;
+			}
+			&__body {
+				position: relative;
+			}
+
+			&__body::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				width: calc(100% - 48px);
+				margin: auto;
+				border-top: dashed 1px $natural-85;
+			}
+
+			&__icon {
+				color: $primary;
+				transform: rotate(-90deg);
+				transition: all 0.3s ease;
+			}
+
+			.collapsed .index-qa__item__icon {
+				color: $dark;
+				transform: rotate(00deg);
 			}
 		}
 	}
