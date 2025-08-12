@@ -1,0 +1,167 @@
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	letter-spacing: 0.02em;
+	font-size: 0.875rem;
+	@include media-breakpoint-up(md) {
+		font-size: 1rem;
+	}
+
+	&-sm {
+		padding: 4px 4px 4px 8px;
+		gap: 0;
+
+		--bs-btn-color: #{$natural-50};
+		--bs-btn-bg: #{$light};
+		--bs-btn-border-color: #{$natural-85};
+
+		--bs-btn-hover-color: #{$natural-50};
+		--bs-btn-hover-bg: #{$natural-90};
+		--bs-btn-hover-border-color: #{$natural-90};
+
+		--bs-btn-active-color: #{$natural-50};
+		--bs-btn-active-bg: #{$natural-90};
+		--bs-btn-active-border-color: #{$natural-90};
+	}
+
+	&-md {
+		padding: 12px 12px 12px 20px;
+		gap: 4px;
+
+		--bs-btn-color: #{$light};
+		--bs-btn-bg: #{$dark};
+		--bs-btn-border-color: #{$dark};
+
+		--bs-btn-hover-color: #{$dark};
+		--bs-btn-hover-bg: #{$secondary};
+		--bs-btn-hover-border-color: #{$secondary};
+
+		--bs-btn-active-color: #{$dark};
+		--bs-btn-active-bg: #{$secondary};
+		--bs-btn-active-border-color: #{$secondary};
+	}
+
+	&-md-outline {
+		padding: 12px 12px 12px 20px;
+		gap: 4px;
+
+		--bs-btn-color: #{$dark};
+		--bs-btn-bg: #{$light};
+		--bs-btn-border-color: #{$natural-85};
+
+		--bs-btn-hover-color: #{$dark};
+		--bs-btn-hover-bg: #{$natural-85};
+		--bs-btn-hover-border-color: #{$natural-85};
+
+		--bs-btn-active-color: #{$dark};
+		--bs-btn-active-bg: #{$natural-85};
+		--bs-btn-active-border-color: #{$natural-85};
+	}
+
+	&-lg {
+		padding: 12px 12px 12px 20px;
+		font-weight: 700;
+		gap: 4px;
+
+		--bs-btn-color: #{$dark};
+		--bs-btn-bg: #{$secondary};
+		--bs-btn-border-color: #{$secondary};
+
+		--bs-btn-hover-color: #{$light};
+		--bs-btn-hover-bg: #{$primary};
+		--bs-btn-hover-border-color: #{$primary};
+
+		--bs-btn-active-color: #{$light};
+		--bs-btn-active-bg: #{$primary};
+		--bs-btn-active-border-color: #{$primary};
+
+		.material-symbols-outlined {
+			font-size: 28px;
+		}
+	}
+
+	&-onlyicon {
+		padding: 10px;
+
+		--bs-btn-hover-color: #{$dark};
+		--bs-btn-hover-bg: #{$natural-90};
+		--bs-btn-hover-border-color: #{$natural-90};
+
+		--bs-btn-active-color: #{$dark};
+		--bs-btn-active-bg: #{$natural-90};
+		--bs-btn-active-border-color: #{$natural-90};
+
+		.material-symbols-outlined {
+			font-size: 22px;
+		}
+	}
+
+	&.w-100-custom {
+		width: 100%;
+		@include media-breakpoint-up(md) {
+			width: auto;
+		}
+	}
+}
+
+.nav-btn {
+	border: 1px solid transparent;
+	border-radius: $border-radius-md;
+	padding: 8px 16px;
+
+	&-outline {
+		border: solid 1px $natural-85;
+	}
+
+	&:hover,
+	&.active {
+		background-color: $natural-90;
+		border: solid 1px $natural-90;
+	}
+
+	@include media-breakpoint-up(md) {
+		padding: 8px 24px;
+	}
+}
+
+.usermenu-btn {
+	border: 1px solid $natural-85;
+	border-radius: $border-radius-md;
+	background-color: $light;
+	padding: 12px;
+	cursor: pointer;
+
+	&:hover,
+	&.active {
+		background-color: $natural-90;
+		border: solid 1px $natural-90;
+	}
+
+	@include media-breakpoint-up(md) {
+		padding: 12px 20px;
+	}
+}
+
+.appointment-btn {
+	border: 1px solid $natural-85;
+	border-radius: $border-radius-md;
+	background-color: $light;
+	padding: 12px;
+	cursor: pointer;
+
+	&:hover {
+		background-color: $natural-90;
+		border: solid 1px $natural-90;
+	}
+
+	&.active {
+		background-color: $dark;
+		border: solid 1px $dark;
+		color: $light;
+	}
+
+	@include media-breakpoint-up(md) {
+		padding: 12px 20px;
+	}
+}

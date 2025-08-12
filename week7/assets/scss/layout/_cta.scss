@@ -1,0 +1,14 @@
+.cta {
+	&-logo {
+		width: 40px;
+	}
+
+	&-head {
+		border-bottom: dashed 1px $natural-85;
+		padding-bottom: 24px;
+	}
+
+	&-icon {
+		font-size: 24px;
+	}
+}

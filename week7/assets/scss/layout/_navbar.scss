@@ -1,0 +1,16 @@
+.logo {
+	width: 90px;
+
+	@include media-breakpoint-up(lg) {
+		width: 124px;
+	}
+}
+
+.user {
+	cursor: pointer;
+}
+
+.user-avatar {
+	width: 44px;
+	border-radius: 99em;
+}

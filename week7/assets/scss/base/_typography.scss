@@ -1,0 +1,81 @@
+body {
+	font-family: "Noto Sans TC", sans-serif;
+}
+
+.font-en {
+	font-family: "Inter", sans-serif;
+}
+
+h1,
+.h1 {
+	font-size: map-get($font-sizes-mobile, h1);
+}
+h2,
+.h2 {
+	font-size: map-get($font-sizes-mobile, h2);
+}
+h3,
+.h3 {
+	font-size: map-get($font-sizes-mobile, h3);
+}
+h4,
+.h4 {
+	font-size: map-get($font-sizes-mobile, h4);
+}
+h5,
+.h5 {
+	font-size: map-get($font-sizes-mobile, h5);
+}
+.display {
+	font-size: map-get($font-sizes-mobile, display);
+}
+.text-lg {
+	font-size: map-get($font-sizes-mobile, t-l);
+}
+.text-md {
+	font-size: map-get($font-sizes-mobile, t-m);
+}
+.text-sm {
+	font-size: map-get($font-sizes-mobile, t-s);
+}
+.text-xs {
+	font-size: map-get($font-sizes-mobile, t-xs);
+}
+
+@include media-breakpoint-up(lg) {
+	h1,
+	.h1 {
+		font-size: map-get($font-sizes, h1);
+	}
+	h2,
+	.h2 {
+		font-size: map-get($font-sizes, h2);
+	}
+	h3,
+	.h3 {
+		font-size: map-get($font-sizes, h3);
+	}
+	h4,
+	.h4 {
+		font-size: map-get($font-sizes, h4);
+	}
+	h5,
+	.h5 {
+		font-size: map-get($font-sizes, h5);
+	}
+	.display {
+		font-size: map-get($font-sizes, display);
+	}
+	.text-lg {
+		font-size: map-get($font-sizes, t-l);
+	}
+	.text-md {
+		font-size: map-get($font-sizes, t-m);
+	}
+	.text-sm {
+		font-size: map-get($font-sizes, t-s);
+	}
+	.text-xs {
+		font-size: map-get($font-sizes, t-xs);
+	}
+}

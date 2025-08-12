@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    服務方案 | 職旅
+  </title>
+  <meta name="description" content="我們最全面的服務方案，為您提供從評估、規劃到實踐的完整支持。不再擔心轉型過程中的各種挑戰，我們的專家團隊將全程陪伴，確保您順利實現職業自由。" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script type="module" crossorigin src="/hexschool-web-layout/week7/dist/assets/main-B_iT35Zi.js"></script>
+  <link rel="stylesheet" crossorigin href="/hexschool-web-layout/week7/dist/assets/main-OPp2Fx9q.css">
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg position-relative border-bottom py-3">
+  <div class="container">
+    <a class="logo" href="index.html">
+      <img src="/hexschool-web-layout/week7/dist/assets/logo-C_BoMSwd.png" alt="職旅 Workway logo">
+    </a>
+    <div class="offcanvas offcanvas-end" id="offcanvasNavbar">
+      <div class="offcanvas-header p-6 justify-content-end">
+        <button type="button" class="btn btn-onlyicon d-lg-none" data-bs-dismiss="offcanvas" aria-label="Close">
+          <span class="material-symbols-outlined">
+            close
+          </span>
+        </button>
+      </div>
+      <div class="offcanvas-body px-6 py-4 d-flex flex-column p-lg-0">
+        <ul class="navbar-nav gap-6 gap-lg-3 justify-content-lg-center">
+          <li>
+            <a class="nav-btn w-100 text-center p-4 py-lg-2 px-lg-6" aria-current="page" href="service.html">服務方案</a>
+          </li>
+          <li>
+            <a class="nav-btn w-100 text-center p-4 py-lg-2 px-lg-6" href="about.html">關於職旅</a>
+          </li>
+          <li>
+            <a class="nav-btn w-100 text-center p-4 py-lg-2 px-lg-6" href="contact.html">聯絡我們</a>
+          </li>
+        </ul>
+        <a class="btn btn-lg p-2 w-100 d-block mt-auto d-lg-none" href="#">登入/註冊</a>
+      </div>
+    </div>
+
+    
+        <a class="nav-btn nav-btn-outline ms-auto me-2" href="#" data-bs-toggle="modal"
+          data-bs-target="#loginModal">登入/註冊</a>
+        
+
+          <button class="btn btn-onlyicon d-lg-none " type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="material-symbols-outlined">
+              menu
+            </span>
+          </button>
+  </div>
+</nav>
+
+      <main>
+        <div class="page-banner">
+  <span class="page-banner-decora-line">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAACgCAYAAADQOBKBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAApeSURBVHgB7d1NchPpGcDxp1s4lSU3iHOCQWVgi3s5xWDsEwAnCD4BcALgBMAJMCZTWUrZDlAoJ4hyA2eXCkidbgtlGAZjbOuj3+7frwr8gZdg/3nep19lh4O3ZcAalJGNv/xcFuXnnzuqPnM0+9rpv2Z/Xn8ur36VR9XXHv/Zpbg0/k/1+b2ifxQA0ACZwKJNZtFWx1cdYseBNq7i7N9Z5OMspuP6a+og+7HojwMAlkRg0Vl1jH2amB2HWBxPybJxrwqx/8bG2EQMgPMSWHCyOrBG9dsyyn/Mp2Af49JIfAHwLQILzueL+MpG9eTrZnF9FAB0nsCCBav+QY2yiHH13t+rtyMTL4DuEViwGscTr/I4uky7ANpOYMH6fDpmzEb1tGsjeiNPNwK0g8CCRjm+ZmI0P168VVwbBgDJEVjQfMP5lGsSvaF9LoDmE1iQmNkSfTYUXADNJbAgcYILoHkEFrTPsH5aMa/e2uECWA+BBe1WT7OG1T/1VxuRDz2lCLAaAgs6ZH6cmMX0lekWwPIILOisbFwfI06jfGV3C2CxBBYwd+AoEWAxBBbwNcPq28MLsQVwPgILOM1QbAGcjcACzmIotgBOJ7CA8zre2doptp4HAL8hsICLOsojOyhj+sLVDwAzAgtYoGxc/XZQHSE+dYQIdJnAApZlWO9rTSI/cMcW0DUCC1g2R4hA5wgsYIWOjxAfeQoRaDuBBaxFNdV6nsXk6c3i+igAWkZgAWv16QWon7ruAWgTgQU0xOzFp3uRP3J8CKROYAGNUx8fWooHUiawgMZyfAikSmABCfD0IZAWgQUkxJ4WkAaBBSSp3tMSWkBTCSwgaUILaCKBBbTFMIvykScPgSYQWEDbCC1g7QQW0FZCC1gbgQW0ndACVk5gAV0htICVyQOgG7bLyAZ/Hbx79rfB+80AWCITLKCTXO8ALJPAAjpNaAHLILAAKllkDy9F/kJoAYtgBwugUkb58ENMB4eDd3cD4IJMsAB+JxtXvz3aKbaeB8A5CCyAkx1sRG/fsSFwVo4IAU62+yEm/3S1A3BWAgvgFNMo79rPAs7CESHAmdT7WeX+TnH1IABOYIIFcCblZvXbS8eGwLcILIBzmB0bTt6/Hrx7EABfcEQIcGHZuBeTvZvF9VEAhAkWwAKUm5PI3zs2BOYEFsCCeNoQmHNECLAcw43o3XNJKXSTCRbAcmzXl5RagoduMsECWLpsvBF5YZoF3WGCBbB05aZpFnSLCRbASplmQReYYAGslGkWdIEJFsDamGZBW5lgAayNaRa0lQkWQCOYZkGbmGABNMLxNOv94eDN/QCSJ7AAmuNyNcl67DUNIX0CC6BhvKYhpE9gATRSuVn9emYBHtJkyR2g8SzAQ2pMsAAazwI8pMYECyAheWTPP0S+v1f0jwJoLBMsgITUC/C9mL73lCE0m8ACSM7sBnhHhtBcAgsgWdnjw8G7xy8H7y8H0CgCCyBp5X1HhtA8AgsgefOnDF1MCk0hsADa4bKLSaE5XNMA0D4HG9HbdzEprI8JFkD77NavZWgvC9ZHYAG0kr0sWCeBBdBe9rJgTexgAXTDwSR697zEDqxGZnzMupQx3fz84yzyP332p5uzr6n/B55dzqKsL1J0mSJcSDbeiLyw/A7LlwUkpL6x+o9VaH2Mj5tlFV51fM1CrY6wqAOt+jjbzD4FGvClbNyLyd7N4voogKURWLRWHWOX4uOVWYiVm7Pwih/qqVj19kpAp5X7O8W1JwEshcCis+pH2GeTsLgivuiiLLKHt4qtRwEsnMCCr/h58MuVSeR1fG3X4RWz6LIDRgtlT3aKrf0AFkpgwXf69cixjq3sRvV207SLNqj+Lo/+EL09y++wOAILLmAeXdPjSVd2I0y6SJYnDGGRBBYs2Ox4sVdNusrt6sMfTLlIhycMYVEEFixZNeXarH5o1UeLuyG4aL76ItJ7O8XVgwDOTWDBis2Ca7o9m3BlN9zZRTO5xgEuQmDBms2OFLPt6p/j7erD7YCGcI0DnJ/AgoZ5PXizPY3srukWTSCy4HwEFjTYfLpVRnbH7hbrkz3fKbbuBfDdBBYkYr67FVHeCUeJrN7BJHr39or+UQCnEliQILHFOtQXkk6jV4gsOJ3AgsSJLVbLhaTwPQQWtMgstj7ulpH/xYI8yyOy4DQCC1rK04gsl8iCbxFY0AGHg3d3HSGyeCILTiKwoEPqI8Q8Pt6NyO+YarEYIgu+RmBBRx0O3tavjVhPtXYDLkRkwZcEFnTcbKo1eWhXi4sRWfA5gQX8X72rVUY8EFqcj8iCOYEF/M78CcRsdoQIZyCyoCawgBPNjw+FFmcjskBgAadygSlnJ7LoNoEFnIk9Lb6fyKK7BBZwLkKL7yOy6CaBBVyI0OJ0IovuEVjAQggtvk1k0S0CC1goocXJsvEk8v5e0T8KaDmBBSyF0OJrqr8To2n0CpFF2wksYKmEFl8x3CmuFgEtJrCApXs5eH85j4/3I/I7QouZ7PlOsXUvoKUEFrAybobnt7InVWTtB7SQwAJWTmgxl0X28Fax9SigZQQWsDaHg7e7ZWSPHRt2Xbm/U1x7EtAiAgtYO4vw5Hnv7k83+i8CWkJgAY3g2LDzjnoxLW4W10cBLSCwgEaZhdZ0YJrVSUcb0eu77Z02EFhAIzk27CovqUM7CCygsRwbdpPb3mkDgQU03uvBm+1p5M9Ms7rERaSkTWAByXg1eFNNs7IHQSe4I4uUCSwgKZbgu8YdWaRJYAFJMs3qjiqmi1vFtWFAQgQWkCzTrM5wfQPJEVhA8kyzuiAbTyLve7KQVOQBkLjbxbWHk+j9uax+CActVW72YvIyIBEmWECrmGa1XfZkp9jaD2g4gQW0jt2stvNkIc3niBBonb2iP55G3i8jXgQtlD34efDLlYAGM8ECWq1+TcNq4vG4evdy0CJes5BmM8ECWm2n2Ho+iV7fAnzblJsfYvIsoKFMsIDOsADfRpbeaSaBBXTK4eDtbjXNemwBvj3yvHf3pxt9+3Y0isACOsdThq1z1ItpcbO4PgpoCIEFdJYjwzZx0zvNYskd6Kz6Bvj6TqXqXT+Uk3d807uldxrDBAvoPEeGbeISUppBYAHELLKqCUh9X9ZukLReTPv2sVg3gQXwGXtZbWAfi/WzgwXwGXtZbWAfi/UzwQL4CntZbWAfi/URWAAnmEXW5GX1jdILCyfKPhbr4ogQ4AR7RX88jV5RRjwNkjSJ3ssqlL3QNysnsAC+oV6Uvl1cvV9G+ShIUL2PNfXQAivniBDgOx0O3tyvvm0+DpLj9QpZNYEFcAavB2+2y8heVu86dkrL0Ub0+j9Wx74BK+CIEOAMbhXXhpPqB3UVWeMgJZc/uLqBFRJYAGc0W37PC5GVnO3ZMS8snyNCgHNyjUOaXN3AKphgAZzT/BqH6t2DIBmubmAVBBbABdTXOOwUV/fclZUSVzewfI4IARbEC0WnJYuyqB9aCFgCgQWwQCIrJdl4Enm/nkIGLJgjQoAFul1ce+jW91Q4KmR5TLAAlsAkKx2OClmG/wGJPNm2KY30QAAAAABJRU5ErkJggg==" alt="背景裝飾圖線條">
+  </span>
+  <span class="page-banner-decora-shape">
+    <img src="data:image/png;base64,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" alt="背景裝飾圖形">
+  </span>
+  <div class="page-banner-content py-9 py-lg-12 px-3">
+    <h1>
+      服務方案
+    </h1>
+    <p class="mt-6 mt-lg-9 text-lg text-slate">
+      我們最全面的服務方案，為您提供從評估、規劃到實踐的完整支持。不再擔心轉型過程中的各種挑戰，我們的專家團隊將全程陪伴，確保您順利實現職業自由。
+    </p>
+    
+
+        <span class="page-banner-decora-women">
+          <img src="/hexschool-web-layout/week7/dist/assets/page-banner-1-DId5spYm.png" alt="背景裝飾圖女性">
+        </span>
+  </div>
+</div>
+
+          <section class="py-9 py-lg-12">
+            <div class="container">
+              <div class="text-center">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARISURBVHgB7ZtNUtRAGIbfzlhYuhpPYI4AC1DLzXADPYHJwvFvAVzAaU4ArhSwKnMEPYG4sFBYwA0Yb8BGygKmP7sHAzMhIZ1Muiep6mfDZCadqTz58vbPBMDhcDgcDofD4UiBwTJLB1EPAhxTQgybB0vhGgzjwTZDBKgARliFBewLqghZ+gNYoLmCGNZhgUYKUtXzcynswwLNFGSpehSNE2SzehTNE2SxehSNEzSEXZpXQYQeLNLEkPYX96MAlmhmL2axipo6ULRWRc0dSRNWYIHGCpLMwwJ3MFPYkRzXnKAMgr7CAjMV5Ala+/kk3EWNafItZgUnKIeZCvJaJfPHIlYFPd6LfDkd9+PtC8Iz1ByrgqjFkiPglc5h1EaNsSZocS8KiChIvN3+c2538lkUa4KYly5C/Tohb70OaooVQaPfwnCdPUmoVd8qMv7DoQpm4eE4bz9ZSWu/HoebqBnGKyglmNP3Y+jVMbCNCsoI5ixqGdhGb7GlX5G6tfwibTyBZd352Wv+0RfwAgIb7PBuHwYwVkF5wZyFbmCv8qgtyPsGubrIiCIpqwMDGBNEZ1DLEYWnEjTEd539TtmFWjDzr9pRy8jtafQWW/wRzbM7+CZfJsKXHclT8m+8L7C+/yTkOYe9vLXIu9kzMjzf5q++oEKMhvTB0/CILrCM60o6aQHP9x8FCzJrFiae0EjIUbdQ1nFl7mykfkDYuK1dGSoX1O1tHb9Z//wi3laS5J9QvZZywr1H4egKyyAeMBnII0kJOapCTunsMC1XXvKPAbInuf6pOKv0uaFKBXXXd0bBPBTD/rikfSnl/hwexHJilKR7c1hIyhmFrzxOWq4w8m7PGoaVKquoMkHqxCAEj7eTknYXwqvAfsu359PeH5ejtgnU6fKtq4oI5IlrhGZbVl9lgV2ZoLSrnZSkUNsXRIfd9zsT+yflXB8Yvbgi+jw8YUyEyGe1qm6/EkEqF+TVDtI+U5LiKlBy1PboAya4zKtR2GbKuWSiIj7xN7uMsV3kUFW3X0k3r4IZJQaFRfCYWFZy1Ov/Qg9xY/iQ3ab092JK4mCGYcYrQp70QF7aD3ltpMRo2sCeSlAymE2SDOwzzG1qPOk6dbc/lSBTw/vsL5wMbLlEkv8g+ZTdfmlBtwWzQSYCW00rNAJ7qm6/tKDcAZs5JrpwhqFWtz8+9ipCKUG2gjmLZGATo9zAHsp5GkpQWJDNYM5CBfZLvh3E2+e4y5GztKLalBk8FhZkPZgzkItkG+OBLcc8uYGtun0UpJCgGQVzFskRdl8jsP3u+y2OAhQSNMNgzmIifAXOK+/2tQXNOpizGA/fHf7uSCOwC3X7WoLqEMxZJEfYOoGNy6GCDw20BBFahcPNKjeWRNSad04T0jsnPUFEHdSb9t+xmb2sqt95DVTlQQO9DGLC6n/YFEX1Xp94OLjaBnuY24jqfU4Oh8PhcDgcjprzD1l36hSlzFqeAAAAAElFTkSuQmCC" alt="職涯轉型全程計畫 icon" class="service-section-icon">
+                <h2 class="mt-1">職涯轉型全程計畫</h2>
+                <p class="mt-lg-6 mt-4 text-lg text-slate">從企業到自由，無縫轉型之旅</p>
+              </div>
+
+              <article class="mt-6 mt-lg-9">
+                <div class="shadow rounded-3 border border-2 border-secondary p-6 pt-9 position-relative p-lg-9">
+                  <span
+                    class="position-absolute text-sm fw-bold bg-secondary py-2 px-4 rounded-top-left-3 rounded-bottom-right-3 service-tag">HOT</span>
+                  <div class="d-flex gap-6 align-items-start justify-content-between">
+                    <div class="flex-grow-1">
+                      <p class="text-primary text-md fw-medium">全面方案</p>
+                      <h3 class="h4 fw-medium mt-2">職涯轉型全程計畫</h3>
+                      <p class="text-md mt-2">針對希望完全改變職業領域的資深專業人士。我們的專家團隊將協助您將過往經驗轉化為新領域的競爭優勢。</p>
+                      <ul class="mt-2 d-flex flex-column gap-1">
+                        <li class="d-flex align-items-center gap-2">
+                          <span class="material-symbols-outlined text-primary service-start-icon">
+                            stat_0
+                          </span>
+                          <span class="text-md">深度職能轉換評估與規劃</span>
+                        </li>
+                        <li class="d-flex align-items-center gap-2">
+                          <span class="material-symbols-outlined text-primary service-start-icon">
+                            stat_0
+                          </span>
+                          <span class="text-md">跨領域技能遷移策略</span>
+                        </li>
+                        <li class="d-flex align-items-center gap-2">
+                          <span class="material-symbols-outlined text-primary service-start-icon">
+                            stat_0
+                          </span>
+                          <span class="text-md">新領域人脈建立指導</span>
+                        </li>
+                        <li class="d-flex align-items-center gap-2">
+                          <span class="material-symbols-outlined text-primary service-start-icon">
+                            stat_0
+                          </span>
+                          <span class="text-md">長期職涯發展藍圖</span>
+                        </li>
+                      </ul>
+                      <div class="bg-neutral rounded-3 p-4 mt-4 p-lg-6 mt-lg-6">
+                        <div class="d-flex flex-nowrap align-items-center">
+                          <span class="text-md service-plan-info ">適合對象：</span>
+                          <span class="text-md fw-bold">從企業職場轉型為自由工作者 / 數位遊牧者的專業人士</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-start mt-2">
+                          <span class="text-md service-plan-info">優惠價格：</span>
+                          <span class="h4 text-primary font-en">NT$ 120,000</span>
+                        </div>
+                      </div>
+                      <a href="#" class="btn btn-md mt-4 mt-lg-6">
+                        我有興趣
+                        <span class="material-symbols-outlined">
+                          chevron_right
+                        </span>
+                      </a>
+                    </div>
+                    <img src="/hexschool-web-layout/week7/dist/assets/service-1-C2d90aJK.png" alt="服務方案 1" class="d-none d-lg-block" />
+                  </div>
+
+                </div>
+              </article>
+              <article class="mt-4 mt-lg-6">
+                <div class="shadow rounded-3 p-6 pt-9 position-relative p-lg-9">
+                  <div class="d-flex gap-6 align-items-start justify-content-between">
+                    <div class="flex-grow-1">
+                      <p class="text-primary text-md fw-medium">加速方案</p>
+                      <h3 class="h4 fw-medium mt-2">自由工作加速計畫</h3>
+                      <p class="text-md mt-2">為已確定要轉型但需要全面規劃的專業人士設計。六次深度諮詢，從心態調整到實際操作，全方位為您的轉型做好準備。</p>
+                      <ul class="mt-2 d-flex flex-column gap-1">
+                        <li class="d-flex align-items-center gap-2">
+                          <span class="material-symbols-outlined text-primary service-start-icon">
+                            stat_0
+                          </span>
+                          <span class="text-md">詳細的市場機會分析</span>
+                        </li>
+                        <li class="d-flex align-items-center gap-2">
+                          <span class="material-symbols-outlined text-primary service-start-icon">
+                            stat_0
+                          </span>
+                          <span class="text-md">個人優勢定位與差異化策略</span>
+                        </li>
+                        <li class="d-flex align-items-center gap-2">
+                          <span class="material-symbols-outlined text-primary service-start-icon">
+                            stat_0
+                          </span>
+                          <span class="text-md">完整的轉型時間表與里程碑</span>
+                        </li>
+                        <li class="d-flex align-items-center gap-2">
+                          <span class="material-symbols-outlined text-primary service-start-icon">
+                            stat_0
+                          </span>
+                          <span class="text-md">轉型期間的心理健康維護策略</span>
+                        </li>
+                      </ul>
+                      <div class="bg-neutral rounded-3 p-4 mt-4 p-lg-6 mt-lg-6">
+                        <div class="d-flex flex-nowrap align-items-center">
+                          <span class="text-md service-plan-info ">適合對象：</span>
+                          <span class="text-md fw-bold">已經開始自由工作但想提升效能和收入的專業人士</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-start mt-2">
+                          <span class="text-md service-plan-info">優惠價格：</span>
+                          <span class="h4 text-primary font-en">NT$ 80,000</span>
+                        </div>
+                      </div>
+                      <a href="#" class="btn btn-md mt-4 mt-lg-6">
+                        我有興趣
+                        <span class="material-symbols-outlined">
+                          chevron_right
+                        </span>
+                      </a>
+                    </div>
+                    <img src="/hexschool-web-layout/week7/dist/assets/service-2-dTsp5JVq.png" alt="服務方案 2" class="d-none d-lg-block" />
+                  </div>
+
+                </div>
+              </article>
+              <article class="mt-4 mt-lg-6">
+                <div class="shadow rounded-3 p-6 pt-9 position-relative p-lg-9">
+                  <div class="d-flex gap-6 align-items-start justify-content-between">
+                    <div class="flex-grow-1">
+                      <p class="text-primary text-md fw-medium">遊牧方案</p>
+                      <h3 class="h4 fw-medium mt-2">數位遊牧生活計畫</h3>
+                      <p class="text-md mt-2">針對希望完全改變職業領域的資深專業人士。我們的專家團隊將協助您將過往經驗轉化為新領域的競爭優勢。</p>
+                      <ul class="mt-2 d-flex flex-column gap-1">
+                        <li class="d-flex align-items-center gap-2">
+                          <span class="material-symbols-outlined text-primary service-start-icon">
+                            stat_0
+                          </span>
+                          <span class="text-md">深度職能轉換評估與規劃</span>
+                        </li>
+                        <li class="d-flex align-items-center gap-2">
+                          <span class="material-symbols-outlined text-primary service-start-icon">
+                            stat_0
+                          </span>
+                          <span class="text-md">新領域人脈建立指導</span>
+                        </li>
+                        <li class="d-flex align-items-center gap-2">
+                          <span class="material-symbols-outlined text-primary service-start-icon">
+                            stat_0
+                          </span>
+                          <span class="text-md">跨領域技能遷移策略</span>
+                        </li>
+                        <li class="d-flex align-items-center gap-2">
+                          <span class="material-symbols-outlined text-primary service-start-icon">
+                            stat_0
+                          </span>
+                          <span class="text-md">長期職涯發展藍圖</span>
+                        </li>
+                      </ul>
+                      <div class="bg-neutral rounded-3 p-4 mt-4 p-lg-6 mt-lg-6">
+                        <div class="d-flex flex-nowrap align-items-center">
+                          <span class="text-md service-plan-info ">適合對象：</span>
+                          <span class="text-md fw-bold">希望同時擁有工作自由和地域自由的專業人士</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-start mt-2">
+                          <span class="text-md service-plan-info">優惠價格：</span>
+                          <span class="h4 text-primary font-en">NT$ 60,000</span>
+                        </div>
+                      </div>
+                      <a href="#" class="btn btn-md mt-4 mt-lg-6">
+                        我有興趣
+                        <span class="material-symbols-outlined">
+                          chevron_right
+                        </span>
+                      </a>
+                    </div>
+                    <img src="/hexschool-web-layout/week7/dist/assets/service-3-U3GYvNPs.png" alt="服務方案 3" class="d-none d-lg-block" />
+                  </div>
+
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="py-9 py-lg-12 bg-neutral">
+            <div class="container">
+              <div class="text-center">
+                <img src="data:image/png;base64,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" alt="基礎諮詢服務 icon" class="service-section-icon">
+                <h2 class="mt-1">基礎諮詢服務</h2>
+                <p class="mt-lg-6 mt-4 text-lg text-slate">我們提供第一次免費諮詢，一起建立信任的橋樑</p>
+              </div>
+              <div class="row mt-6 mt-lg-9">
+                <div class="col-lg-4">
+                  <div class="shadow rounded-3 bg-light px-4 py-6 px-lg-3 px-xl-6">
+                    <div class="text-center">
+                      <img src="/hexschool-web-layout/week7/dist/assets/service-4-CrPwWC4B.png" alt="職涯探索評估" class="d-block mx-auto">
+                      <h3 class="h4 fw-medium mt-4 mt-lg-6">職涯探索評估</h3>
+                      <p class="text-sm text-slate mt-2">3 次一對一諮詢，了解可能性和適配性</p>
+                      <p class="h4 text-primary font-en mt-2">NT$ 3,800</p>
+                      <a href="#" class="btn btn-md mt-4 mt-lg-6">
+                        我有興趣
+                        <span class="material-symbols-outlined">
+                          chevron_right
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                  <div
+                    class="shadow rounded-3 border border-2 bg-light border-secondary position-relative px-4 py-6 px-lg-3 px-xl-6">
+                    <span
+                      class="position-absolute text-sm fw-bold bg-secondary py-2 px-4 rounded-top-left-3 rounded-bottom-right-3 service-tag">HOT</span>
+                    <div class="text-center">
+                      <img src="/hexschool-web-layout/week7/dist/assets/service-5-Dwldrok0.png" alt="職涯轉型規劃" class="d-block mx-auto">
+                      <h3 class="h4 fw-medium mt-4 mt-lg-6">職涯轉型規劃</h3>
+                      <p class="text-sm text-slate mt-2">6 次深度諮詢，建立完整轉型藍圖</p>
+                      <p class="h4 text-primary font-en mt-2">NT$ 12,000</p>
+                      <a href="#" class="btn btn-md mt-4 mt-lg-6">
+                        我有興趣
+                        <span class="material-symbols-outlined">
+                          chevron_right
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                  <div class="shadow rounded-3 bg-light px-4 py-6 px-lg-3 px-xl-6">
+                    <div class="text-center">
+                      <img src="/hexschool-web-layout/week7/dist/assets/service-6-uamIZH-n.png" alt="專業定位與品牌建立" class="d-block mx-auto">
+                      <h3 class="h4 fw-medium mt-4 mt-lg-6">專業定位與品牌建立</h3>
+                      <p class="text-sm text-slate mt-2">4 次專業諮詢，確立市場定位與差異化策略</p>
+                      <p class="h4 text-primary font-en mt-2">NT$ 8,800</p>
+                      <a href="#" class="btn btn-md mt-4 mt-lg-6">
+                        我有興趣
+                        <span class="material-symbols-outlined">
+                          chevron_right
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="py-9 py-lg-12 service-support-section">
+            <div class="container position-relative z-2">
+              <div class="text-center">
+                <img src="data:image/png;base64,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" alt="持續支持方案 icon" class="service-section-icon">
+                <h2 class="mt-1">持續支持方案</h2>
+              </div>
+              <div
+                class="shadow rounded-3 border border-2 border-secondary position-relative py-6 p-lg-9 mx-auto mt-6 mt-lg-9 text-center overflow-hidden service-support-content">
+                <div class="position-relative z-2">
+                  <h3 class="h4 fw-medium">職旅會員計畫</h3>
+                  <p class="text-md mt-2">享有長期社群支持與資源服務</p>
+                  <div class="mt-9 d-flex align-items-center justify-content-center gap-2">
+                    <h3 class="h4 text-primary font-en">NT$ 9,800</h3>
+                    <span class="text-md">/年</span>
+                    <span class="text-md py-1 font-en">( NT$1,200 /月)</span>
+                  </div>
+
+                  <a href="#" class="btn btn-md mt-9">
+                    我有興趣
+                    <span class="material-symbols-outlined">
+                      chevron_right
+                    </span>
+                  </a>
+                </div>
+
+                <!-- 裝飾圖 -->
+                <span class="position-absolute service-support-decora-cloud">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="data:image/png;base64,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">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAr4AAAFACAYAAABa93+BAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAyZSURBVHgB7d3hURvnGobh3RXk76GDqIOoA9MBdOB0EHeQU5LTAe5A6QB3wPkrid3zrZAixbFjA0La1XNdMwQhQQwej+f2O+9+W69Wj10FAABnrqkAACCA8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIILwBQAggvAFACCC8AUAIMJFBZxMXVf3m0cPXVc9bJ4u77uH/c8rr32uXqH8Oj/vfXRV/nO1e62bbn6Nvz0PAOdG+MLrPZSwLOFa35d8vO+f6EO1D9mmWQdsea17uLi4uN99fv1QDVT5XtcBvFwur8r3uX7rPy4/37Sq2vJx85+Sy9PyM5fn1tEslgEYhXq1euwq4B+eprHrSex9P4HtY7ZMR8vj6qFt2/vLy8s+YO8r+lierlaraR/JbfsUxeXxL+Wlq36iXH7vphUAnJjwJVYftmWKOd+P2hJw9/1kVtAe3mKxmG0myNN+erwN4/L7P6tMjQE4AuHLOVtPZEvMzruu/V95PO+fm0wmc2E7LP16RZkYz/ajuPzDpDxeRzEAHITwZfS2k9uue/zcx23btnNrCOejnxQ3TdMH8UwQA/AawpfReArc6m67llAmt3fiNtcuiLvrup78YmUCgO8RvgzOboLb/SlweY7+IrvHx8fZbjrczVxYB8CW8OWUHsofwX5F4c+9FYX7IR/1xfj0+8Mlhq83MfzOZBggl/DlWPrIvdvu4ZrickpfWZO4rgA4e8KXt7AfuXdOUWAMlstlmQo3JYjXU+HrylQY4OwIX15rf11B5HI2NlPhWdtW15NJ84uTJADGT/jyLE+7uI+frCuQZnfhXHfdNJN3QhhgfIQv37Q9PqxMvMo0t51fXFzMXXgGT3YXzQlhgLEQvvzFNBdebjsRLv9QvJ1M6neOUQMYHuGba72b27bdH6a5cHibEL6uqubGecIAwyB8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" alt="區塊裝飾圖">
+                  </picture>
+                </span>
+
+                <span class="position-absolute d-none d-md-block service-support-decora-men">
+                  <img src="/hexschool-web-layout/week7/dist/assets/service-7-BIB7Yf9a.png" alt="區塊裝飾圖 - 男生">
+                </span>
+
+                <div class="position-absolute d-none d-md-block service-support-decora-women">
+                  <img src="/hexschool-web-layout/week7/dist/assets/service-8-DBO4tC9I.png" alt="區塊裝飾圖 - 女生">
+                </div>
+              </div>
+
+            </div>
+
+          </section>
+      </main>
+
+      <div class="cta py-8">
+  <div class="container">
+    <div class="rounded-4 bg-primary py-4 px-6 py-lg-6 px-lg-9">
+      <div class="cta-head">
+        <img src="data:image/png;base64,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" alt="logo" class="cta-logo">
+        <h2 class="text-light mt-6">邁向你真正想過的生活，從這裡開始</h2>
+        <p class="text-lg text-light mt-3">第一次諮詢只要 30 分鐘，可能改變你未來 30 年的生活方式</p>
+      </div>
+      <div class="d-flex justify-content-between align-items-start flex-column flex-md-row mt-4 mt-lg-6">
+        <div class="d-md-flex d-block align-items-center gap-6 gap-md-4 flex-column flex-md-row">
+          <a href="tel:+886-800123123" class="d-flex align-items-center gap-2 text-light">
+            <span class="material-symbols-outlined cta-icon">
+              call
+            </span>
+            <span class="h5 fw-normal font-en">0800-123-123</span>
+          </a>
+          <a href="mailto:Sample@mail.com" class="d-flex align-items-center gap-2 mt-4 mt-md-0 text-light">
+            <span class="material-symbols-outlined cta-icon">
+              mail
+            </span>
+            <span class="h5 fw-normal font-en">Sample@mail.com</span>
+          </a>
+        </div>
+        <a href="#" class="btn btn-md mt-6 mt-md-0">
+          預約免費職涯探索
+          <span class="material-symbols-outlined">
+            chevron_right
+          </span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+        <footer class="bg-neutral border-top py-9">
+
+  <div class="container">
+    <div class="d-flex flex-column flex-xl-row justify-content-between align-items-center">
+      <ul class="d-flex flex-wrap justify-content-center row-gap-2 ">
+        <li>
+          <a class="nav-btn" href="service.html">服務方案</a>
+        </li>
+        <li>
+          <a class="nav-btn" href="about.html">關於職旅</a>
+        </li>
+        <li>
+          <a class="nav-btn" href="contact.html">聯絡我們</a>
+        </li>
+        <li>
+          <a class="nav-btn" href="privacy-policy.html">隱私權政策</a>
+        </li>
+        <li>
+          <a class="nav-btn" href="user-agreement.html">用戶條款</a>
+        </li>
+      </ul>
+      <p class="text-slate text-sm text-center mt-2 mt-xl-0">Copyright © 2025 職旅 workway. All rights reserved.</p>
+    </div>
+  </div>
+  
+</footer>          <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-head">
+        <img class="rounded-start-3" src="/hexschool-web-layout/week7/dist/assets/modal-login-B5ireEjR.jpg" alt="登入">
+      </div>
+      <div class="modal-body p-6 pt-9 p-lg-9 position-relative">
+        <h2 class="text-center">登入</h2>
+        <div class="modal-close">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="border-bottom mb-6 pb-6">
+          <a href="javascript:;"
+            class="border rounded-3 p-3 mt-6 mt-lg-9 d-flex gap-0 gap-lg-1 justify-content-center align-items-center">
+            <img class="modal-icon" src="data:image/png;base64,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" alt="Google Icon">
+            <span class="text-md">Google</span>
+          </a>
+          <a href="javascript:;"
+            class="border rounded-3 p-3 mt-4 d-flex gap-0 gap-lg-1 justify-content-center align-items-center">
+            <img class="modal-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUbSURBVHgB7ZrNchpHEMd7VkDkykU6SI5v6ycIfgLhJwiXVK1yEbo5yFXGTxB4AqOqmORmdInJTXoCkyeI/ATZnJJISYlDKkbATqdngcRSzc4XYAuYX5VKthhmd//b09PT3QAej8fj8Xg8Ho/H4/nQMFgQ0dPLEkugCIzvIbAi/SlkwHp0xfbrlzvPwYGoevkN3XANAbfovzHNFTPOzhjD7g+t3XNYAHMVqFy72tocjJ7RDZcRoZg9Ehud1v06WLB/dPkCEWuKITH9NKCQ73aa2zHMibkIFD25CiEY0ttl5cnb1V2097q1uw0W7FcvrhBAO/fkAm3I5xvzEGpmgb6q/vWMQ9IEW8RD0LIDpJ8x4c2PWY/E7qXLCJH+zcpgDat3WjsNmIGZBIqqF6/oVwXuMvQiOi93D8GRABwRPgHuujgChEp0lL5IJ5wEEruJxmHeLUik/a9/d7pf6yU2cci/wJIhNgYs5B/ZOm57C6LdCpaQdAccDq2XmpUFieAPOL6BZSZgjzvf7nSNh4MNiEtpPTewfAZjC1pW3yPFworMLWhJfY8M5Ilx0GmzxEqwIgQQHIhzo9lYAyhirsCto8AyI3a0zcHQyIqMBKJz0BewajA4MBumoUKm2B8Mr2DFEIHju0L+4Wlzu6cap7Wg61FSghXEdJlpBULOV295TWGwpxuSAz0lmAUGXUT+VuR3GASfi/lMkmryqShHxPCUgr1fxRwBC/bUmUvNfAjCgg7V11TwZfWiuAHwM7gRU0B2eDsgi578FgIL6sCYkZOcgsCPrwvv6qfNhzd8xmSHFTFaCA7QEnqkymcrlxiJ4/x2oJBIo9XO9w/iznf3K/RmjsEUSnr92PqsdlucdL7Wbht48lg4XXCArLuk+lwpkOv2zhhrdpoPYtWYTwr5uslDpWPyiTJtKkSnJWcu+HtgkC77TAL1zaGTBVEO+UQ3pk3bKyXdznTjaGn9pBM7hfM2uIBqH5spUGUciofggHGNiqWlGt0go7mEFYEboerYkSlQfzRy9j+m5xzalbTjTHe8iuE1Zdy7zo71MgVKq6KObJqKy9iefojaR0yZLaAdhVmfZArEDYKoTAySUmJ7Jh+kF5J8RJrJ1A3j/AU4onLU2RbE0Nlk04eiykfWx2nybRy7mMHxVVRLvyOfb3ytEBxhimAzM1C0KvVmE/MAnw9yha44FEY1ChIHuYP3GhCsQAbNDYQTsQmkfQBiKQtrxdmifVUpPFMgWgIIa0S/kN+WneylSyw9DqwZm9CXWrTcB+VyIawbI/kzO9fm1wUvkAYvkAapQAlHp9TBKiIV6NNCPoY1o5/LSQ/FUoFEKkKkSmFNoGDwPKu6ke2DKGIFR0R6lCLck7Ttd8FMW4utMpS3QMV3lTnpqPpHnYZY1uRvtvjuP/2zjAnVwscn9xDmA2UQ+RkLNk77ub/Pp6lYl/sVL1Okc7M+1xYOrS+qaMEVETrL5YvIk6KocKA4EGPaYL4lOZvFk/nEb9Ew/hY2WIy54bkswzjt0aZHroMx+n5to/aXSeOU6M4KwRCRl3btqLdBCHNvOLLtmZRWXGTYdZiNrUmUa0Kzb9h31Nti04o87r3mx/3CP01ZhUT+HdsbsqhruXTUW9+PcdYBGzbCTHFuJDcRatECGTVWpD4xaRhVRqRfnxGVULodYh5ERxdvpAmzGYX5f5o5MRWKkuxpsVGIs2j/I0it6HrQFC/ov9r9HITxeDwej8fj8Xg8Hs/H41/GcCLMyxZ7AAAAAABJRU5ErkJggg==" alt="Discord Icon">
+            <span class="text-md">Discord</span>
+          </a>
+        </div>
+        <form action="">
+          <div class="form-floating">
+            <input type="text" class="form-control text-md" id="account" placeholder="帳號">
+            <label for="account" class="text-sm text-slate">帳號</label>
+          </div>
+          <div class="form-floating position-relative mt-4">
+            <input type="password" class="form-control text-md pe-9" id="password" placeholder="密碼">
+            <label for="password" class="text-sm text-slate">密碼</label>
+            <span
+              class="material-symbols-outlined position-absolute top-50 end-0 translate-middle-y me-3 modal-password-icon"
+              id="toggle-password">
+              visibility
+            </span>
+          </div>
+
+          <div class="text-end mt-4">
+            <a href="#" class="text-sm text-slate">忘記密碼</a>
+          </div>
+          <button type="button" class="btn btn-md w-100 mt-4 finish-btn">
+            送出
+            <span class="material-symbols-outlined">
+              chevron_right
+            </span>
+          </button>
+        </form>
+
+        <p class="text-md text-slate text-center mt-6 mt-lg-9">不是會員? <a href="javascript:;" data-bs-toggle="modal"
+            data-bs-target="#registerModal" class="text-primary text-decoration-underline ms-1">快速註冊</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content flex-row-reverse">
+      <div class="modal-head">
+        <img class="rounded-end-3" src="/hexschool-web-layout/week7/dist/assets/modal-register-D1WUjzmk.jpg" alt="註冊">
+      </div>
+      <div class="modal-body p-6 pt-9 p-lg-9 position-relative">
+        <h2 class="text-center">註冊</h2>
+        <div class="modal-close">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="border-bottom mb-6 pb-6">
+          <a href="javascript:;"
+            class="border rounded-3 p-3 mt-6 mt-lg-9 d-flex gap-0 gap-lg-1 justify-content-center align-items-center">
+            <img class="modal-icon" src="data:image/png;base64,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" alt="Google Icon">
+            <span class="text-md">Google</span>
+          </a>
+          <a href="javascript:;"
+            class="border rounded-3 p-3 mt-4 d-flex gap-0 gap-lg-1 justify-content-center align-items-center">
+            <img class="modal-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUbSURBVHgB7ZrNchpHEMd7VkDkykU6SI5v6ycIfgLhJwiXVK1yEbo5yFXGTxB4AqOqmORmdInJTXoCkyeI/ATZnJJISYlDKkbATqdngcRSzc4XYAuYX5VKthhmd//b09PT3QAej8fj8Xg8Ho/H4/nQMFgQ0dPLEkugCIzvIbAi/SlkwHp0xfbrlzvPwYGoevkN3XANAbfovzHNFTPOzhjD7g+t3XNYAHMVqFy72tocjJ7RDZcRoZg9Ehud1v06WLB/dPkCEWuKITH9NKCQ73aa2zHMibkIFD25CiEY0ttl5cnb1V2097q1uw0W7FcvrhBAO/fkAm3I5xvzEGpmgb6q/vWMQ9IEW8RD0LIDpJ8x4c2PWY/E7qXLCJH+zcpgDat3WjsNmIGZBIqqF6/oVwXuMvQiOi93D8GRABwRPgHuujgChEp0lL5IJ5wEEruJxmHeLUik/a9/d7pf6yU2cci/wJIhNgYs5B/ZOm57C6LdCpaQdAccDq2XmpUFieAPOL6BZSZgjzvf7nSNh4MNiEtpPTewfAZjC1pW3yPFworMLWhJfY8M5Ilx0GmzxEqwIgQQHIhzo9lYAyhirsCto8AyI3a0zcHQyIqMBKJz0BewajA4MBumoUKm2B8Mr2DFEIHju0L+4Wlzu6cap7Wg61FSghXEdJlpBULOV295TWGwpxuSAz0lmAUGXUT+VuR3GASfi/lMkmryqShHxPCUgr1fxRwBC/bUmUvNfAjCgg7V11TwZfWiuAHwM7gRU0B2eDsgi578FgIL6sCYkZOcgsCPrwvv6qfNhzd8xmSHFTFaCA7QEnqkymcrlxiJ4/x2oJBIo9XO9w/iznf3K/RmjsEUSnr92PqsdlucdL7Wbht48lg4XXCArLuk+lwpkOv2zhhrdpoPYtWYTwr5uslDpWPyiTJtKkSnJWcu+HtgkC77TAL1zaGTBVEO+UQ3pk3bKyXdznTjaGn9pBM7hfM2uIBqH5spUGUciofggHGNiqWlGt0go7mEFYEboerYkSlQfzRy9j+m5xzalbTjTHe8iuE1Zdy7zo71MgVKq6KObJqKy9iefojaR0yZLaAdhVmfZArEDYKoTAySUmJ7Jh+kF5J8RJrJ1A3j/AU4onLU2RbE0Nlk04eiykfWx2nybRy7mMHxVVRLvyOfb3ytEBxhimAzM1C0KvVmE/MAnw9yha44FEY1ChIHuYP3GhCsQAbNDYQTsQmkfQBiKQtrxdmifVUpPFMgWgIIa0S/kN+WneylSyw9DqwZm9CXWrTcB+VyIawbI/kzO9fm1wUvkAYvkAapQAlHp9TBKiIV6NNCPoY1o5/LSQ/FUoFEKkKkSmFNoGDwPKu6ke2DKGIFR0R6lCLck7Ttd8FMW4utMpS3QMV3lTnpqPpHnYZY1uRvtvjuP/2zjAnVwscn9xDmA2UQ+RkLNk77ub/Pp6lYl/sVL1Okc7M+1xYOrS+qaMEVETrL5YvIk6KocKA4EGPaYL4lOZvFk/nEb9Ew/hY2WIy54bkswzjt0aZHroMx+n5to/aXSeOU6M4KwRCRl3btqLdBCHNvOLLtmZRWXGTYdZiNrUmUa0Kzb9h31Nti04o87r3mx/3CP01ZhUT+HdsbsqhruXTUW9+PcdYBGzbCTHFuJDcRatECGTVWpD4xaRhVRqRfnxGVULodYh5ERxdvpAmzGYX5f5o5MRWKkuxpsVGIs2j/I0it6HrQFC/ov9r9HITxeDwej8fj8Xg8Hs/H41/GcCLMyxZ7AAAAAABJRU5ErkJggg==" alt="Discord Icon">
+            <span class="text-md">Discord</span>
+          </a>
+        </div>
+        <form action="">
+          <div class="form-floating">
+            <input type="text" class="form-control text-md" id="account" placeholder="帳號">
+            <label for="account" class="text-sm text-slate">帳號</label>
+          </div>
+          <div class="form-floating position-relative mt-4">
+            <input type="password" class="form-control text-md pe-9" id="password" placeholder="密碼">
+            <label for="password" class="text-sm text-slate">密碼</label>
+            <span
+              class="material-symbols-outlined position-absolute top-50 end-0 translate-middle-y me-3 modal-password-icon"
+              id="toggle-password">
+              visibility
+            </span>
+          </div>
+
+          <div class="form-floating position-relative mt-4">
+            <input type="password" class="form-control text-md pe-9" id="check-password" placeholder="確認密碼">
+            <label for="check-password" class="text-sm text-slate">確認密碼</label>
+            <span
+              class="material-symbols-outlined position-absolute top-50 end-0 translate-middle-y me-3 modal-password-icon"
+              id="toggle-password-check">
+              visibility
+            </span>
+          </div>
+
+          <div class="text-end mt-4">
+            <a href="#" class="text-sm text-slate">忘記密碼</a>
+          </div>
+          <button type="button" class="btn btn-md w-100 mt-4 finish-btn">
+            送出
+            <span class="material-symbols-outlined">
+              chevron_right
+            </span>
+          </button>
+        </form>
+
+        <p class="text-md text-slate text-center mt-6 mt-lg-9">已是會員? <a href="javascript:;" data-bs-toggle="modal"
+            data-bs-target="#loginModal" class="text-primary text-decoration-underline ms-1">直接登入</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const icon = document.querySelector('#toggle-password');
+  const passwordInput = document.querySelector('#password');
+  // const input = document.getElementById('password');
+  icon.addEventListener('click', () => {
+    if (passwordInput.type === 'password') {
+      passwordInput.type = 'text';
+      icon.textContent = 'visibility_off';
+    } else {
+      passwordInput.type = 'password';
+      icon.textContent = 'visibility';
+    }
+  });
+
+  const iconCheck = document.querySelector('#toggle-password-check');
+  const checkPasswordInput = document.querySelector('#check-password');
+  // const input = document.getElementById('password');
+  iconCheck.addEventListener('click', () => {
+    if (checkPasswordInput.type === 'password') {
+      checkPasswordInput.type = 'text';
+      iconCheck.textContent = 'visibility_off';
+    } else {
+      checkPasswordInput.type = 'password';
+      iconCheck.textContent = 'visibility';
+    }
+  });
+
+  const finishBtn = document.querySelectorAll('.finish-btn');
+
+  finishBtn.forEach(btn => {
+    btn.addEventListener('click', () => {
+      window.location.href = 'personal-data.html';
+    });
+  });
+</script>
+  </body>
+
+</html>

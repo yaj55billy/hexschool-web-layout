@@ -1,0 +1,88 @@
+body {
+	background-color: $light;
+	color: $dark;
+	letter-spacing: 0.02em;
+	line-height: 1.5;
+	overflow-x: hidden;
+}
+
+a {
+	display: inline-block;
+	color: inherit;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+ul,
+ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin-bottom: 0;
+}
+
+.bg-neutral {
+	background-color: $natural-95;
+}
+
+.list-disc {
+	list-style-type: disc;
+	padding-left: 24px;
+	li::marker {
+		font-size: 0.75rem;
+	}
+}
+
+.rounded-top-left-3 {
+	border-top-left-radius: var(--bs-border-radius-lg);
+}
+.rounded-top-right-3 {
+	border-top-right-radius: var(--bs-border-radius-lg);
+}
+.rounded-bottom-left-3 {
+	border-bottom-left-radius: var(--bs-border-radius-lg);
+}
+.rounded-bottom-right-3 {
+	border-bottom-right-radius: var(--bs-border-radius-lg);
+}
+
+.page-content {
+	width: 1076px;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.page-content-head {
+	width: 100%;
+	@include media-breakpoint-up(lg) {
+		width: calc(30.6% - 12px);
+	}
+}
+
+.page-content-body {
+	width: 100%;
+	@include media-breakpoint-up(lg) {
+		width: calc(69.4% - 12px);
+	}
+}
+
+.slider-wrapper {
+	margin-right: calc(-50vw + 50% + 24px);
+}
+
+.cards-container {
+	overflow-x: auto;
+	white-space: nowrap;
+	scrollbar-width: thin;
+	scrollbar-color: #6c757d #f8f9fa;
+	padding-left: 12px;
+	padding: 0 12px;
+	margin: 0 -12px; // 讓陰影顯示，但又對齊 container
+}

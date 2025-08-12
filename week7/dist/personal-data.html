@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    個人資料 | 職旅
+  </title>
+  <meta name="description" content="您的個人資料" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script type="module" crossorigin src="/hexschool-web-layout/week7/dist/assets/main-B_iT35Zi.js"></script>
+  <link rel="stylesheet" crossorigin href="/hexschool-web-layout/week7/dist/assets/main-OPp2Fx9q.css">
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg position-relative border-bottom py-3">
+  <div class="container">
+    <a class="logo" href="index.html">
+      <img src="/hexschool-web-layout/week7/dist/assets/logo-C_BoMSwd.png" alt="職旅 Workway logo">
+    </a>
+    <div class="offcanvas offcanvas-end" id="offcanvasNavbar">
+      <div class="offcanvas-header p-6 justify-content-end">
+        <button type="button" class="btn btn-onlyicon d-lg-none" data-bs-dismiss="offcanvas" aria-label="Close">
+          <span class="material-symbols-outlined">
+            close
+          </span>
+        </button>
+      </div>
+      <div class="offcanvas-body px-6 py-4 d-flex flex-column p-lg-0">
+        <ul class="navbar-nav gap-6 gap-lg-3 justify-content-lg-center">
+          <li>
+            <a class="nav-btn w-100 text-center p-4 py-lg-2 px-lg-6" aria-current="page" href="service.html">服務方案</a>
+          </li>
+          <li>
+            <a class="nav-btn w-100 text-center p-4 py-lg-2 px-lg-6" href="about.html">關於職旅</a>
+          </li>
+          <li>
+            <a class="nav-btn w-100 text-center p-4 py-lg-2 px-lg-6" href="contact.html">聯絡我們</a>
+          </li>
+        </ul>
+        <a class="btn btn-lg p-2 w-100 d-block mt-auto d-lg-none" href="#">登入/註冊</a>
+      </div>
+    </div>
+
+    
+      <div class="user ms-auto me-2">
+        <a href="personal-data.html" class="d-flex align-items-center gap-2">
+          <img src="/hexschool-web-layout/week7/dist/assets/user-Da2uELgd.jpg" alt="Mokumaru 貓貓" class="user-avatar">
+          <span class="text-dark font-en fw-medium">Mokumaru</span>
+        </a>
+      </div>
+      
+
+          <button class="btn btn-onlyicon d-lg-none " type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="material-symbols-outlined">
+              menu
+            </span>
+          </button>
+  </div>
+</nav>
+      <main class="bg-neutral py-9 py-lg-12">
+        <div class="container">
+          <ul class="d-flex justify-content-center gap-4">
+            <li>
+              <a href="personal-data.html" class="usermenu-btn d-flex align-items-center gap-0 gap-lg-1 active">
+                <span class="material-symbols-outlined">
+                  face
+                </span>
+                <span class="text-md">個人資料</span>
+              </a>
+            </li>
+            <li>
+              <a href="appointment.html" class="usermenu-btn d-flex align-items-center gap-0 gap-lg-1">
+                <span class="material-symbols-outlined">
+                  pending_actions
+                </span>
+                <span class="text-md">預約紀錄</span>
+              </a>
+            </li>
+            <li>
+              <a href="plan.html" class="usermenu-btn d-flex align-items-center gap-0 gap-lg-1">
+                <span class="material-symbols-outlined">
+                  list_alt
+                </span>
+                <span class="text-md">職旅計畫</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="page-content mt-4 mt-lg-6">
+            <div class="shadow rounded-4 bg-light p-6 p-lg-9">
+              <div class="d-flex gap-4 gap-lg-6 flex-column flex-lg-row">
+                <div class="page-content-head">
+                  <h1 class="h4 fw-medium">個人資料</h1>
+                </div>
+                <div class="page-content-body">
+                  <form action="">
+                    <div class="d-flex align-items-end gap-4 ">
+                      <div class="personal-avatar">
+                        <img src="/hexschool-web-layout/week7/dist/assets/user-Da2uELgd.jpg" alt="user 貓貓">
+                      </div>
+                      <input id="upload" type="file" class="personal-upload">
+                      <label type="button" for="upload" class="usermenu-btn d-flex align-items-center gap-0 gap-lg-1">
+                        <span class="material-symbols-outlined">
+                          upload
+                        </span>
+                        <span class="text-md">更新頭貼</span>
+                      </label>
+                    </div>
+
+                    <div class="form-floating mt-4 mt-lg-6">
+                      <!-- is-invalid -->
+                      <input type="text" class="form-control text-md" id="name" placeholder="姓名">
+                      <label for="name" class="text-sm text-slate">姓名</label>
+                      <!-- <div class="invalid-feedback">
+                      請輸入姓名！
+                    </div> -->
+                    </div>
+
+                    <div class="mt-4 mt-lg-6">
+                      <label for="female" class="d-block text-md mb-2">性別</label>
+                      <div class="form-check-inline ms-2">
+                        <div class="form-check-custom">
+                          <input class="form-check-input" type="radio" name="gender" id="female" value="女性" checked>
+                          <label class="form-check-label text-sm" for="female" value="女性">
+                            女性
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form-check-inline">
+                        <div class="form-check-custom">
+                          <!-- <input class="form-check-input error" type="radio" name="gender" id="male" value="男性"> -->
+                          <input class="form-check-input" type="radio" name="gender" id="male" value="男性">
+                          <label class="form-check-label text-sm" for="male">
+                            男性
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form-check-inline">
+                        <div class="form-check-custom">
+                          <!-- <input class="form-check-input" type="radio" name="gender" id="prefer-not-to-say" value="不願透露" disabled> -->
+                          <input class="form-check-input" type="radio" name="gender" id="prefer-not-to-say"
+                            value="不願透露">
+                          <label class="form-check-label text-sm" for="prefer-not-to-say">
+                            不願透露
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-floating mt-4 mt-lg-6">
+                      <input type="date" class="form-control text-md" id="birthday" placeholder="生日">
+                      <label for="birthday" class="text-sm text-slate">生日</label>
+                    </div>
+
+                    <div class="mt-4 mt-lg-6">
+                      <label class="d-block text-md mb-2">密碼</label>
+                      <a href="javascript:;" class="btn btn-md btn-md-outline" data-bs-toggle="modal"
+                        data-bs-target="#passwordModal">
+                        修改密碼
+                        <span class="material-symbols-outlined">
+                          chevron_right
+                        </span>
+                      </a>
+                    </div>
+
+                    <div class="form-floating mt-4 mt-lg-6">
+                      <input type="email" class="form-control text-md" id="email" value="mokumaru@mail.com">
+                      <label for="email" class="text-sm text-slate">信箱</label>
+                      <div class="feedback text-sm text-slate ms-2">
+                        盡量勿使用Yahoo或Hotmail郵件信箱，以免因擋信、漏信
+                      </div>
+                    </div>
+
+                    <div class="form-floating mt-4 mt-lg-6">
+                      <input type="tel" class="form-control text-md" id="phone" value="0900-123-456">
+                      <label for="phone" class="text-sm text-slate">聯絡電話</label>
+                    </div>
+
+                    <div class="form-floating mt-4 mt-lg-6">
+                      <input type="text" class="form-control text-md" id="address" value="高雄市三民區九如一路 87 號">
+                      <label for="address" class="text-sm text-slate">通訊地址</label>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <div class="page-content-footer mt-12 mt-lg-9">
+                <div
+                  class="d-flex justify-content-center align-items-center gap-4 gap-lg-6 flex-column-reverse flex-md-row">
+                  <button type="button" class="btn btn-md btn-md-outline w-100-custom">
+                    重新填寫
+                    <span class="material-symbols-outlined">
+                      chevron_right
+                    </span>
+                  </button>
+                  <button type="button" class="btn btn-md w-100-custom">
+                    儲存更新
+                    <span class="material-symbols-outlined">
+                      chevron_right
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 修改密碼 Modal -->
+            <div class="modal fade" id="passwordModal" tabindex="-1" aria-labelledby="passwordModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fw-medium" id="passwordModalLabel">更新密碼</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body p-6">
+                    <form>
+                      <div class="form-floating">
+                        <input type="password" class="form-control text-md" id="newPassword" placeholder="請輸入新密碼">
+                        <label for="newPassword" class="text-sm text-slate">新密碼</label>
+                      </div>
+                      <div class="form-floating mt-6">
+                        <input type="password" class="form-control text-md" id="confirmPassword" placeholder="請輸入新密碼">
+                        <label for="confirmPassword" class="text-sm text-slate">再次密碼</label>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer py-4 px-6">
+                    <button type="button" class="btn btn-md">
+                      更新密碼
+                      <span class="material-symbols-outlined">
+                        chevron_right
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </main>
+
+      <footer class="bg-neutral border-top py-9">
+
+  <div class="container">
+    <div class="d-flex flex-column flex-xl-row justify-content-between align-items-center">
+      <ul class="d-flex flex-wrap justify-content-center row-gap-2 ">
+        <li>
+          <a class="nav-btn" href="service.html">服務方案</a>
+        </li>
+        <li>
+          <a class="nav-btn" href="about.html">關於職旅</a>
+        </li>
+        <li>
+          <a class="nav-btn" href="contact.html">聯絡我們</a>
+        </li>
+        <li>
+          <a class="nav-btn" href="privacy-policy.html">隱私權政策</a>
+        </li>
+        <li>
+          <a class="nav-btn" href="user-agreement.html">用戶條款</a>
+        </li>
+      </ul>
+      <p class="text-slate text-sm text-center mt-2 mt-xl-0">Copyright © 2025 職旅 workway. All rights reserved.</p>
+    </div>
+  </div>
+  
+</footer>
+        <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-head">
+        <img class="rounded-start-3" src="/hexschool-web-layout/week7/dist/assets/modal-login-B5ireEjR.jpg" alt="登入">
+      </div>
+      <div class="modal-body p-6 pt-9 p-lg-9 position-relative">
+        <h2 class="text-center">登入</h2>
+        <div class="modal-close">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="border-bottom mb-6 pb-6">
+          <a href="javascript:;"
+            class="border rounded-3 p-3 mt-6 mt-lg-9 d-flex gap-0 gap-lg-1 justify-content-center align-items-center">
+            <img class="modal-icon" src="data:image/png;base64,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" alt="Google Icon">
+            <span class="text-md">Google</span>
+          </a>
+          <a href="javascript:;"
+            class="border rounded-3 p-3 mt-4 d-flex gap-0 gap-lg-1 justify-content-center align-items-center">
+            <img class="modal-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUbSURBVHgB7ZrNchpHEMd7VkDkykU6SI5v6ycIfgLhJwiXVK1yEbo5yFXGTxB4AqOqmORmdInJTXoCkyeI/ATZnJJISYlDKkbATqdngcRSzc4XYAuYX5VKthhmd//b09PT3QAej8fj8Xg8Ho/H4/nQMFgQ0dPLEkugCIzvIbAi/SlkwHp0xfbrlzvPwYGoevkN3XANAbfovzHNFTPOzhjD7g+t3XNYAHMVqFy72tocjJ7RDZcRoZg9Ehud1v06WLB/dPkCEWuKITH9NKCQ73aa2zHMibkIFD25CiEY0ttl5cnb1V2097q1uw0W7FcvrhBAO/fkAm3I5xvzEGpmgb6q/vWMQ9IEW8RD0LIDpJ8x4c2PWY/E7qXLCJH+zcpgDat3WjsNmIGZBIqqF6/oVwXuMvQiOi93D8GRABwRPgHuujgChEp0lL5IJ5wEEruJxmHeLUik/a9/d7pf6yU2cci/wJIhNgYs5B/ZOm57C6LdCpaQdAccDq2XmpUFieAPOL6BZSZgjzvf7nSNh4MNiEtpPTewfAZjC1pW3yPFworMLWhJfY8M5Ilx0GmzxEqwIgQQHIhzo9lYAyhirsCto8AyI3a0zcHQyIqMBKJz0BewajA4MBumoUKm2B8Mr2DFEIHju0L+4Wlzu6cap7Wg61FSghXEdJlpBULOV295TWGwpxuSAz0lmAUGXUT+VuR3GASfi/lMkmryqShHxPCUgr1fxRwBC/bUmUvNfAjCgg7V11TwZfWiuAHwM7gRU0B2eDsgi578FgIL6sCYkZOcgsCPrwvv6qfNhzd8xmSHFTFaCA7QEnqkymcrlxiJ4/x2oJBIo9XO9w/iznf3K/RmjsEUSnr92PqsdlucdL7Wbht48lg4XXCArLuk+lwpkOv2zhhrdpoPYtWYTwr5uslDpWPyiTJtKkSnJWcu+HtgkC77TAL1zaGTBVEO+UQ3pk3bKyXdznTjaGn9pBM7hfM2uIBqH5spUGUciofggHGNiqWlGt0go7mEFYEboerYkSlQfzRy9j+m5xzalbTjTHe8iuE1Zdy7zo71MgVKq6KObJqKy9iefojaR0yZLaAdhVmfZArEDYKoTAySUmJ7Jh+kF5J8RJrJ1A3j/AU4onLU2RbE0Nlk04eiykfWx2nybRy7mMHxVVRLvyOfb3ytEBxhimAzM1C0KvVmE/MAnw9yha44FEY1ChIHuYP3GhCsQAbNDYQTsQmkfQBiKQtrxdmifVUpPFMgWgIIa0S/kN+WneylSyw9DqwZm9CXWrTcB+VyIawbI/kzO9fm1wUvkAYvkAapQAlHp9TBKiIV6NNCPoY1o5/LSQ/FUoFEKkKkSmFNoGDwPKu6ke2DKGIFR0R6lCLck7Ttd8FMW4utMpS3QMV3lTnpqPpHnYZY1uRvtvjuP/2zjAnVwscn9xDmA2UQ+RkLNk77ub/Pp6lYl/sVL1Okc7M+1xYOrS+qaMEVETrL5YvIk6KocKA4EGPaYL4lOZvFk/nEb9Ew/hY2WIy54bkswzjt0aZHroMx+n5to/aXSeOU6M4KwRCRl3btqLdBCHNvOLLtmZRWXGTYdZiNrUmUa0Kzb9h31Nti04o87r3mx/3CP01ZhUT+HdsbsqhruXTUW9+PcdYBGzbCTHFuJDcRatECGTVWpD4xaRhVRqRfnxGVULodYh5ERxdvpAmzGYX5f5o5MRWKkuxpsVGIs2j/I0it6HrQFC/ov9r9HITxeDwej8fj8Xg8Hs/H41/GcCLMyxZ7AAAAAABJRU5ErkJggg==" alt="Discord Icon">
+            <span class="text-md">Discord</span>
+          </a>
+        </div>
+        <form action="">
+          <div class="form-floating">
+            <input type="text" class="form-control text-md" id="account" placeholder="帳號">
+            <label for="account" class="text-sm text-slate">帳號</label>
+          </div>
+          <div class="form-floating position-relative mt-4">
+            <input type="password" class="form-control text-md pe-9" id="password" placeholder="密碼">
+            <label for="password" class="text-sm text-slate">密碼</label>
+            <span
+              class="material-symbols-outlined position-absolute top-50 end-0 translate-middle-y me-3 modal-password-icon"
+              id="toggle-password">
+              visibility
+            </span>
+          </div>
+
+          <div class="text-end mt-4">
+            <a href="#" class="text-sm text-slate">忘記密碼</a>
+          </div>
+          <button type="button" class="btn btn-md w-100 mt-4 finish-btn">
+            送出
+            <span class="material-symbols-outlined">
+              chevron_right
+            </span>
+          </button>
+        </form>
+
+        <p class="text-md text-slate text-center mt-6 mt-lg-9">不是會員? <a href="javascript:;" data-bs-toggle="modal"
+            data-bs-target="#registerModal" class="text-primary text-decoration-underline ms-1">快速註冊</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content flex-row-reverse">
+      <div class="modal-head">
+        <img class="rounded-end-3" src="/hexschool-web-layout/week7/dist/assets/modal-register-D1WUjzmk.jpg" alt="註冊">
+      </div>
+      <div class="modal-body p-6 pt-9 p-lg-9 position-relative">
+        <h2 class="text-center">註冊</h2>
+        <div class="modal-close">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="border-bottom mb-6 pb-6">
+          <a href="javascript:;"
+            class="border rounded-3 p-3 mt-6 mt-lg-9 d-flex gap-0 gap-lg-1 justify-content-center align-items-center">
+            <img class="modal-icon" src="data:image/png;base64,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" alt="Google Icon">
+            <span class="text-md">Google</span>
+          </a>
+          <a href="javascript:;"
+            class="border rounded-3 p-3 mt-4 d-flex gap-0 gap-lg-1 justify-content-center align-items-center">
+            <img class="modal-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUbSURBVHgB7ZrNchpHEMd7VkDkykU6SI5v6ycIfgLhJwiXVK1yEbo5yFXGTxB4AqOqmORmdInJTXoCkyeI/ATZnJJISYlDKkbATqdngcRSzc4XYAuYX5VKthhmd//b09PT3QAej8fj8Xg8Ho/H4/nQMFgQ0dPLEkugCIzvIbAi/SlkwHp0xfbrlzvPwYGoevkN3XANAbfovzHNFTPOzhjD7g+t3XNYAHMVqFy72tocjJ7RDZcRoZg9Ehud1v06WLB/dPkCEWuKITH9NKCQ73aa2zHMibkIFD25CiEY0ttl5cnb1V2097q1uw0W7FcvrhBAO/fkAm3I5xvzEGpmgb6q/vWMQ9IEW8RD0LIDpJ8x4c2PWY/E7qXLCJH+zcpgDat3WjsNmIGZBIqqF6/oVwXuMvQiOi93D8GRABwRPgHuujgChEp0lL5IJ5wEEruJxmHeLUik/a9/d7pf6yU2cci/wJIhNgYs5B/ZOm57C6LdCpaQdAccDq2XmpUFieAPOL6BZSZgjzvf7nSNh4MNiEtpPTewfAZjC1pW3yPFworMLWhJfY8M5Ilx0GmzxEqwIgQQHIhzo9lYAyhirsCto8AyI3a0zcHQyIqMBKJz0BewajA4MBumoUKm2B8Mr2DFEIHju0L+4Wlzu6cap7Wg61FSghXEdJlpBULOV295TWGwpxuSAz0lmAUGXUT+VuR3GASfi/lMkmryqShHxPCUgr1fxRwBC/bUmUvNfAjCgg7V11TwZfWiuAHwM7gRU0B2eDsgi578FgIL6sCYkZOcgsCPrwvv6qfNhzd8xmSHFTFaCA7QEnqkymcrlxiJ4/x2oJBIo9XO9w/iznf3K/RmjsEUSnr92PqsdlucdL7Wbht48lg4XXCArLuk+lwpkOv2zhhrdpoPYtWYTwr5uslDpWPyiTJtKkSnJWcu+HtgkC77TAL1zaGTBVEO+UQ3pk3bKyXdznTjaGn9pBM7hfM2uIBqH5spUGUciofggHGNiqWlGt0go7mEFYEboerYkSlQfzRy9j+m5xzalbTjTHe8iuE1Zdy7zo71MgVKq6KObJqKy9iefojaR0yZLaAdhVmfZArEDYKoTAySUmJ7Jh+kF5J8RJrJ1A3j/AU4onLU2RbE0Nlk04eiykfWx2nybRy7mMHxVVRLvyOfb3ytEBxhimAzM1C0KvVmE/MAnw9yha44FEY1ChIHuYP3GhCsQAbNDYQTsQmkfQBiKQtrxdmifVUpPFMgWgIIa0S/kN+WneylSyw9DqwZm9CXWrTcB+VyIawbI/kzO9fm1wUvkAYvkAapQAlHp9TBKiIV6NNCPoY1o5/LSQ/FUoFEKkKkSmFNoGDwPKu6ke2DKGIFR0R6lCLck7Ttd8FMW4utMpS3QMV3lTnpqPpHnYZY1uRvtvjuP/2zjAnVwscn9xDmA2UQ+RkLNk77ub/Pp6lYl/sVL1Okc7M+1xYOrS+qaMEVETrL5YvIk6KocKA4EGPaYL4lOZvFk/nEb9Ew/hY2WIy54bkswzjt0aZHroMx+n5to/aXSeOU6M4KwRCRl3btqLdBCHNvOLLtmZRWXGTYdZiNrUmUa0Kzb9h31Nti04o87r3mx/3CP01ZhUT+HdsbsqhruXTUW9+PcdYBGzbCTHFuJDcRatECGTVWpD4xaRhVRqRfnxGVULodYh5ERxdvpAmzGYX5f5o5MRWKkuxpsVGIs2j/I0it6HrQFC/ov9r9HITxeDwej8fj8Xg8Hs/H41/GcCLMyxZ7AAAAAABJRU5ErkJggg==" alt="Discord Icon">
+            <span class="text-md">Discord</span>
+          </a>
+        </div>
+        <form action="">
+          <div class="form-floating">
+            <input type="text" class="form-control text-md" id="account" placeholder="帳號">
+            <label for="account" class="text-sm text-slate">帳號</label>
+          </div>
+          <div class="form-floating position-relative mt-4">
+            <input type="password" class="form-control text-md pe-9" id="password" placeholder="密碼">
+            <label for="password" class="text-sm text-slate">密碼</label>
+            <span
+              class="material-symbols-outlined position-absolute top-50 end-0 translate-middle-y me-3 modal-password-icon"
+              id="toggle-password">
+              visibility
+            </span>
+          </div>
+
+          <div class="form-floating position-relative mt-4">
+            <input type="password" class="form-control text-md pe-9" id="check-password" placeholder="確認密碼">
+            <label for="check-password" class="text-sm text-slate">確認密碼</label>
+            <span
+              class="material-symbols-outlined position-absolute top-50 end-0 translate-middle-y me-3 modal-password-icon"
+              id="toggle-password-check">
+              visibility
+            </span>
+          </div>
+
+          <div class="text-end mt-4">
+            <a href="#" class="text-sm text-slate">忘記密碼</a>
+          </div>
+          <button type="button" class="btn btn-md w-100 mt-4 finish-btn">
+            送出
+            <span class="material-symbols-outlined">
+              chevron_right
+            </span>
+          </button>
+        </form>
+
+        <p class="text-md text-slate text-center mt-6 mt-lg-9">已是會員? <a href="javascript:;" data-bs-toggle="modal"
+            data-bs-target="#loginModal" class="text-primary text-decoration-underline ms-1">直接登入</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const icon = document.querySelector('#toggle-password');
+  const passwordInput = document.querySelector('#password');
+  // const input = document.getElementById('password');
+  icon.addEventListener('click', () => {
+    if (passwordInput.type === 'password') {
+      passwordInput.type = 'text';
+      icon.textContent = 'visibility_off';
+    } else {
+      passwordInput.type = 'password';
+      icon.textContent = 'visibility';
+    }
+  });
+
+  const iconCheck = document.querySelector('#toggle-password-check');
+  const checkPasswordInput = document.querySelector('#check-password');
+  // const input = document.getElementById('password');
+  iconCheck.addEventListener('click', () => {
+    if (checkPasswordInput.type === 'password') {
+      checkPasswordInput.type = 'text';
+      iconCheck.textContent = 'visibility_off';
+    } else {
+      checkPasswordInput.type = 'password';
+      iconCheck.textContent = 'visibility';
+    }
+  });
+
+  const finishBtn = document.querySelectorAll('.finish-btn');
+
+  finishBtn.forEach(btn => {
+    btn.addEventListener('click', () => {
+      window.location.href = 'personal-data.html';
+    });
+  });
+</script>
+  </body>
+
+</html>

@@ -1,0 +1,111 @@
+.about {
+	&-list {
+		&:hover .about-card-head img {
+			transform: scale(1.05);
+		}
+	}
+	&-card {
+		width: 320px;
+	}
+	&-card-head {
+		position: relative;
+		overflow: hidden;
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			right: 0;
+
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 0 0 40px 40px;
+			border-color: transparent transparent $light;
+		}
+
+		img {
+			transition: transform 0.3s ease;
+		}
+	}
+
+	&-commitment-tooltip {
+		padding: 12px 18px;
+		margin-bottom: 10px; // 補三角形負值高度
+		position: relative;
+
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: -6px;
+			left: 0;
+			right: 0;
+			margin: auto;
+
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 0 0 28px 28px;
+			border-color: transparent transparent $light;
+			transform: rotate(45deg);
+			-webkit-transform: rotate(45deg);
+		}
+	}
+
+	&-commitment-description {
+		width: 800px;
+		margin: 0 auto;
+		max-width: 100%;
+	}
+
+	&-commitment-img {
+		height: 80px;
+		object-fit: cover;
+		@include media-breakpoint-down(lg) {
+			height: 100px;
+		}
+
+		@media (max-width: 374px) {
+			height: 90px;
+		}
+	}
+
+	&-company {
+		position: relative;
+
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 22%;
+			background-color: $light;
+			z-index: 1;
+			@include media-breakpoint-down(md) {
+				display: none;
+			}
+		}
+	}
+
+	&-table-head {
+		min-width: 120px;
+		line-height: 1.5;
+		@media (max-width: 374px) {
+			min-width: 100px;
+		}
+	}
+
+	&-table-body {
+		@include media-breakpoint-down(sm) {
+			min-height: 74px;
+		}
+	}
+
+	&-company-map {
+		width: 100%;
+		height: 400px;
+		@include media-breakpoint-down(md) {
+			height: 200px;
+		}
+	}
+}
