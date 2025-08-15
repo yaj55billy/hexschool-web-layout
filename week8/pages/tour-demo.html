@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>旅遊卡片示範</title>
+</head>
+
+<body>
+  <%- include('./layout/navbar'); -%>
+
+    <main class="container py-5">
+      <h1 class="mb-5">旅遊行程推薦</h1>
+
+      <div class="row g-4">
+        <!-- 卡片 1: 環球影城 -->
+        <div class="col-md-6 col-lg-4">
+          <%- include('./layout/card-tour', { imageUrl: '../assets/images/universal.jpg' , title: '環球影城一日遊' ,
+            description: '哈利波特園區＋快速通關券' , rating: '4.8' , reviewCount: '1029' , soldCount: '1,000+' , price: '5,480' ,
+            originalPrice: '6,200' }); -%>
+        </div>
+
+        <!-- 卡片 2: 迪士尼樂園 -->
+        <div class="col-md-6 col-lg-4">
+          <%- include('./layout/card-tour', { imageUrl: '../assets/images/disney.jpg' , title: '東京迪士尼樂園' ,
+            description: '經典樂園一日遊＋快速通關' , rating: '4.9' , reviewCount: '856' , soldCount: '800+' , price: '4,680' ,
+            originalPrice: null }); -%>
+        </div>
+
+        <!-- 卡片 3: 富士山 -->
+        <div class="col-md-6 col-lg-4">
+          <%- include('./layout/card-tour', { imageUrl: '../assets/images/fuji.jpg' , title: '富士山一日遊' ,
+            description: '河口湖＋忍野八海＋溫泉體驗' , rating: '4.7' , reviewCount: '643' , soldCount: '500+' , price: '3,280' ,
+            originalPrice: '3,800' }); -%>
+        </div>
+      </div>
+    </main>
+
+    <%- include('./layout/footer'); -%>
+      <%- include('./layout/script'); -%>
+
+        <script type="module" src="../main.js"></script>
+</body>
+
+</html>

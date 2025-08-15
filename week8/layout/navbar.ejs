@@ -1,0 +1,149 @@
+<nav class="navbar fixed-top py-3">
+  <div class="container">
+    <div class="d-flex w-100 justify-content-between align-items-center">
+      <div class="d-flex align-items-center">
+        <a class="navbar-brand p-0" href="index.html">
+          <img src="../assets/images/logo.png" alt="ZOBAA 旅遊">
+        </a>
+        <form action="" class="d-none d-md-block navbar-md-search">
+          <div class="d-flex align-items-center py-3">
+            <input type="text" id="search" class="form-control form-control-sm ps-9" placeholder="搜尋景點、地點或城市">
+            <a href="search-results.html" class="position-absolute">
+              <span class="material-symbols-outlined p-2 text-neutral-80">
+                search
+              </span>
+            </a>
+          </div>
+        </form>
+      </div>
+      <div class="d-flex align-items-center">
+        <button class="btn p-0 border-0 d-md-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseSearch">
+          <span class="material-symbols-outlined text-neutral-80 p-2">
+            search
+          </span>
+        </button>
+        <button class="btn p-0 border-0 me-md-4" type="button">
+          <span class="material-symbols-outlined py-2 px-3 text-neutral-80 position-relative">
+            shopping_cart
+            <span class="position-absolute bg-danger cart-number">
+              2
+            </span>
+          </span>
+        </button>
+        <button class="btn p-0 border-0 d-md-none" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="material-symbols-outlined text-neutral-80 p-2">
+            menu
+          </span>
+        </button>
+        <button id="loginBtn" class="btn btn-default btn-primary d-none d-md-inline-block" type="button">登入 /
+          註冊</button>
+        <a id="userInfo" href="personal-info.html" class="d-none d-md-flex align-items-center hidden">
+          <img src="../assets/images/avatar.png" alt="Jessica" class="me-2">
+          <p class="text-primary fw-bold">Jessica</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="collapse" id="collapseSearch">
+      <div class="bg-white p-3 position-absolute top-0 start-0 w-100">
+        <form action="">
+          <div class="d-flex align-items-center">
+            <input type="text" id="search" class="form-control form-control-sm ps-9" placeholder="搜尋景點、地點或城市">
+            <a href="search-results.html" class="position-absolute">
+              <span class="material-symbols-outlined p-2 text-neutral-80">
+                search
+              </span>
+            </a>
+            <button class="btn p-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSearch">
+              <span class="material-symbols-outlined p-2 text-neutral-80">
+                close
+              </span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+    <div class="offcanvas offcanvas-end p-6" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header p-0">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body p-0 mt-4">
+        <div id="loggedInMenu" class="d-flex flex-column h-100 hidden">
+          <div class="d-flex align-items-center gap-2 border-bottom pb-4 mb-4">
+            <img src="../assets/images/avatar.png" alt="Jessica">
+            <div>
+              <p class="fw-bold text-primary">Jessica</p>
+              <p class="text-neutral-80">jessica.yen@gamil.com</p>
+            </div>
+          </div>
+          <ul class="navbar-nav flex-grow-1">
+            <li class="nav-item">
+              <a class="nav-link text-neutral-80 d-flex align-items-center py-3" aria-current="page" href="#">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="me-2">
+                  <path
+                    d="M17 4H7C5.89543 4 5 4.89543 5 6V19C5 20.1046 5.89543 21 7 21H17C18.1046 21 19 20.1046 19 19V6C19 4.89543 18.1046 4 17 4Z"
+                    stroke="#4b4b4b" stroke-width="2" />
+                  <path d="M9 9H15M9 13H15M9 17H13" stroke="#4b4b4b" stroke-width="2" stroke-linecap="round" />
+                </svg>
+                訂單管理</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-neutral-80 d-flex align-items-center py-3" aria-current="page" href="#">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="me-2">
+                  <path
+                    d="M12 20.3249C11.7667 20.3249 11.5293 20.2832 11.288 20.1999C11.0467 20.1166 10.834 19.9832 10.65 19.7999L8.925 18.2249C7.15833 16.6082 5.56233 15.0042 4.137 13.4129C2.71167 11.8216 1.99933 10.0672 2 8.1499C2 6.58324 2.525 5.2749 3.575 4.2249C4.625 3.1749 5.93333 2.6499 7.5 2.6499C8.38333 2.6499 9.21667 2.83724 10 3.2119C10.7833 3.58657 11.45 4.09924 12 4.7499C12.55 4.0999 13.2167 3.58757 14 3.2129C14.7833 2.83824 15.6167 2.65057 16.5 2.6499C18.0667 2.6499 19.375 3.1749 20.425 4.2249C21.475 5.2749 22 6.58324 22 8.1499C22 10.0666 21.2917 11.8249 19.875 13.4249C18.4583 15.0249 16.85 16.6332 15.05 18.2499L13.35 19.7999C13.1667 19.9832 12.9543 20.1166 12.713 20.1999C12.4717 20.2832 12.234 20.3249 12 20.3249ZM11.05 6.7499C10.5667 6.06657 10.05 5.54557 9.5 5.1869C8.95 4.82824 8.28333 4.64924 7.5 4.6499C6.5 4.6499 5.66667 4.98324 5 5.6499C4.33333 6.31657 4 7.1499 4 8.1499C4 9.01657 4.30833 9.93757 4.925 10.9129C5.54167 11.8882 6.27933 12.8339 7.138 13.7499C7.99667 14.6659 8.88 15.5242 9.788 16.3249C10.696 17.1256 11.4333 17.7839 12 18.2999C12.5667 17.7832 13.3043 17.1249 14.213 16.3249C15.1217 15.5249 16.005 14.6666 16.863 13.7499C17.721 12.8332 18.4583 11.8876 19.075 10.9129C19.6917 9.93824 20 9.01724 20 8.1499C20 7.1499 19.6667 6.31657 19 5.6499C18.3333 4.98324 17.5 4.6499 16.5 4.6499C15.7167 4.6499 15.05 4.82924 14.5 5.1879C13.95 5.54657 13.4333 6.06724 12.95 6.7499C12.8333 6.91657 12.6917 7.04157 12.525 7.1249C12.3583 7.20824 12.1833 7.2499 12 7.2499C11.8167 7.2499 11.6417 7.20824 11.475 7.1249C11.3083 7.04157 11.1667 6.91657 11.05 6.7499Z"
+                    fill="#4b4b4b" />
+                </svg>
+                我的收藏</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-neutral-80 d-flex align-items-center py-3" aria-current="page" href="#">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="me-2">
+                  <path
+                    d="M19.8999 12.6599C19.7396 12.4774 19.6512 12.2428 19.6512 11.9999C19.6512 11.757 19.7396 11.5224 19.8999 11.3399L21.1799 9.89989C21.3209 9.74256 21.4085 9.5446 21.4301 9.3344C21.4516 9.12421 21.4061 8.91258 21.2999 8.72989L19.2999 5.2699C19.1948 5.08742 19.0348 4.94277 18.8426 4.85658C18.6505 4.77039 18.4361 4.74705 18.2299 4.7899L16.3499 5.1699C16.1107 5.21932 15.8616 5.17948 15.6498 5.0579C15.4379 4.93631 15.2779 4.74138 15.1999 4.5099L14.5899 2.6799C14.5228 2.48127 14.395 2.30876 14.2245 2.18674C14.0541 2.06471 13.8495 1.99935 13.6399 1.9999H9.6399C9.42183 1.98851 9.20603 2.04882 9.02546 2.17161C8.84489 2.2944 8.70948 2.47291 8.6399 2.6799L8.0799 4.5099C8.0019 4.74138 7.84187 4.93631 7.63001 5.0579C7.41815 5.17948 7.16911 5.21932 6.9299 5.1699L4.9999 4.7899C4.80445 4.76228 4.6052 4.79312 4.42724 4.87853C4.24929 4.96395 4.1006 5.10012 3.9999 5.2699L1.9999 8.72989C1.89106 8.91054 1.84212 9.12098 1.86008 9.33112C1.87804 9.54126 1.96198 9.74034 2.0999 9.89989L3.3699 11.3399C3.53022 11.5224 3.61863 11.757 3.61863 11.9999C3.61863 12.2428 3.53022 12.4774 3.3699 12.6599L2.0999 14.0999C1.96198 14.2595 1.87804 14.4585 1.86008 14.6687C1.84212 14.8788 1.89106 15.0892 1.9999 15.2699L3.9999 18.7299C4.10499 18.9124 4.26502 19.057 4.45715 19.1432C4.64928 19.2294 4.86372 19.2527 5.0699 19.2099L6.9499 18.8299C7.18911 18.7805 7.43815 18.8203 7.65001 18.9419C7.86187 19.0635 8.0219 19.2584 8.0999 19.4899L8.7099 21.3199C8.77948 21.5269 8.91489 21.7054 9.09546 21.8282C9.27603 21.951 9.49183 22.0113 9.7099 21.9999H13.7099C13.9195 22.0004 14.1241 21.9351 14.2945 21.8131C14.465 21.691 14.5928 21.5185 14.6599 21.3199L15.2699 19.4899C15.3479 19.2584 15.5079 19.0635 15.7198 18.9419C15.9316 18.8203 16.1807 18.7805 16.4199 18.8299L18.2999 19.2099C18.5061 19.2527 18.7205 19.2294 18.9126 19.1432C19.1048 19.057 19.2648 18.9124 19.3699 18.7299L21.3699 15.2699C21.4761 15.0872 21.5216 14.8756 21.5001 14.6654C21.4785 14.4552 21.3909 14.2572 21.2499 14.0999L19.8999 12.6599ZM18.4099 13.9999L19.2099 14.8999L17.9299 17.1199L16.7499 16.8799C16.0297 16.7327 15.2805 16.855 14.6445 17.2237C14.0085 17.5924 13.53 18.1817 13.2999 18.8799L12.9199 19.9999H10.3599L9.9999 18.8599C9.76975 18.1617 9.29128 17.5724 8.6553 17.2037C8.01932 16.835 7.27012 16.7127 6.5499 16.8599L5.3699 17.0999L4.0699 14.8899L4.8699 13.9899C5.36185 13.4399 5.63383 12.7278 5.63383 11.9899C5.63383 11.252 5.36185 10.5399 4.8699 9.98989L4.0699 9.0899L5.3499 6.88989L6.5299 7.1299C7.25012 7.27712 7.99932 7.15478 8.6353 6.78609C9.27128 6.41741 9.74975 5.82805 9.9799 5.1299L10.3599 3.9999H12.9199L13.2999 5.13989C13.53 5.83805 14.0085 6.42741 14.6445 6.79609C15.2805 7.16478 16.0297 7.28712 16.7499 7.13989L17.9299 6.8999L19.2099 9.11989L18.4099 10.0199C17.9235 10.5687 17.6549 11.2766 17.6549 12.0099C17.6549 12.7432 17.9235 13.4511 18.4099 13.9999ZM11.6399 7.9999C10.8488 7.9999 10.0754 8.23449 9.41761 8.67402C8.75982 9.11354 8.24713 9.73826 7.94438 10.4692C7.64163 11.2001 7.56241 12.0043 7.71675 12.7803C7.8711 13.5562 8.25206 14.2689 8.81147 14.8283C9.37088 15.3877 10.0836 15.7687 10.8595 15.923C11.6355 16.0774 12.4397 15.9982 13.1706 15.6954C13.9015 15.3927 14.5262 14.88 14.9658 14.2222C15.4053 13.5644 15.6399 12.791 15.6399 11.9999C15.6399 10.939 15.2185 9.92161 14.4683 9.17147C13.7182 8.42132 12.7008 7.9999 11.6399 7.9999ZM11.6399 13.9999C11.2443 13.9999 10.8577 13.8826 10.5288 13.6628C10.1999 13.4431 9.94351 13.1307 9.79214 12.7653C9.64076 12.3998 9.60116 11.9977 9.67833 11.6097C9.7555 11.2218 9.94598 10.8654 10.2257 10.5857C10.5054 10.306 10.8618 10.1155 11.2497 10.0383C11.6377 9.96115 12.0398 10.0008 12.4053 10.1521C12.7707 10.3035 13.0831 10.5599 13.3028 10.8888C13.5226 11.2177 13.6399 11.6043 13.6399 11.9999C13.6399 12.5303 13.4292 13.039 13.0541 13.4141C12.679 13.7892 12.1703 13.9999 11.6399 13.9999Z"
+                    fill="#4b4b4b" />
+                </svg>
+
+                帳號設定</a>
+            </li>
+
+          </ul>
+          <button id="logoutBtn" type="button" class="d-flex align-items-center p-0 border-0 bg-transparent"
+            data-bs-dismiss="offcanvas">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-2">
+              <path
+                d="M20.15 13H8V11H20.15L18.6 9.45L20 8L24 12L20 16L18.6 14.55L20.15 13ZM15 9V5H5V19H15V15H17V19C17 19.55 16.8042 20.0208 16.4125 20.4125C16.0208 20.8042 15.55 21 15 21H5C4.45 21 3.97917 20.8042 3.5875 20.4125C3.19583 20.0208 3 19.55 3 19V5C3 4.45 3.19583 3.97917 3.5875 3.5875C3.97917 3.19583 4.45 3 5 3H15C15.55 3 16.0208 3.19583 16.4125 3.5875C16.8042 3.97917 17 4.45 17 5V9H15Z"
+                fill="#909090" />
+            </svg>
+            <span class="text-neutral-80">登出</span>
+          </button>
+        </div>
+
+        <div id="guestMenu" class="d-flex flex-column h-100">
+          <div class="d-flex align-items-center gap-2 border-bottom pb-4 mb-4">
+            <img src="../assets/images/icon-guest.png" alt="guest">
+            <div>
+              <p class="fw-bold text-primary">訪客</p>
+              <p class="text-neutral-80">未登入</p>
+            </div>
+          </div>
+          <div class="flex-grow-1 mt-2">
+            <h6 class="text-primary">歡迎來到 ZOBAA</h6>
+            <p class="mt-1 text-neutral-80">加入會員即可立即訂購、收藏行程，並享相關優惠好禮。</p>
+          </div>
+
+          <button id="mobileLoginBtn" type="button" class="btn btn-default btn-primary w-100">登入/註冊</button>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</nav>

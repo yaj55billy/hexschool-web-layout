@@ -1,0 +1,51 @@
+<div class="tour-card position-relative">
+  <a href="" class="position-absolute top-0 start-0 w-100 h-100 z-2"></a>
+  <div class="position-relative mb-4 tour-card-head rounded-3">
+    <img src="<%= imageUrl %>" class="rounded-3 w-100 tour-card-img" alt="<%= title %>">
+    <button class="position-absolute top-0 end-0 z-3 tour-card-collect" type="button">
+      <span class="material-symbols-outlined text-white">
+        favorite_border
+      </span>
+    </button>
+  </div>
+
+  <div class="border-bottom pb-3 mb-3">
+    <h3 class="font-base fw-bold lh-base mb-2">
+      <%= title %>
+    </h3>
+    <ul class="d-flex align-items-center">
+      <li class="me-2 mb-2 py-1 px-2 bg-primary-10 rounded-1 text-primary">
+        <%= tag1 %>
+      </li>
+      <li class="me-2 mb-2 py-1 px-2 bg-primary-10 rounded-1 text-primary">
+        <%= tag2 %>
+      </li>
+    </ul>
+    <div class="d-flex align-items-center">
+      <div class="d-flex align-items-center border-end pe-3 me-3">
+        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg"
+          class="card-icon-star me-1">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M5.99992 9.53593L2.73742 11.2174C2.71272 11.2302 2.68497 11.2358 2.65727 11.2337C2.62957 11.2315 2.60301 11.2218 2.58053 11.2054C2.55806 11.1891 2.54056 11.1669 2.52999 11.1412C2.51942 11.1155 2.51619 11.0873 2.52067 11.0599L3.11316 7.43743L0.504665 4.85593C0.484537 4.83661 0.470256 4.81202 0.463459 4.78496C0.456663 4.75791 0.457624 4.72948 0.466234 4.70295C0.474844 4.67641 0.490755 4.65284 0.512143 4.63493C0.53353 4.61702 0.559531 4.6055 0.587165 4.60168L4.21491 4.04443L5.86491 0.766928C5.87736 0.741967 5.89651 0.720968 5.92022 0.706291C5.94394 0.691613 5.97128 0.683838 5.99917 0.683838C6.02705 0.683838 6.05439 0.691613 6.07811 0.706291C6.10182 0.720968 6.12098 0.741967 6.13342 0.766928L7.78341 4.04443L11.4112 4.60168C11.4386 4.60576 11.4644 4.61743 11.4856 4.63537C11.5068 4.65332 11.5226 4.67682 11.5312 4.70324C11.5398 4.72966 11.5408 4.75795 11.5342 4.78493C11.5275 4.8119 11.5135 4.83649 11.4937 4.85593L8.88741 7.43818L9.47841 11.0607C9.48273 11.088 9.47938 11.1161 9.46874 11.1416C9.4581 11.1672 9.44059 11.1893 9.41814 11.2056C9.3957 11.2218 9.3692 11.2315 9.34158 11.2336C9.31396 11.2357 9.2863 11.2301 9.26166 11.2174L5.99992 9.53593Z"
+            fill="#F6BD2B" />
+        </svg>
+
+        <span class="text-neutral-80 font-sm">
+          <%= rating %> <span class="text-neutral-60">(<%= reviewCount %>)</span>
+        </span>
+      </div>
+      <span class="text-neutral-80 font-sm">
+        <%= soldCount %> 個已訂購
+      </span>
+    </div>
+  </div>
+
+  <div>
+    <h4 class="text-primary fs-6">NT$ <%= price %>
+    </h4>
+    <% if (originalPrice && originalPrice> price) { %>
+      <p class="text-decoration-line-through text-neutral-60 text-sm">NT$ <%= originalPrice %>
+      </p>
+      <% } %>
+  </div>
+</div>

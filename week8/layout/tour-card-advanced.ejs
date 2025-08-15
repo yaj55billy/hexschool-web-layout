@@ -1,0 +1,116 @@
+<!-- 進階旅遊卡片組件 -->
+<div class="card tour-card <%= cardClass || '' %>">
+  <div class="position-relative">
+    <img src="<%= imageUrl %>" class="card-img-top" alt="<%= title %>" loading="lazy">
+    
+    <!-- 收藏按鈕 -->
+    <% if (showFavorite !== false) { %>
+    <button class="btn position-absolute top-0 end-0 m-3 p-2 bg-white rounded-circle border-0 shadow-sm" 
+            type="button" 
+            data-tour-id="<%= id || '' %>"
+            onclick="toggleFavorite(this)">
+      <span class="material-symbols-outlined text-neutral-60">
+        <%= isFavorite ? 'favorite' : 'favorite_border' %>
+      </span>
+    </button>
+    <% } %>
+    
+    <!-- 標籤/徽章 -->
+    <% if (badge) { %>
+    <span class="position-absolute top-0 start-0 m-3 badge bg-<%= badge.type || 'primary' %> rounded-pill">
+      <%= badge.text %>
+    </span>
+    <% } %>
+  </div>
+  
+  <div class="card-body p-4">
+    <!-- 標題 -->
+    <h5 class="card-title fw-bold mb-2">
+      <% if (url) { %>
+        <a href="<%= url %>" class="text-decoration-none text-dark"><%= title %></a>
+      <% } else { %>
+        <%= title %>
+      <% } %>
+    </h5>
+    
+    <!-- 描述 -->
+    <p class="card-text text-neutral-80 mb-3"><%= description %></p>
+    
+    <!-- 評分和購買資訊 -->
+    <div class="d-flex align-items-center justify-content-between mb-3">
+      <div class="d-flex align-items-center text-neutral-80 small">
+        <% if (rating) { %>
+        <span class="material-symbols-outlined me-1 text-warning" style="font-size: 18px;">
+          star
+        </span>
+        <span class="me-3"><%= rating %> (<%= reviewCount || 0 %>)</span>
+        <% } %>
+        
+        <% if (soldCount) { %>
+        <span><%= soldCount %> 個已訂購</span>
+        <% } %>
+      </div>
+    </div>
+    
+    <!-- 價格區域 -->
+    <div class="d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-baseline">
+        <span class="h5 fw-bold text-primary mb-0">NT$ <%= price.toLocaleString() %></span>
+        <% if (originalPrice && originalPrice > price) { %>
+        <span class="text-decoration-line-through text-neutral-60 ms-2 small">
+          NT$ <%= originalPrice.toLocaleString() %>
+        </span>
+        <% } %>
+      </div>
+      
+      <!-- 快速預訂按鈕 -->
+      <% if (showBookButton !== false) { %>
+      <button class="btn btn-primary btn-sm" 
+              type="button"
+              data-tour-id="<%= id || '' %>"
+              onclick="quickBook(this)">
+        立即預訂
+      </button>
+      <% } %>
+    </div>
+    
+    <!-- 額外資訊 -->
+    <% if (extraInfo && extraInfo.length > 0) { %>
+    <div class="mt-3 pt-3 border-top">
+      <% extraInfo.forEach(function(info) { %>
+      <small class="text-neutral-80 d-block">
+        <span class="material-symbols-outlined me-1" style="font-size: 14px;"><%= info.icon %></span>
+        <%= info.text %>
+      </small>
+      <% }); %>
+    </div>
+    <% } %>
+  </div>
+</div>
+
+<script>
+// 收藏功能
+function toggleFavorite(button) {
+  const icon = button.querySelector('.material-symbols-outlined');
+  const tourId = button.dataset.tourId;
+  
+  if (icon.textContent.trim() === 'favorite_border') {
+    icon.textContent = 'favorite';
+    icon.classList.add('text-danger');
+    icon.classList.remove('text-neutral-60');
+    // 這裡可以調用 API 加入收藏
+  } else {
+    icon.textContent = 'favorite_border';
+    icon.classList.remove('text-danger');
+    icon.classList.add('text-neutral-60');
+    // 這裡可以調用 API 移除收藏
+  }
+}
+
+// 快速預訂功能
+function quickBook(button) {
+  const tourId = button.dataset.tourId;
+  // 這裡可以實現快速預訂邏輯
+  alert('正在跳轉到預訂頁面...');
+}
+</script>

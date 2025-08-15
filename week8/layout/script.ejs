@@ -1,0 +1,88 @@
+<style>
+  .hidden {
+    display: none !important;
+  }
+</style>
+
+<script>
+
+  // 視窗捲動距離 50，將 navbar 區塊加上 navbar-scroll-active class START
+  window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+      navbar.classList.add('navbar-scroll-active');
+    } else {
+      navbar.classList.remove('navbar-scroll-active');
+    }
+  });
+
+  // 視窗捲動距離 50，將 navbar 區塊加上 navbar-scroll-active class END
+
+  // 登入狀態切換 START
+  let isLogin = false;
+
+  // 更新UI顯示
+  function updateUI() {
+    const loginBtn = document.getElementById('loginBtn');
+    const userInfo = document.getElementById('userInfo');
+    const loggedInMenu = document.getElementById('loggedInMenu');
+    const guestMenu = document.getElementById('guestMenu');
+
+    if (isLogin) {
+      // 已登入狀態
+      // 桌機版：隱藏登入按鈕，顯示用戶信息（保持手機版隱藏）
+      loginBtn.className = 'btn btn-default btn-primary d-none';
+      userInfo.className = 'd-none d-md-flex align-items-center';
+
+      // 手機版選單：顯示已登入選單，隱藏訪客選單
+      loggedInMenu.classList.remove('hidden');
+      guestMenu.classList.add('hidden');
+    } else {
+      // 未登入狀態
+      // 桌機版：顯示登入按鈕，隱藏用戶信息（保持手機版隱藏）
+      loginBtn.className = 'btn btn-default btn-primary d-none d-md-inline-block';
+      userInfo.className = 'd-none d-md-flex align-items-center hidden';
+
+      // 手機版選單：隱藏已登入選單，顯示訪客選單
+      loggedInMenu.classList.add('hidden');
+      guestMenu.classList.remove('hidden');
+    }
+  }
+
+  // 登入函數
+  function login() {
+    isLogin = true;
+    updateUI();
+  }
+
+  // 登出函數
+  function logout() {
+    isLogin = false;
+    updateUI();
+  }
+
+  // 頁面載入時初始化UI
+  document.addEventListener('DOMContentLoaded', function () {
+    // 綁定事件監聽器
+    const loginBtn = document.getElementById('loginBtn');
+    const mobileLoginBtn = document.getElementById('mobileLoginBtn');
+    const logoutBtn = document.getElementById('logoutBtn');
+
+    if (loginBtn) {
+      loginBtn.addEventListener('click', login);
+    }
+
+    if (mobileLoginBtn) {
+      mobileLoginBtn.addEventListener('click', login);
+    }
+
+    if (logoutBtn) {
+      logoutBtn.addEventListener('click', logout);
+    }
+
+    // 初始化UI
+    updateUI();
+  });
+  // 登入狀態切換 END
+
+</script>

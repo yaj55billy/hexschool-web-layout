@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>地點搜尋頁</title>
+</head>
+
+<body>
+  <%- include('./layout/navbar'); -%>
+    <main class="main">
+      <section>
+        <div class="container">
+          <h1 class="text-black">大阪</h1>
+          <p>
+            大阪，一座融合傳統與現代的城市，擁有豐富的歷史文化、熱鬧的購物街區與世界知名的美食天堂。從氣派的大阪城到霓虹閃爍的道頓堀，每一處都充滿驚喜。無論是第一次造訪，還是再次回味，大阪總能用它的熱情與魅力，讓你留下難忘回憶。
+          </p>
+        </div>
+
+      </section>
+
+      <section>
+        <div class="container"></div>
+      </section>
+
+      <section class="py-9 py-md-12">
+        <div class="container">
+          <h2 class="text-primary fs-3 fs-md-1 mb-5 mb-md-9">大阪 TOP 10!</h2>
+          <div class="row">
+            <div class="col-md-6 col-lg-3">
+              <%- include('./layout/card-tour', { imageUrl: '../assets/images/tour-1.jpg' ,
+                title: '環球影城超值一日遊｜哈利波特園區＋快速通關體驗' , tag1: '即買即用' , tag2: '5 天前可免費取消' , rating: '4.8' ,
+                reviewCount: '1029' , soldCount: '1,000+' , price: '5,480' , originalPrice: '6,200' }); -%>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <%- include('./layout/footer'); -%>
+      <%- include('./layout/script'); -%>
+
+        <script type="module" src="../main.js"></script>
+</body>
+
+</html>
