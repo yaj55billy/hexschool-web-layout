@@ -357,7 +357,7 @@ $theme-colors: (
 	"neutral-10": $neutral-10,
 
 	// "secondary": $secondary,
-	// "warning": $warning,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+	// "warning": $warning,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -414,9 +414,9 @@ $enable-gradients: false !default;
 $enable-transitions: true !default;
 $enable-reduced-motion: true !default;
 $enable-smooth-scroll: true !default;
-$enable-grid-classes: true !default;
+$enable-grid-classes: false !default;
 $enable-container-classes: true !default;
-$enable-cssgrid: false !default;
+$enable-cssgrid: true !default;
 $enable-button-pointers: true !default;
 $enable-rfs: false !default;
 $enable-validation-icons: true !default;
@@ -622,9 +622,12 @@ $border-radius-2xl: $border-radius-xxl !default; // Deprecated in v5.3.0
 // fusv-enable
 
 // scss-docs-start box-shadow-variables
-$box-shadow: 0 0.5rem 1rem rgba($black, 0.15) !default;
-$box-shadow-sm: 0 0.125rem 0.25rem rgba($black, 0.075) !default;
-$box-shadow-lg: 0 1rem 3rem rgba($black, 0.175) !default;
+// $box-shadow: 0 0.5rem 1rem rgba($black, 0.15) !default;
+// $box-shadow-sm: 0 0.125rem 0.25rem rgba($black, 0.075) !default;
+// $box-shadow-lg: 0 1rem 3rem rgba($black, 0.175) !default;
+$box-shadow: 0 0.25rem 2.5rem rgba($black, 0.1) !default;
+$box-shadow-sm: 0 0.25rem 0.75rem rgba($black, 0.15) !default;
+$box-shadow-lg: 0 0.5rem 5rem rgba($black, 0.08) !default;
 $box-shadow-inset: inset 0 1px 2px rgba($black, 0.075) !default;
 // scss-docs-end box-shadow-variables
 
@@ -1043,9 +1046,11 @@ $form-color-width: 3rem !default;
 // scss-docs-end form-input-variables
 
 // scss-docs-start form-check-variables
-$form-check-input-width: 1em !default;
+// $form-check-input-width: 1em !default;
+$form-check-input-width: 1.5rem !default;
 $form-check-min-height: $font-size-base * $line-height-base !default;
-$form-check-padding-start: $form-check-input-width + 0.5em !default;
+// $form-check-padding-start: $form-check-input-width + 0.5em !default;
+$form-check-padding-start: $form-check-input-width + 0.5rem !default;
 $form-check-margin-bottom: 0.125rem !default;
 $form-check-label-color: null !default;
 $form-check-label-cursor: null !default;
@@ -1772,11 +1777,14 @@ $figure-caption-color: var(--#{$prefix}secondary-color) !default;
 $breadcrumb-font-size: null !default;
 $breadcrumb-padding-y: 0 !default;
 $breadcrumb-padding-x: 0 !default;
-$breadcrumb-item-padding-x: 0.5rem !default;
+// $breadcrumb-item-padding-x: 0.5rem !default;
+$breadcrumb-item-padding-x: 0.75rem !default;
 $breadcrumb-margin-bottom: 1rem !default;
 $breadcrumb-bg: null !default;
-$breadcrumb-divider-color: var(--#{$prefix}secondary-color) !default;
-$breadcrumb-active-color: var(--#{$prefix}secondary-color) !default;
+// $breadcrumb-divider-color: var(--#{$prefix}secondary-color) !default;
+$breadcrumb-divider-color: $neutral-60 !default;
+// $breadcrumb-active-color: var(--#{$prefix}secondary-color) !default;
+$breadcrumb-active-color: $neutral-60 !default;
 $breadcrumb-divider: quote("/") !default;
 $breadcrumb-divider-flipped: $breadcrumb-divider !default;
 $breadcrumb-border-radius: null !default;

@@ -1,0 +1,30 @@
+<div class="card-product position-relative bg-white rounded-5 p-4 p-lg-6 d-block d-lg-flex gap-lg-7">
+  <a href="#" class="position-absolute top-0 start-0 w-100 h-100 z-2"></a>
+
+  <div class="card-product-head mb-4 mb-lg-0">
+    <img src="<%= imageUrl %>" class="rounded-2 w-100 card-product-img" alt="<%= title %>">
+  </div>
+  <div>
+    <ul class="d-flex align-items-center mb-6">
+      <li class="me-2 mb-2 py-2 px-4 bg-primary-10 rounded-1 text-primary font-sm fw-bold">
+        <%= tag1 %>
+      </li>
+      <li class="me-2 mb-2 py-2 px-4 bg-primary-10 rounded-1 text-primary font-sm fw-bold">
+        <%= tag2 %>
+      </li>
+    </ul>
+    <h3 class="fs-4 fs-lg-2 mb-2 card-product-title">
+      <%= title %>
+    </h3>
+    <p class="mb-8 card-product-text">
+      <%= description %>
+    </p>
+    <div class="d-flex align-items-center justify-content-lg-end gap-2">
+      <p class="text-primary fw-bold">查看文章</p>
+      <span class="material-symbols-outlined text-primary">
+        arrow_forward
+      </span>
+    </div>
+  </div>
+
+</div>

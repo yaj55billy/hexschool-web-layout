@@ -13,28 +13,151 @@
     <main class="main">
       <section>
         <div class="container">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#" class="text-primary">首頁</a></li>
+              <li class="breadcrumb-item"><a href="#" class="text-primary">日本</a></li>
+              <li class="breadcrumb-item"><a href="#" class="text-primary">關西</a></li>
+              <li class="breadcrumb-item active" aria-current="page">大阪</li>
+            </ol>
+          </nav>
           <h1 class="text-black">大阪</h1>
           <p>
             大阪，一座融合傳統與現代的城市，擁有豐富的歷史文化、熱鬧的購物街區與世界知名的美食天堂。從氣派的大阪城到霓虹閃爍的道頓堀，每一處都充滿驚喜。無論是第一次造訪，還是再次回味，大阪總能用它的熱情與魅力，讓你留下難忘回憶。
           </p>
         </div>
-
       </section>
 
-      <section>
-        <div class="container"></div>
+      <section class="py-9 py-md-12">
+        <div class="container">
+          <h2 class="text-primary fs-3 fs-md-1 mb-5 mb-md-9">想怎麼玩大阪？<br class="d-block d-md-none" />熱門分類快速選！</h2>
+          <ul class="grid gap-4 gap-lg-6">
+            <li class="g-col-6 g-col-lg-3">
+              <%- include('./layout/card-simple', { imageUrl: '../assets/images/card-simple-5.jpg' , title: '交通優惠' ,
+                description: '20+ 種選擇' , isHome: false }); -%>
+            </li>
+            <li class="g-col-6 g-col-lg-3">
+              <%- include('./layout/card-simple', { imageUrl: '../assets/images/card-simple-6.jpg' , title: '一日遊' ,
+                description: '50+ 種選擇' , isHome: false }); -%>
+            </li>
+            <li class="g-col-6 g-col-lg-3">
+              <%- include('./layout/card-simple', { imageUrl: '../assets/images/card-simple-7.jpg' , title: '景點門票' ,
+                description: '70+ 種選擇' , isHome: false }); -%>
+            </li>
+            <li class="g-col-6 g-col-lg-3">
+              <%- include('./layout/card-simple', { imageUrl: '../assets/images/card-simple-8.jpg' , title: '美食餐廳' ,
+                description: '80+ 種選擇' , isHome: false }); -%>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="py-9 py-md-12">
         <div class="container">
           <h2 class="text-primary fs-3 fs-md-1 mb-5 mb-md-9">大阪 TOP 10!</h2>
-          <div class="row">
-            <div class="col-md-6 col-lg-3">
-              <%- include('./layout/card-tour', { imageUrl: '../assets/images/tour-1.jpg' ,
-                title: '環球影城超值一日遊｜哈利波特園區＋快速通關體驗' , tag1: '即買即用' , tag2: '5 天前可免費取消' , rating: '4.8' ,
-                reviewCount: '1029' , soldCount: '1,000+' , price: '5,480' , originalPrice: '6,200' }); -%>
+          <div class="position-relative">
+            <div class="swiper swiper-search-results-top10">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <%- include('./layout/card-tour', { imageUrl: '../assets/images/tour-1.jpg' ,
+                    title: '環球影城超值一日遊｜哈利波特園區＋快速通關體驗' , tag1: '即買即用' , tag2: '5 天前可免費取消' , rating: '4.8' ,
+                    reviewCount: '1029' , soldCount: '1,000+' , price: '5,480' , originalPrice: '6,200' }); -%>
+                </li>
+                <li class="swiper-slide">
+                  <%- include('./layout/card-tour', { imageUrl: '../assets/images/tour-2.jpg' ,
+                    title: '奈良梅花鹿餵食體驗＋和服散策｜日式風情輕旅行' , tag1: '中文導覽' , tag2: '5 天前可免費取消' , rating: '4.7' ,
+                    reviewCount: '880' , soldCount: '900+' , price: '2,250' , originalPrice: '2,800' }); -%>
+                </li>
+                <li class="swiper-slide">
+                  <%- include('./layout/card-tour', { imageUrl: '../assets/images/tour-3.jpg' ,
+                    title: '黑門市場美食巡禮｜在地職人帶路吃遍大阪經典小吃' , tag1: '專業導覽' , tag2: '5 天前可免費取消' , rating: '4.6' ,
+                    reviewCount: '540' , soldCount: '700+' , price: '1,580' , originalPrice: '2,500' }); -%>
+                </li>
+                <li class="swiper-slide">
+                  <%- include('./layout/card-tour', { imageUrl: '../assets/images/tour-4.jpg' ,
+                    title: '大阪夜景直升機體驗｜空中俯瞰梅田摩天輪＋海遊館' , tag1: '即買即用' , tag2: '7 天前可免費取消' , rating: '4.7' ,
+                    reviewCount: '319' , soldCount: '600+' , price: '6,890' , originalPrice: '8,890' }); -%>
+                </li>
+                <li class="swiper-slide">
+                  <%- include('./layout/card-tour', { imageUrl: '../assets/images/tour-1.jpg' ,
+                    title: '環球影城超值一日遊｜哈利波特園區＋快速通關體驗' , tag1: '即買即用' , tag2: '5 天前可免費取消' , rating: '4.8' ,
+                    reviewCount: '1029' , soldCount: '1,000+' , price: '5,480' , originalPrice: '6,200' }); -%>
+                </li>
+                <li class="swiper-slide">
+                  <%- include('./layout/card-tour', { imageUrl: '../assets/images/tour-2.jpg' ,
+                    title: '奈良梅花鹿餵食體驗＋和服散策｜日式風情輕旅行' , tag1: '中文導覽' , tag2: '5 天前可免費取消' , rating: '4.7' ,
+                    reviewCount: '880' , soldCount: '900+' , price: '2,250' , originalPrice: '2,800' }); -%>
+                </li>
+                <li class="swiper-slide">
+                  <%- include('./layout/card-tour', { imageUrl: '../assets/images/tour-3.jpg' ,
+                    title: '黑門市場美食巡禮｜在地職人帶路吃遍大阪經典小吃' , tag1: '專業導覽' , tag2: '5 天前可免費取消' , rating: '4.6' ,
+                    reviewCount: '540' , soldCount: '700+' , price: '1,580' , originalPrice: '2,500' }); -%>
+                </li>
+                <li class="swiper-slide">
+                  <%- include('./layout/card-tour', { imageUrl: '../assets/images/tour-4.jpg' ,
+                    title: '大阪夜景直升機體驗｜空中俯瞰梅田摩天輪＋海遊館' , tag1: '即買即用' , tag2: '7 天前可免費取消' , rating: '4.7' ,
+                    reviewCount: '319' , soldCount: '600+' , price: '6,890' , originalPrice: '8,890' }); -%>
+                </li>
+              </ul>
+            </div>
+            <div class="bg-white shadow-sm swiper-custom-prev ">
+              <span class="material-symbols-outlined text-primary">
+                arrow_back
+              </span>
+            </div>
+            <div class="bg-white shadow-sm swiper-custom-next">
+              <span class="material-symbols-outlined text-primary">
+                arrow_forward
+              </span>
             </div>
           </div>
+        </div>
+      </section>
+
+
+      <section></section>
+      <section class="py-9 py-md-12 bg-primary-10">
+        <div class="container">
+          <div class="d-block d-lg-flex align-items-center justify-content-between mb-5">
+            <h2 class="text-primary fs-3 fs-md-1 mb-2 mb-lg-0">
+              旅人攻略
+              <br />
+              看看大家怎麼玩！
+            </h2>
+            <div>
+              <p class="mb-2 text-primary fw-bold">
+                這裡不只是遊記，更是來自旅人親身經歷的風格指南與靈感筆記。
+              </p>
+              <p class="text-primary fw-bold">
+                跟著他們的腳步走，找到屬於你的旅行意義。
+              </p>
+            </div>
+          </div>
+
+          <ul>
+            <li class="mb-6">
+              <%- include('./layout/card-product', { imageUrl: '../assets/images/product-1.jpg' , title: '空堀商店街的散步節奏' ,
+                description: '離開熱鬧難波，走進空堀這座時間凍結的老街，每家店都像一段回憶：木造喫茶、手工小物、安靜的巷弄轉角。這裡沒有觀光氣氛，只有城市最真實的日常樣貌...' , tag1: '#大阪' ,
+                tag2: '#老街巡禮' }); -%>
+            </li>
+            <li class="mb-6">
+              <%- include('./layout/card-product', { imageUrl: '../assets/images/product-2.jpg' , title: '深夜的章魚燒與便利商店啤酒'
+                , description: '難波站邊的小巷，有開到凌晨的章魚燒老店。坐在路邊配一罐便利商店啤酒，看路人談天、喝醉、笑鬧，這種庶民感才是我最懷念的大阪味道。' , tag1: '#大阪' ,
+                tag2: '#庶民美食' }); -%>
+            </li>
+            <li class="mb-6">
+              <%- include('./layout/card-product', { imageUrl: '../assets/images/product-3.jpg' ,
+                title: '一個人在中之島圖書館待一整天' ,
+                description: '陰天的中之島很安靜，我選擇在百年圖書館裡消磨一整天。閱讀、打盹、寫明信片，從高聳書架與拱形窗邊找到片刻的呼吸空間。不趕行程的日子，才最像我想要的旅途。' , tag1: '#大阪'
+                , tag2: '#靜態旅行' }); -%>
+            </li>
+            <li class="mb-6">
+              <%- include('./layout/card-product', { imageUrl: '../assets/images/product-4.jpg' , title: '跟著在地人玩「新世界」' ,
+                description: '走進「新世界」，才發現大阪有多狂、有多生活。串炸店裡全是吆喝聲、立吞店排滿上班族，還有拍不完的霓虹與搞笑招牌。這一區又亂又熱鬧，但真實又迷人。' , tag1: '#大阪' ,
+                tag2: '#在地文化' }); -%>
+            </li>
+          </ul>
+
         </div>
       </section>
     </main>
@@ -42,7 +165,7 @@
 
     <%- include('./layout/footer'); -%>
       <%- include('./layout/script'); -%>
-
+        <script type="module" src="../assets/js/swiper.js"></script>
         <script type="module" src="../main.js"></script>
 </body>
 

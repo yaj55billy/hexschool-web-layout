@@ -1,0 +1,31 @@
+.swiper-custom-prev,
+.swiper-custom-next {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 56px;
+	height: 56px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 12px;
+	cursor: pointer;
+	z-index: 5;
+	@media (max-width: 1100px) {
+		display: none;
+	}
+}
+
+.swiper-custom-prev {
+	left: -80px;
+	@media (max-width: 1500px) {
+		left: -40px;
+	}
+}
+
+.swiper-custom-next {
+	right: -80px;
+	@media (max-width: 1500px) {
+		right: -40px;
+	}
+}

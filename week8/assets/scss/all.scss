@@ -13,11 +13,12 @@
 @import "./base/base";
 @import "./base/typography";
 
+@import "./components/swiper";
 @import "./components/button";
 @import "./components/card";
 // @import "./components/form";
 // @import "./components/modal";
 @import "./layout/navbar";
-// @import 'layout/footer';
+@import "layout/footer";
 
 // @import "./pages/index";

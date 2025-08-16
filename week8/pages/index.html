@@ -14,25 +14,43 @@
     <!-- <h1 class="index-title">我是首頁</h1>
       -->
 
-    <main class="main" style="height: 100vh;  background-color: beige;">
-      <h1 class="index-title">我是首頁</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat similique est ut, assumenda blanditiis deserunt
-        porro ea accusamus, cupiditate sequi, atque adipisci nisi omnis. Obcaecati ipsum nihil veniam dolorum animi
-        eveniet sunt pariatur enim error ad, commodi debitis suscipit eius placeat, non at unde corporis fugiat adipisci
-        a perferendis aut?
+    <main class="main">
 
-      </p>
-      <div>
-        <button type="button" class="btn btn-default btn-primary">按鈕</button>
-        <button type="button" class="btn btn-default btn-secondary">按鈕</button>
-        <button type="button" class="btn btn-small btn-primary">按鈕</button>
-        <button type="button" class="btn btn-small btn-secondary">按鈕</button>
-      </div>
+      <section class="py-9 py-md-13">
+        <div class="container">
+          <ul class="grid gap-4 gap-lg-6">
+            <li class="g-col-6 g-col-lg-3">
+              <%- include('./layout/card-simple', { imageUrl: '../assets/images/card-simple-1.jpg' ,
+                title: 'ZOBAA 專屬推薦行程' , description: '嚴選深度行程，豐富旅行靈感' , isHome: true }); -%>
+            </li>
+            <li class="g-col-6 g-col-lg-3">
+              <%- include('./layout/card-simple', { imageUrl: '../assets/images/card-simple-2.jpg' , title: '旅人攻略集合' ,
+                description: '景點、交通、私房景點一次掌握' , isHome: true }); -%>
+            </li>
+            <li class="g-col-6 g-col-lg-3">
+              <%- include('./layout/card-simple', { imageUrl: '../assets/images/card-simple-3.jpg' , title: '優惠機票、酒店' ,
+                description: '即時比價，聰明出發不踩雷' , isHome: true }); -%>
+            </li>
+            <li class="g-col-6 g-col-lg-3">
+              <%- include('./layout/card-simple', { imageUrl: '../assets/images/card-simple-4.jpg' , title: '銀行專屬優惠' ,
+                description: '使用指定卡別享受獨家旅遊好康' , isHome: true }); -%>
+            </li>
+          </ul>
+        </div>
+      </section>
 
+      <section>
+        <div class="container">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+            <label class="form-check-label" for="checkDefault">
+              Default checkbox
+            </label>
+          </div>
+        </div>
+      </section>
 
     </main>
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-
 
 
     <%- include('./layout/footer'); -%>

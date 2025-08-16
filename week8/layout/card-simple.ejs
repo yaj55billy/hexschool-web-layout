@@ -1,0 +1,14 @@
+<div class="card-simple position-relative bg-white rounded-4 border">
+  <a href="#" class="position-absolute top-0 start-0 w-100 h-100 z-2"></a>
+  <div class="card-simple-head <% if (isHome) { %> index<% } %>">
+    <img src="<%= imageUrl %>" class="w-100 rounded-top-4 card-simple-img" alt="<%= title %>">
+  </div>
+  <div class="p-4 p-lg-6 rounded-bottom-4 card-simple-body">
+    <h3 class="mb-2 card-simple-title">
+      <%= title %>
+    </h3>
+    <p class="text-neutral-80 card-simple-text">
+      <%= description %>
+    </p>
+  </div>
+</div>
