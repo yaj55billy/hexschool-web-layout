@@ -11,9 +11,9 @@
 <body>
   <%- include('./layout/navbar'); -%>
     <main class="main">
-      <section>
+      <section class="py-9 py-md-12">
         <div class="container">
-          <nav aria-label="breadcrumb">
+          <nav aria-label="breadcrumb" class="mb-md-9 d-none d-md-block">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="#" class="text-primary">首頁</a></li>
               <li class="breadcrumb-item"><a href="#" class="text-primary">日本</a></li>
@@ -21,10 +21,35 @@
               <li class="breadcrumb-item active" aria-current="page">大阪</li>
             </ol>
           </nav>
-          <h1 class="text-black">大阪</h1>
-          <p>
+          <h1 class="text-black fs-3 fs-md-1 mb-2">大阪</h1>
+          <p class="text-neutral-80 mb-6">
             大阪，一座融合傳統與現代的城市，擁有豐富的歷史文化、熱鬧的購物街區與世界知名的美食天堂。從氣派的大阪城到霓虹閃爍的道頓堀，每一處都充滿驚喜。無論是第一次造訪，還是再次回味，大阪總能用它的熱情與魅力，讓你留下難忘回憶。
           </p>
+          <div class="position-relative">
+            <ul class="search-results-hero">
+              <li><img src="../assets/images/search-results-hero-1.jpg" alt="大阪景點一" class="rounded-start-4"></li>
+              <li><img src="../assets/images/search-results-hero-2.jpg" alt="大阪景點二"></li>
+              <li><img src="../assets/images/search-results-hero-3.jpg" alt="大阪景點三"></li>
+              <li><img src="../assets/images/search-results-hero-4.jpg" alt="大阪景點四"></li>
+              <li><img src="../assets/images/search-results-hero-5.jpg" alt="大阪景點五"></li>
+            </ul>
+
+            <div class="swiper d-block d-md-none swiper-search-results-hero">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide rounded-2">
+                  <img src="../assets/images/search-results-hero-1.jpg" alt="大阪景點一" class="rounded-2">
+                </li>
+                <li class="swiper-slide rounded-2">
+                  <img src="../assets/images/search-results-hero-1.jpg" alt="大阪景點一" class="rounded-2">
+                </li>
+                <li class="swiper-slide rounded-2">
+                  <img src="../assets/images/search-results-hero-1.jpg" alt="大阪景點一" class="rounded-2">
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-pagination-hero"></div>
+            <a href="" class="position-absolute z-2 btn btn-default btn-secondary search-results-hero-btn">查看更多</a>
+          </div>
         </div>
       </section>
 
@@ -100,12 +125,12 @@
                 </li>
               </ul>
             </div>
-            <div class="bg-white shadow-sm swiper-custom-prev ">
+            <div class="bg-white shadow-sm swiper-custom-prev swiper-custom-next-fortop10">
               <span class="material-symbols-outlined text-primary">
                 arrow_back
               </span>
             </div>
-            <div class="bg-white shadow-sm swiper-custom-next">
+            <div class="bg-white shadow-sm swiper-custom-next swiper-custom-next-fortop10">
               <span class="material-symbols-outlined text-primary">
                 arrow_forward
               </span>
@@ -114,8 +139,75 @@
         </div>
       </section>
 
+      <section class="py-9 py-md-12">
+        <div class="container">
+          <h2 class="text-primary fs-3 fs-md-1 mb-5 mb-md-9">來自 ZOBAA 的大阪推薦</h2>
+          <ul class="border-bottom d-flex align-items-center gap-8 mx-2 mb-5 mb-md-9 overflow-x-auto tabs-location">
+            <li><a href="#" class="py-4 d-block position-relative text-center tabs-location-link active">觀光行程</a></li>
+            <li><a href="#" class="py-4 d-block position-relative text-center tabs-location-link">景點門票</a></li>
+            <li><a href="#" class="py-4 d-block position-relative text-center tabs-location-link">交通優惠</a></li>
+            <li><a href="#" class="py-4 d-block position-relative text-center tabs-location-link">美食餐廳</a></li>
+            <li><a href="#" class="py-4 d-block position-relative text-center tabs-location-link">本月優惠</a></li>
+          </ul>
+          <div class="position-relative">
+            <div class="swiper swiper-search-results-feature">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <%- include('./layout/card-tour', { imageUrl: '../assets/images/tour-1.jpg' ,
+                    title: '環球影城超值一日遊｜哈利波特園區＋快速通關體驗' , tag1: '即買即用' , tag2: '5 天前可免費取消' , rating: '4.8' ,
+                    reviewCount: '1029' , soldCount: '1,000+' , price: '5,480' , originalPrice: '6,200' }); -%>
+                </li>
+                <li class="swiper-slide">
+                  <%- include('./layout/card-tour', { imageUrl: '../assets/images/tour-2.jpg' ,
+                    title: '奈良梅花鹿餵食體驗＋和服散策｜日式風情輕旅行' , tag1: '中文導覽' , tag2: '5 天前可免費取消' , rating: '4.7' ,
+                    reviewCount: '880' , soldCount: '900+' , price: '2,250' , originalPrice: '2,800' }); -%>
+                </li>
+                <li class="swiper-slide">
+                  <%- include('./layout/card-tour', { imageUrl: '../assets/images/tour-3.jpg' ,
+                    title: '黑門市場美食巡禮｜在地職人帶路吃遍大阪經典小吃' , tag1: '專業導覽' , tag2: '5 天前可免費取消' , rating: '4.6' ,
+                    reviewCount: '540' , soldCount: '700+' , price: '1,580' , originalPrice: '2,500' }); -%>
+                </li>
+                <li class="swiper-slide">
+                  <%- include('./layout/card-tour', { imageUrl: '../assets/images/tour-4.jpg' ,
+                    title: '大阪夜景直升機體驗｜空中俯瞰梅田摩天輪＋海遊館' , tag1: '即買即用' , tag2: '7 天前可免費取消' , rating: '4.7' ,
+                    reviewCount: '319' , soldCount: '600+' , price: '6,890' , originalPrice: '8,890' }); -%>
+                </li>
+                <li class="swiper-slide">
+                  <%- include('./layout/card-tour', { imageUrl: '../assets/images/tour-1.jpg' ,
+                    title: '環球影城超值一日遊｜哈利波特園區＋快速通關體驗' , tag1: '即買即用' , tag2: '5 天前可免費取消' , rating: '4.8' ,
+                    reviewCount: '1029' , soldCount: '1,000+' , price: '5,480' , originalPrice: '6,200' }); -%>
+                </li>
+                <li class="swiper-slide">
+                  <%- include('./layout/card-tour', { imageUrl: '../assets/images/tour-2.jpg' ,
+                    title: '奈良梅花鹿餵食體驗＋和服散策｜日式風情輕旅行' , tag1: '中文導覽' , tag2: '5 天前可免費取消' , rating: '4.7' ,
+                    reviewCount: '880' , soldCount: '900+' , price: '2,250' , originalPrice: '2,800' }); -%>
+                </li>
+                <li class="swiper-slide">
+                  <%- include('./layout/card-tour', { imageUrl: '../assets/images/tour-3.jpg' ,
+                    title: '黑門市場美食巡禮｜在地職人帶路吃遍大阪經典小吃' , tag1: '專業導覽' , tag2: '5 天前可免費取消' , rating: '4.6' ,
+                    reviewCount: '540' , soldCount: '700+' , price: '1,580' , originalPrice: '2,500' }); -%>
+                </li>
+                <li class="swiper-slide">
+                  <%- include('./layout/card-tour', { imageUrl: '../assets/images/tour-4.jpg' ,
+                    title: '大阪夜景直升機體驗｜空中俯瞰梅田摩天輪＋海遊館' , tag1: '即買即用' , tag2: '7 天前可免費取消' , rating: '4.7' ,
+                    reviewCount: '319' , soldCount: '600+' , price: '6,890' , originalPrice: '8,890' }); -%>
+                </li>
+              </ul>
+            </div>
+            <div class="bg-white shadow-sm swiper-custom-prev swiper-custom-next-forfeature">
+              <span class="material-symbols-outlined text-primary">
+                arrow_back
+              </span>
+            </div>
+            <div class="bg-white shadow-sm swiper-custom-next swiper-custom-next-forfeature">
+              <span class="material-symbols-outlined text-primary">
+                arrow_forward
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <section></section>
       <section class="py-9 py-md-12 bg-primary-10">
         <div class="container">
           <div class="d-block d-lg-flex align-items-center justify-content-between mb-5">
